@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#E9EDE6"/>
+  <g transform="translate(400, 280)">
+    <rect x="-120" y="-40" width="240" height="80" rx="12" fill="#7D8A78" opacity="0.3"/>
+    <rect x="-100" y="-30" width="200" height="60" rx="8" fill="#7D8A78" opacity="0.5"/>
+    <circle cx="-70" cy="40" r="20" fill="#727871" opacity="0.4"/>
+    <circle cx="70" cy="40" r="20" fill="#727871" opacity="0.4"/>
+    <rect x="-80" y="-20" width="60" height="30" rx="4" fill="#F7F7F2" opacity="0.6"/>
+    <rect x="20" y="-20" width="60" height="30" rx="4" fill="#F7F7F2" opacity="0.6"/>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#727871" font-weight="500">Vehicle Image</text>
+  <text x="400" y="425" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#727871" opacity="0.6">Demo placeholder</text>
+</svg>

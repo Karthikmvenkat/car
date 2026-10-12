@@ -1,0 +1,33 @@
+{
+  "name": "carpal",
+  "version": "1.0.0",
+  "description": "CarPal - Premium Automotive Platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "dev:api": "npm run dev --workspace=apps/api",
+    "build": "npm run build --workspace=apps/web",
+    "build:api": "npm run build --workspace=apps/api",
+    "start": "npm run start --workspace=apps/web",
+    "start:api": "npm run start --workspace=apps/api",
+    "lint": "npm run lint --workspace=apps/web",
+    "typecheck": "npm run typecheck --workspace=apps/web",
+    "db:generate": "npx prisma generate --schema=prisma/schema.prisma",
+    "db:migrate": "npx prisma migrate dev --schema=prisma/schema.prisma",
+    "db:push": "npx prisma db push --schema=prisma/schema.prisma",
+    "db:seed": "npx ts-node prisma/seed.ts",
+    "db:studio": "npx prisma studio --schema=prisma/schema.prisma"
+  },
+  "keywords": [
+    "automotive",
+    "carpal",
+    "nextjs",
+    "nestjs"
+  ],
+  "author": "",
+  "license": "UNLICENSED"
+}

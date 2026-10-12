@@ -1,0 +1,413 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================
+// USERS & AUTH
+// ============================================
+
+model User {
+  id            String    @id @default(cuid())
+  name          String
+  email         String    @unique
+  phone         String?
+  passwordHash  String
+  role          Role      @default(CUSTOMER)
+  status        UserStatus @default(ACTIVE)
+  emailVerified Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  favorites     Favorite[]
+  enquiries     Enquiry[]
+  bookings      TestDriveBooking[]
+  assignedLeads Enquiry[]  @relation("AssignedLead")
+  auditLogs     AuditLog[]
+  notes         EnquiryNote[]
+
+  @@index([email])
+  @@index([role])
+}
+
+enum Role {
+  CUSTOMER
+  ADMIN
+  SUPER_ADMIN
+  INVENTORY_MANAGER
+  SALES_MANAGER
+  CONTENT_EDITOR
+  ANALYST
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+}
+
+// ============================================
+// VEHICLE INVENTORY
+// ============================================
+
+model Brand {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  slug      String   @unique
+  logoUrl   String?
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  models    Model[]
+  vehicles  Vehicle[]
+}
+
+model Model {
+  id        String    @id @default(cuid())
+  brandId   String
+  name      String
+  slug      String
+  bodyStyle String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  brand     Brand     @relation(fields: [brandId], references: [id])
+  vehicles  Vehicle[]
+
+  @@unique([brandId, slug])
+  @@index([brandId])
+}
+
+model Vehicle {
+  id            String           @id @default(cuid())
+  slug          String           @unique
+  brandId       String
+  modelId       String
+  variant       String?
+  year          Int
+  condition     VehicleCondition
+  price         Int
+  currency      String           @default("USD")
+  mileage       Int
+  fuelType      String
+  transmission  String
+  drivetrain    String?
+  bodyStyle     String
+  exteriorColor String
+  interiorColor String?
+  description   String?
+  status        VehicleStatus    @default(DRAFT)
+  featured      Boolean          @default(false)
+  locationId    String?
+  publishedAt   DateTime?
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+
+  brand         Brand            @relation(fields: [brandId], references: [id])
+  model         Model            @relation(fields: [modelId], references: [id])
+  location      Location?        @relation(fields: [locationId], references: [id])
+  images        VehicleImage[]
+  features      VehicleFeature[]
+  favorites     Favorite[]
+  enquiries     Enquiry[]
+  bookings      TestDriveBooking[]
+
+  @@index([brandId])
+  @@index([modelId])
+  @@index([status])
+  @@index([slug])
+  @@index([year, price])
+  @@index([bodyStyle])
+  @@index([fuelType])
+  @@index([featured])
+}
+
+enum VehicleCondition {
+  NEW
+  USED
+  CERTIFIED
+}
+
+enum VehicleStatus {
+  DRAFT
+  AVAILABLE
+  RESERVED
+  SOLD
+  ARCHIVED
+}
+
+model VehicleImage {
+  id        String   @id @default(cuid())
+  vehicleId String
+  url       String
+  storageKey String?
+  alt       String   @default("")
+  order     Int      @default(0)
+  isPrimary Boolean  @default(false)
+  mediaType String   @default("image")
+  createdAt DateTime @default(now())
+
+  vehicle   Vehicle  @relation(fields: [vehicleId], references: [id], onDelete: Cascade)
+
+  @@index([vehicleId])
+  @@index([order])
+}
+
+model VehicleFeature {
+  id        String  @id @default(cuid())
+  vehicleId String
+  name      String
+  category  String?
+
+  vehicle   Vehicle @relation(fields: [vehicleId], references: [id], onDelete: Cascade)
+
+  @@index([vehicleId])
+}
+
+// ============================================
+// LOCATION
+// ============================================
+
+model Location {
+  id        String    @id @default(cuid())
+  name      String
+  address   String
+  city      String
+  state     String?
+  country   String    @default("US")
+  phone     String?
+  email     String?
+  timezone  String    @default("America/New_York")
+  active    Boolean   @default(true)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  vehicles  Vehicle[]
+}
+
+// ============================================
+// FAVORITES
+// ============================================
+
+model Favorite {
+  id        String   @id @default(cuid())
+  userId    String
+  vehicleId String
+  createdAt DateTime @default(now())
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  vehicle   Vehicle  @relation(fields: [vehicleId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, vehicleId])
+  @@index([userId])
+  @@index([vehicleId])
+}
+
+// ============================================
+// ENQUIRIES & LEADS
+// ============================================
+
+model Enquiry {
+  id              String        @id @default(cuid())
+  userId          String?
+  vehicleId       String
+  name            String
+  email           String
+  phone           String?
+  message         String
+  preferredContact String?
+  source          String        @default("website")
+  status          LeadStatus    @default(NEW)
+  assignedToId    String?
+  followUpDate    DateTime?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  user            User?         @relation(fields: [userId], references: [id])
+  vehicle         Vehicle       @relation(fields: [vehicleId], references: [id])
+  assignedTo      User?         @relation("AssignedLead", fields: [assignedToId], references: [id])
+  notes           EnquiryNote[]
+  statusHistory   EnquiryStatusHistory[]
+
+  @@index([userId])
+  @@index([vehicleId])
+  @@index([status])
+  @@index([createdAt])
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUALIFIED
+  TEST_DRIVE_SCHEDULED
+  COMPLETED
+  WON
+  LOST
+}
+
+model EnquiryNote {
+  id        String   @id @default(cuid())
+  enquiryId String
+  userId    String
+  content   String
+  internal  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  enquiry   Enquiry  @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@index([enquiryId])
+}
+
+model EnquiryStatusHistory {
+  id        String     @id @default(cuid())
+  enquiryId String
+  fromStatus LeadStatus
+  toStatus  LeadStatus
+  note      String?
+  changedBy String
+  createdAt DateTime   @default(now())
+
+  enquiry   Enquiry    @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+
+  @@index([enquiryId])
+}
+
+// ============================================
+// TEST DRIVE BOOKINGS
+// ============================================
+
+model TestDriveBooking {
+  id            String        @id @default(cuid())
+  vehicleId     String
+  userId        String?
+  name          String
+  email         String
+  phone         String
+  requestedDate DateTime
+  requestedTime String
+  confirmedDate DateTime?
+  confirmedTime String?
+  status        BookingStatus @default(PENDING)
+  notes         String?
+  staffNotes    String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  vehicle       Vehicle       @relation(fields: [vehicleId], references: [id])
+  user          User?         @relation(fields: [userId], references: [id])
+
+  @@index([vehicleId])
+  @@index([userId])
+  @@index([status])
+  @@index([requestedDate])
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  RESCHEDULED
+  COMPLETED
+  CANCELLED
+  NO_SHOW
+}
+
+// ============================================
+// CONTENT MANAGEMENT
+// ============================================
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  role      String?
+  quote     String
+  avatarUrl String?
+  rating    Int      @default(5)
+  active    Boolean  @default(true)
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model FAQ {
+  id        String   @id @default(cuid())
+  question  String
+  answer    String
+  category  String?
+  order     Int      @default(0)
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model PageContent {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  content   String
+  metadata  Json?
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ============================================
+// SEO
+// ============================================
+
+model SeoMetadata {
+  id          String  @id @default(cuid())
+  path        String  @unique
+  title       String
+  description String?
+  ogImage     String?
+  noindex     Boolean @default(false)
+  updatedAt   DateTime @updatedAt
+}
+
+// ============================================
+// AUDIT LOG
+// ============================================
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  action     String
+  entity     String
+  entityId   String?
+  metadata   Json?
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime @default(now())
+
+  user       User?    @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([entity])
+  @@index([action])
+  @@index([createdAt])
+}
+
+// ============================================
+// NOTIFICATIONS
+// ============================================
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String?
+  type      String
+  title     String
+  message   String
+  read      Boolean  @default(false)
+  metadata  Json?
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([read])
+  @@index([createdAt])
+}
