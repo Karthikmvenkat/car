@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-# CarPal — Firebase + Cloud Run Deployment Script
+# CAR — Firebase + Cloud Run Deployment Script
 # ============================================================
 # Prerequisites:
 #   1. Install Firebase CLI:  npm install -g firebase-tools
@@ -16,14 +16,14 @@ set -e
 # ─── Configuration ─────────────────────────────────────────
 PROJECT_ID="your-firebase-project-id"   # ← Replace with your Firebase project ID
 REGION="us-central1"                     # ← Change to your preferred region
-API_SERVICE="carpal-api"
-WEB_SERVICE="carpal-web"
-DB_INSTANCE="carpal-db"
-DB_NAME="carpal"
-DB_USER="carpal"
+API_SERVICE="car-api"
+WEB_SERVICE="car-web"
+DB_INSTANCE="car-db"
+DB_NAME="car"
+DB_USER="car"
 
 echo "╔══════════════════════════════════════════════════════╗"
-echo "║  CarPal — Firebase + Cloud Run Deployment           ║"
+echo "║  CAR — Firebase + Cloud Run Deployment            ║"
 echo "╚══════════════════════════════════════════════════════╝"
 echo ""
 
@@ -52,10 +52,10 @@ echo ""
 
 # ─── Step 4: Create Artifact Registry for Docker images ───
 echo "▶ Setting up Artifact Registry..."
-gcloud artifacts repositories create carpal-images \
+gcloud artifacts repositories create car-images \
   --repository-format=docker \
   --location=$REGION \
-  --description="CarPal Docker images" 2>/dev/null || echo "  (Repository already exists)"
+  --description="CAR Docker images" 2>/dev/null || echo "  (Repository already exists)"
 gcloud auth configure-docker ${REGION}-docker.pkg.dev --quiet
 echo "✓ Artifact Registry ready"
 echo ""
@@ -78,7 +78,7 @@ echo ""
 echo "▶ Building API Docker image..."
 cd apps/api
 gcloud builds submit \
-  --tag ${REGION}-docker.pkg.dev/$PROJECT_ID/carpal-images/$API_SERVICE:latest \
+  --tag ${REGION}-docker.pkg.dev/$PROJECT_ID/car-images/$API_SERVICE:latest \
   --timeout=600
 cd ../..
 echo "✓ API image pushed"
@@ -87,7 +87,7 @@ echo ""
 # ─── Step 7: Deploy API to Cloud Run ──────────────────────
 echo "▶ Deploying API to Cloud Run..."
 gcloud run deploy $API_SERVICE \
-  --image ${REGION}-docker.pkg.dev/$PROJECT_ID/carpal-images/$API_SERVICE:latest \
+  --image ${REGION}-docker.pkg.dev/$PROJECT_ID/car-images/$API_SERVICE:latest \
   --region $REGION \
   --platform managed \
   --allow-unauthenticated \
@@ -97,7 +97,7 @@ gcloud run deploy $API_SERVICE \
   --min-instances 0 \
   --max-instances 3 \
   --set-env-vars "NODE_ENV=production,PORT=8080" \
-  --set-secrets "DATABASE_URL=carpal-db-url:latest,JWT_SECRET=carpal-jwt-secret:latest,GOOGLE_CLIENT_ID=carpal-google-client-id:latest" \
+  --set-secrets "DATABASE_URL=car-db-url:latest,JWT_SECRET=car-jwt-secret:latest,GOOGLE_CLIENT_ID=car-google-client-id:latest" \
   --update-env-vars "FRONTEND_URL=https://$PROJECT_ID.web.app"
 echo "✓ API deployed"
 echo ""
@@ -106,7 +106,7 @@ echo ""
 echo "▶ Building Web Docker image..."
 cd apps/web
 gcloud builds submit \
-  --tag ${REGION}-docker.pkg.dev/$PROJECT_ID/carpal-images/$WEB_SERVICE:latest \
+  --tag ${REGION}-docker.pkg.dev/$PROJECT_ID/car-images/$WEB_SERVICE:latest \
   --timeout=600
 cd ../..
 echo "✓ Web image pushed"
@@ -116,7 +116,7 @@ echo ""
 echo "▶ Deploying Web to Cloud Run..."
 API_URL=$(gcloud run services describe $API_SERVICE --region=$REGION --format='value(status.url)')
 gcloud run deploy $WEB_SERVICE \
-  --image ${REGION}-docker.pkg.dev/$PROJECT_ID/carpal-images/$WEB_SERVICE:latest \
+  --image ${REGION}-docker.pkg.dev/$PROJECT_ID/car-images/$WEB_SERVICE:latest \
   --region $REGION \
   --platform managed \
   --allow-unauthenticated \
@@ -140,7 +140,7 @@ WEB_URL=$(gcloud run services describe $WEB_SERVICE --region=$REGION --format='v
 API_URL=$(gcloud run services describe $API_SERVICE --region=$REGION --format='value(status.url)')
 
 echo "╔══════════════════════════════════════════════════════╗"
-echo "║  ✓ CarPal deployed successfully!                    ║"
+echo "║  ✓ CAR deployed successfully!                     ║"
 echo "╠══════════════════════════════════════════════════════╣"
 echo "║                                                      ║"
 echo "║  Firebase Hosting: https://$PROJECT_ID.web.app      ║"

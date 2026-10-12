@@ -1,4 +1,4 @@
-# CarPal — Premium Automotive Platform
+# CAR — Premium Automotive Platform
 
 A full-stack premium automotive marketplace built with Next.js 14, NestJS, PostgreSQL, and Prisma.
 
@@ -55,8 +55,8 @@ npm run dev:api
 
 | Role     | Email                  | Password   |
 |----------|------------------------|------------|
-| Admin    | admin@trycarpal.com    | admin123   |
-| Customer | demo@trycarpal.com     | customer123|
+| Admin    | admin@trycar.com    | admin123   |
+| Customer | demo@trycar.com     | customer123|
 
 ## Frontend Routes
 
@@ -65,7 +65,7 @@ npm run dev:api
 - `/vehicles` — Browse/search vehicles with filters
 - `/vehicles/[slug]` — Vehicle detail page with gallery
 - `/how-it-works` — 4-step buying process
-- `/about` — About CarPal
+- `/about` — About CAR
 - `/stories` — Customer stories
 - `/contact` — Contact form
 - `/enquire?vehicle=...` — Vehicle enquiry form

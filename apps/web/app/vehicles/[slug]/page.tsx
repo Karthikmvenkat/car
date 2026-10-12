@@ -13,6 +13,14 @@ interface VehiclePageProps {
   };
 }
 
+export function generateStaticParams() {
+  return demoVehicles.map((vehicle) => ({
+    slug: vehicle.slug,
+  }));
+}
+
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: VehiclePageProps): Promise<Metadata> {
@@ -22,7 +30,7 @@ export async function generateMetadata({
 
   return {
     title: `${vehicle.year} ${vehicle.make} ${vehicle.model}${vehicle.variant ? ` ${vehicle.variant}` : ''}`,
-    description: vehicle.description || `${vehicle.make} ${vehicle.model} for sale at CarPal`,
+    description: vehicle.description || `${vehicle.make} ${vehicle.model} for sale at CAR`,
     openGraph: {
       images: vehicle.images.map((img) => ({
         url: img.url,

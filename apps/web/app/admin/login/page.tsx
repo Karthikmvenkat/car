@@ -41,7 +41,7 @@ export default function AdminLoginPage() {
             Admin Login
           </h1>
           <p className="text-body-sm text-primary-muted">
-            Sign in to manage your CarPal dashboard
+            Sign in to manage your CAR dashboard
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export default function AdminLoginPage() {
                   if (error) setError('');
                 }}
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent"
-                placeholder="admin@carpal.com"
+                placeholder="admin@car.com"
               />
             </div>
             <div>

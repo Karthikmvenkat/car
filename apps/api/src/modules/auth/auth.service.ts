@@ -9,10 +9,10 @@ import { LoginDto } from './dto/login.dto';
 // In-memory user store for demo (used when database is unavailable)
 const demoUsers: Map<string, any> = new Map([
   [
-    'demo@trycarpal.com',
+    'demo@trycar.com',
     {
       id: 'demo-user-1',
-      email: 'demo@trycarpal.com',
+      email: 'demo@trycar.com',
       name: 'Demo User',
       phone: null,
       passwordHash: bcrypt.hashSync('customer123', 12),
@@ -23,10 +23,10 @@ const demoUsers: Map<string, any> = new Map([
     },
   ],
   [
-    'admin@trycarpal.com',
+    'admin@trycar.com',
     {
       id: 'admin-user-1',
-      email: 'admin@trycarpal.com',
+      email: 'admin@trycar.com',
       name: 'Admin User',
       phone: null,
       passwordHash: bcrypt.hashSync('admin123', 12),

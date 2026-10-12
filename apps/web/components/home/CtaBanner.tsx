@@ -43,7 +43,7 @@ export function CtaBanner() {
               </h2>
               <p className="text-body-lg text-white/60 mb-8">
                 Join thousands of satisfied customers who found their perfect
-                vehicle through CarPal. Start your journey today.
+                vehicle through CAR. Start your journey today.
               </p>
             </div>
 

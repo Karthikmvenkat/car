@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Get Started with CarPal',
-  description: 'Learn how to find your perfect car with CarPal. Simple steps to discover, explore, and connect.',
+  title: 'Get Started with CAR',
+  description: 'Learn how to find your perfect car with CAR. Simple steps to discover, explore, and connect.',
 };
 
 export default function GetStartedPage() {
@@ -20,7 +20,7 @@ export default function GetStartedPage() {
               Your journey to the right car starts here
             </h1>
             <p className="text-body-lg text-primary-muted mb-8">
-              CarPal makes finding and enquiring about vehicles simple, transparent, and stress-free. Here's how to get started.
+              CAR makes finding and enquiring about vehicles simple, transparent, and stress-free. Here's how to get started.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/vehicles" className="btn-primary">
@@ -181,7 +181,7 @@ export default function GetStartedPage() {
                 Ready to find your perfect car?
               </h2>
               <p className="text-body-md text-white/70 mb-8 max-w-lg mx-auto">
-                Join thousands of satisfied customers who found their ideal vehicle through CarPal.
+                Join thousands of satisfied customers who found their ideal vehicle through CAR.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/vehicles" className="btn-primary">

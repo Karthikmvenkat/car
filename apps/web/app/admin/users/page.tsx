@@ -4,11 +4,11 @@ import { useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const demoUsers = [
-  { id: '1', name: 'Admin User', email: 'admin@carpal.com', role: 'Super Admin', status: 'Active', lastLogin: '2 hours ago' },
-  { id: '2', name: 'Alex Thompson', email: 'alex@carpal.com', role: 'Sales Manager', status: 'Active', lastLogin: '1 day ago' },
-  { id: '3', name: 'Maria Garcia', email: 'maria@carpal.com', role: 'Lead Manager', status: 'Active', lastLogin: '3 days ago' },
-  { id: '4', name: 'John Editor', email: 'john@carpal.com', role: 'Content Editor', status: 'Active', lastLogin: '1 week ago' },
-  { id: '5', name: 'Sarah Analyst', email: 'sarah@carpal.com', role: 'Read-only Analyst', status: 'Inactive', lastLogin: '1 month ago' },
+  { id: '1', name: 'Admin User', email: 'admin@car.com', role: 'Super Admin', status: 'Active', lastLogin: '2 hours ago' },
+  { id: '2', name: 'Alex Thompson', email: 'alex@car.com', role: 'Sales Manager', status: 'Active', lastLogin: '1 day ago' },
+  { id: '3', name: 'Maria Garcia', email: 'maria@car.com', role: 'Lead Manager', status: 'Active', lastLogin: '3 days ago' },
+  { id: '4', name: 'John Editor', email: 'john@car.com', role: 'Content Editor', status: 'Active', lastLogin: '1 week ago' },
+  { id: '5', name: 'Sarah Analyst', email: 'sarah@car.com', role: 'Read-only Analyst', status: 'Inactive', lastLogin: '1 month ago' },
 ];
 
 const roleColors: Record<string, string> = {
@@ -67,7 +67,7 @@ export default function AdminUsersPage() {
               <input
                 type="email"
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent"
-                placeholder="john@carpal.com"
+                placeholder="john@car.com"
               />
             </div>
           </div>

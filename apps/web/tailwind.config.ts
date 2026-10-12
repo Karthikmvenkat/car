@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // CarPal Design Tokens
+        // CAR Design Tokens
         primary: {
           bg: '#F7F7F2', // warm ivory
           text: '#171A18', // deep charcoal

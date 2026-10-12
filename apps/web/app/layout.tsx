@@ -17,23 +17,23 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'CarPal — Your Next Car, A Better Way',
-    template: '%s | CarPal',
+    default: 'CAR — Your Next Car, A Better Way',
+    template: '%s | CAR',
   },
   description:
     'Discover the right car with transparent pricing, thoughtful guidance and a better buying experience.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://trycarpal.com',
-    siteName: 'CarPal',
-    title: 'CarPal — Your Next Car, A Better Way',
+    url: 'https://trycar.com',
+    siteName: 'CAR',
+    title: 'CAR — Your Next Car, A Better Way',
     description:
       'Discover the right car with transparent pricing, thoughtful guidance and a better buying experience.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CarPal — Your Next Car, A Better Way',
+    title: 'CAR — Your Next Car, A Better Way',
     description:
       'Discover the right car with transparent pricing, thoughtful guidance and a better buying experience.',
   },

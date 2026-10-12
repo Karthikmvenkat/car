@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: carpal-api
+    name: car-api
     env: node
     region: oregon
     plan: free
@@ -13,7 +13,7 @@ services:
         value: 4000
       - key: DATABASE_URL
         fromDatabase:
-          name: carpal-db
+          name: car-db
           property: connectionString
       - key: JWT_SECRET
         generateValue: true
@@ -24,8 +24,8 @@ services:
     healthCheckPath: /api/health
 
 databases:
-  - name: carpal-db
+  - name: car-db
     region: oregon
-    databaseName: carpal
+    databaseName: car
     plan: free
     ipAllowList: []

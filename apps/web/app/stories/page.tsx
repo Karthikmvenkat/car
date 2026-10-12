@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Customer Stories',
-  description: 'Read real experiences from customers who found their perfect vehicle through CarPal.',
+  description: 'Read real experiences from customers who found their perfect vehicle through CAR.',
 };
 
 const stories = [
@@ -11,7 +11,7 @@ const stories = [
     name: 'Sarah Mitchell',
     vehicle: '2024 BMW M4 Competition',
     quote:
-      'CarPal made the entire experience effortless. The transparent pricing and expert guidance helped me find exactly what I was looking for. I never felt pressured, and the team was always available to answer my questions.',
+      'CAR made the entire experience effortless. The transparent pricing and expert guidance helped me find exactly what I was looking for. I never felt pressured, and the team was always available to answer my questions.',
     avatar: 'SM',
     location: 'New York, NY',
   },
@@ -19,7 +19,7 @@ const stories = [
     name: 'James Chen',
     vehicle: '2024 Mercedes-Benz EQE SUV',
     quote:
-      'I was skeptical about buying a car online, but CarPal\'s process was seamless. The test drive scheduling was a game-changer — I could try multiple vehicles on my own schedule before making a decision.',
+      'I was skeptical about buying a car online, but CAR\'s process was seamless. The test drive scheduling was a game-changer — I could try multiple vehicles on my own schedule before making a decision.',
     avatar: 'JC',
     location: 'San Francisco, CA',
   },
@@ -35,7 +35,7 @@ const stories = [
     name: 'Michael Thompson',
     vehicle: '2024 Audi RS e-tron GT',
     quote:
-      'As an EV enthusiast, I appreciated how knowledgeable the CarPal team was about electric vehicles. They helped me understand charging infrastructure, range expectations, and found me the perfect car.',
+      'As an EV enthusiast, I appreciated how knowledgeable the CAR team was about electric vehicles. They helped me understand charging infrastructure, range expectations, and found me the perfect car.',
     avatar: 'MT',
     location: 'Seattle, WA',
   },
@@ -51,7 +51,7 @@ const stories = [
     name: 'David Kumar',
     vehicle: '2024 Tesla Model S Plaid',
     quote:
-      'CarPal\'s comparison tools and detailed specifications helped me make an informed decision. The team was responsive, professional, and genuinely helpful throughout the entire process.',
+      'CAR\'s comparison tools and detailed specifications helped me make an informed decision. The team was responsive, professional, and genuinely helpful throughout the entire process.',
     avatar: 'DK',
     location: 'Boston, MA',
   },
@@ -70,7 +70,7 @@ export default function StoriesPage() {
             Real Experiences, Real Satisfaction
           </h1>
           <p className="text-body-lg text-primary-muted">
-            Hear from customers who found their perfect vehicle through CarPal.
+            Hear from customers who found their perfect vehicle through CAR.
             Their stories speak to our commitment to transparency, expertise,
             and exceptional service.
           </p>
@@ -130,7 +130,7 @@ export default function StoriesPage() {
           </h2>
           <p className="text-body-lg text-primary-muted mb-8 max-w-lg mx-auto">
             Join hundreds of satisfied customers who found their perfect vehicle
-            through CarPal.
+            through CAR.
           </p>
           <Link href="/vehicles" className="btn-primary px-8 py-3.5">
             Browse Vehicles

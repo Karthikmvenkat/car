@@ -4,16 +4,16 @@ import * as bcrypt from 'bcrypt';
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('Seeding CarPal database...\n');
+  console.log('Seeding CAR database...\n');
 
   // ─── Create Admin User ───────────────────────────────────────
   const passwordHash = await bcrypt.hash('admin123', 12);
   const admin = await prisma.user.upsert({
-    where: { email: 'admin@trycarpal.com' },
+    where: { email: 'admin@trycar.com' },
     update: {},
     create: {
-      name: 'CarPal Admin',
-      email: 'admin@trycarpal.com',
+      name: 'CAR Admin',
+      email: 'admin@trycar.com',
       passwordHash,
       role: 'SUPER_ADMIN',
       status: 'ACTIVE',
@@ -25,11 +25,11 @@ async function main() {
   // ─── Create Demo Customer ────────────────────────────────────
   const customerHash = await bcrypt.hash('customer123', 12);
   const customer = await prisma.user.upsert({
-    where: { email: 'demo@trycarpal.com' },
+    where: { email: 'demo@trycar.com' },
     update: {},
     create: {
       name: 'Demo Customer',
-      email: 'demo@trycarpal.com',
+      email: 'demo@trycar.com',
       phone: '+15551234567',
       passwordHash: customerHash,
       role: 'CUSTOMER',
@@ -42,13 +42,13 @@ async function main() {
   // ─── Create Location ─────────────────────────────────────────
   const location = await prisma.location.create({
     data: {
-      name: 'CarPal Manhattan Showroom',
+      name: 'CAR Manhattan Showroom',
       address: '450 Park Avenue',
       city: 'New York',
       state: 'NY',
       country: 'US',
       phone: '+12125551234',
-      email: 'showroom@trycarpal.com',
+      email: 'showroom@trycar.com',
       timezone: 'America/New_York',
       active: true,
     },
@@ -235,7 +235,7 @@ async function main() {
     {
       name: 'Sarah Mitchell',
       role: 'San Francisco, CA',
-      quote: 'CarPal made buying my dream Porsche an absolute pleasure. The team was knowledgeable, transparent, and never pushy. I drove home feeling confident in every way.',
+      quote: 'CAR made buying my dream Porsche an absolute pleasure. The team was knowledgeable, transparent, and never pushy. I drove home feeling confident in every way.',
       rating: 5,
       active: true,
       order: 0,
@@ -243,7 +243,7 @@ async function main() {
     {
       name: 'James Chen',
       role: 'Austin, TX',
-      quote: 'I\'ve purchased many vehicles in my career, and CarPal is genuinely the best experience I\'ve had. They found me a spec I didn\'t even know existed.',
+      quote: 'I\'ve purchased many vehicles in my career, and CAR is genuinely the best experience I\'ve had. They found me a spec I didn\'t even know existed.',
       rating: 5,
       active: true,
       order: 1,
@@ -265,7 +265,7 @@ async function main() {
 
   // ─── Create FAQs ─────────────────────────────────────────────
   const faqs = [
-    { question: 'How does the CarPal buying process work?', answer: 'Browse our curated inventory, submit an enquiry or book a test drive, and our team will guide you through every step — from selection to delivery.', category: 'General', order: 0 },
+    { question: 'How does the CAR buying process work?', answer: 'Browse our curated inventory, submit an enquiry or book a test drive, and our team will guide you through every step — from selection to delivery.', category: 'General', order: 0 },
     { question: 'Do you offer financing options?', answer: 'Yes, we work with multiple premium financing partners to offer competitive rates. Our team can help you find the right financing solution for your needs.', category: 'Financing', order: 1 },
     { question: 'Can I trade in my current vehicle?', answer: 'Absolutely. We offer competitive trade-in valuations and can handle the entire process for you. Request a trade-in appraisal through our website.', category: 'Trade-In', order: 2 },
     { question: 'Do you ship vehicles nationwide?', answer: 'Yes, we offer enclosed transport shipping to all 50 states. Shipping costs and timelines vary by destination — contact us for a quote.', category: 'Shipping', order: 3 },
@@ -282,7 +282,7 @@ async function main() {
   await prisma.pageContent.create({
     data: {
       slug: 'home',
-      title: 'CarPal — Your Next Car, A Better Way',
+      title: 'CAR — Your Next Car, A Better Way',
       content: JSON.stringify({
         hero: {
           eyebrow: 'A Better Way to Buy',
@@ -300,11 +300,11 @@ async function main() {
 
   // ─── Create SEO Metadata ─────────────────────────────────────
   const seoPages = [
-    { path: '/', title: 'CarPal — Premium Automotive Marketplace', description: 'Discover premium vehicles with transparent pricing and a curated buying experience.' },
-    { path: '/vehicles', title: 'Browse Vehicles — CarPal', description: 'Explore our curated collection of premium vehicles.' },
-    { path: '/how-it-works', title: 'How It Works — CarPal', description: 'Learn about our streamlined car buying process.' },
-    { path: '/about', title: 'About CarPal', description: 'Discover why CarPal is redefining the automotive buying experience.' },
-    { path: '/contact', title: 'Contact Us — CarPal', description: 'Get in touch with the CarPal team.' },
+    { path: '/', title: 'CAR — Premium Automotive Marketplace', description: 'Discover premium vehicles with transparent pricing and a curated buying experience.' },
+    { path: '/vehicles', title: 'Browse Vehicles — CAR', description: 'Explore our curated collection of premium vehicles.' },
+    { path: '/how-it-works', title: 'How It Works — CAR', description: 'Learn about our streamlined car buying process.' },
+    { path: '/about', title: 'About CAR', description: 'Discover why CAR is redefining the automotive buying experience.' },
+    { path: '/contact', title: 'Contact Us — CAR', description: 'Get in touch with the CAR team.' },
   ];
 
   for (const s of seoPages) {
@@ -314,8 +314,8 @@ async function main() {
 
   console.log('\nSeeding complete!');
   console.log('\nDemo credentials:');
-  console.log('  Admin:    admin@trycarpal.com / admin123');
-  console.log('  Customer: demo@trycarpal.com / customer123');
+  console.log('  Admin:    admin@trycar.com / admin123');
+  console.log('  Customer: demo@trycar.com / customer123');
 }
 
 main()

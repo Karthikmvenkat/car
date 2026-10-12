@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Privacy Policy',
-  description: 'Learn how CarPal collects, uses, and protects your personal information.',
+  description: 'Learn how CAR collects, uses, and protects your personal information.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-heading-md font-semibold mb-4">1. Introduction</h2>
             <p className="text-body-sm leading-relaxed">
-              CarPal ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services. Please read this policy carefully. If you do not agree with the terms of this policy, please do not access the site.
+              CAR ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services. Please read this policy carefully. If you do not agree with the terms of this policy, please do not access the site.
             </p>
           </section>
 
@@ -117,8 +117,8 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-heading-md font-semibold mb-4">11. Contact Us</h2>
             <p className="text-body-sm leading-relaxed">
               If you have any questions about this Privacy Policy or our data practices, please contact us at{' '}
-              <a href="mailto:privacy@trycarpal.com" className="text-primary-accent hover:underline">
-                privacy@trycarpal.com
+              <a href="mailto:privacy@trycar.com" className="text-primary-accent hover:underline">
+                privacy@trycar.com
               </a>.
             </p>
           </section>

@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About CarPal',
+  title: 'About CAR',
   description:
-    'Learn about CarPal\'s mission to transform the car buying experience with transparency, expertise, and care.',
+    'Learn about CAR\'s mission to transform the car buying experience with transparency, expertise, and care.',
 };
 
 export default function AboutPage() {
@@ -13,13 +13,13 @@ export default function AboutPage() {
       <div className="container-main">
         {/* Hero */}
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <p className="text-caption text-primary-accent mb-2">About CarPal</p>
+          <p className="text-caption text-primary-accent mb-2">About CAR</p>
           <h1 className="text-display-lg font-bold text-primary-text tracking-tight mb-6">
             A Better Way to Find Your Car
           </h1>
           <p className="text-body-lg text-primary-muted leading-relaxed">
             We believe buying a car should be an exciting experience, not a
-            stressful one. CarPal was built to bring transparency, expertise,
+            stressful one. CAR was built to bring transparency, expertise,
             and genuine care to the automotive buying journey.
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function AboutPage() {
           </h2>
           <p className="text-body-lg text-primary-muted mb-8 max-w-lg mx-auto">
             Browse our curated collection of premium vehicles and experience the
-            CarPal difference.
+            CAR difference.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/vehicles" className="btn-primary px-8 py-3.5">

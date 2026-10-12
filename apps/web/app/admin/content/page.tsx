@@ -207,7 +207,7 @@ export default function AdminContentPage() {
             </label>
             <input
               type="text"
-              defaultValue="CarPal — Find Your Perfect Car"
+              defaultValue="CAR — Find Your Perfect Car"
               className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent"
             />
           </div>
@@ -227,7 +227,7 @@ export default function AdminContentPage() {
             </label>
             <input
               type="text"
-              defaultValue="https://trycarpal.com/og-image.jpg"
+              defaultValue="https://trycar.com/og-image.jpg"
               className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent"
             />
           </div>

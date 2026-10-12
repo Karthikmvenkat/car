@@ -7,7 +7,7 @@ export class HealthController {
     return {
       status: 'ok',
       timestamp: new Date().toISOString(),
-      service: 'carpal-api',
+      service: 'car-api',
     };
   }
 }

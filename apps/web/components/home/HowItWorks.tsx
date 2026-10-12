@@ -65,7 +65,7 @@ export function HowItWorks() {
         <div className="hiw-header text-center max-w-2xl mx-auto mb-16" style={{ opacity: 0 }}>
           <p className="text-caption text-primary-accent mb-2">Simple Process</p>
           <h2 className="text-display-md font-bold text-primary-text tracking-tight">
-            How CarPal Works
+            How CAR Works
           </h2>
           <p className="text-body-lg text-primary-muted mt-4">
             A streamlined experience designed to make finding your next car

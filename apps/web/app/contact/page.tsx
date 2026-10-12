@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with the CarPal team. We\'re here to help with any questions about our vehicles or services.',
+  description: 'Get in touch with the CAR team. We\'re here to help with any questions about our vehicles or services.',
 };
 
 export default function ContactPage() {
@@ -97,10 +97,10 @@ export default function ContactPage() {
                   For general enquiries
                 </p>
                 <a
-                  href="mailto:hello@trycarpal.com"
+                  href="mailto:hello@trycar.com"
                   className="text-body-md font-medium text-primary-accent hover:underline"
                 >
-                  hello@trycarpal.com
+                  hello@trycar.com
                 </a>
               </div>
 

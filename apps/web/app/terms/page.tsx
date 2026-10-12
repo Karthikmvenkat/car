@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Terms & Conditions',
-  description: 'Read the terms and conditions governing your use of CarPal services.',
+  description: 'Read the terms and conditions governing your use of CAR services.',
 };
 
 export default function TermsPage() {
@@ -20,14 +20,14 @@ export default function TermsPage() {
           <section>
             <h2 className="text-heading-md font-semibold mb-4">1. Acceptance of Terms</h2>
             <p className="text-body-sm leading-relaxed">
-              By accessing and using the CarPal website and services, you accept and agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our services. We reserve the right to modify these terms at any time, and your continued use of the site constitutes acceptance of any modifications.
+              By accessing and using the CAR website and services, you accept and agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our services. We reserve the right to modify these terms at any time, and your continued use of the site constitutes acceptance of any modifications.
             </p>
           </section>
 
           <section>
             <h2 className="text-heading-md font-semibold mb-4">2. Description of Service</h2>
             <p className="text-body-sm leading-relaxed">
-              CarPal provides an online platform for discovering, exploring, and enquiring about vehicles. Our services include vehicle listings, search and filtering tools, vehicle details pages, enquiry forms, test-drive booking, and related features. CarPal acts as an intermediary platform and does not directly sell vehicles.
+              CAR provides an online platform for discovering, exploring, and enquiring about vehicles. Our services include vehicle listings, search and filtering tools, vehicle details pages, enquiry forms, test-drive booking, and related features. CAR acts as an intermediary platform and does not directly sell vehicles.
             </p>
           </section>
 
@@ -65,7 +65,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-heading-md font-semibold mb-4">6. Intellectual Property</h2>
             <p className="text-body-sm leading-relaxed">
-              All content on the CarPal website, including text, graphics, logos, images, software, and compilation thereof, is the property of CarPal or its content suppliers and is protected by applicable intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.
+              All content on the CAR website, including text, graphics, logos, images, software, and compilation thereof, is the property of CAR or its content suppliers and is protected by applicable intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.
             </p>
           </section>
 
@@ -87,28 +87,28 @@ export default function TermsPage() {
           <section>
             <h2 className="text-heading-md font-semibold mb-4">8. Disclaimer of Warranties</h2>
             <p className="text-body-sm leading-relaxed">
-              The site and its services are provided on an "as is" and "as available" basis without any warranties of any kind, either express or implied. CarPal does not warrant that the site will be uninterrupted, error-free, or free of viruses or other harmful components. We do not warrant the accuracy or completeness of any information on the site.
+              The site and its services are provided on an "as is" and "as available" basis without any warranties of any kind, either express or implied. CAR does not warrant that the site will be uninterrupted, error-free, or free of viruses or other harmful components. We do not warrant the accuracy or completeness of any information on the site.
             </p>
           </section>
 
           <section>
             <h2 className="text-heading-md font-semibold mb-4">9. Limitation of Liability</h2>
             <p className="text-body-sm leading-relaxed">
-              To the fullest extent permitted by law, CarPal shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or goodwill, resulting from your use of or inability to use the site or services. Our total liability for any claim arising from these terms shall not exceed the amount you paid us in the twelve months preceding the claim.
+              To the fullest extent permitted by law, CAR shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or goodwill, resulting from your use of or inability to use the site or services. Our total liability for any claim arising from these terms shall not exceed the amount you paid us in the twelve months preceding the claim.
             </p>
           </section>
 
           <section>
             <h2 className="text-heading-md font-semibold mb-4">10. Indemnification</h2>
             <p className="text-body-sm leading-relaxed">
-              You agree to indemnify, defend, and hold harmless CarPal, its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising from your use of the site, your violation of these terms, or your violation of any rights of another party.
+              You agree to indemnify, defend, and hold harmless CAR, its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising from your use of the site, your violation of these terms, or your violation of any rights of another party.
             </p>
           </section>
 
           <section>
             <h2 className="text-heading-md font-semibold mb-4">11. Governing Law</h2>
             <p className="text-body-sm leading-relaxed">
-              These terms shall be governed by and construed in accordance with the laws of the jurisdiction in which CarPal operates, without regard to its conflict of law provisions. Any disputes arising from these terms shall be resolved in the courts of that jurisdiction.
+              These terms shall be governed by and construed in accordance with the laws of the jurisdiction in which CAR operates, without regard to its conflict of law provisions. Any disputes arising from these terms shall be resolved in the courts of that jurisdiction.
             </p>
           </section>
 
@@ -123,8 +123,8 @@ export default function TermsPage() {
             <h2 className="text-heading-md font-semibold mb-4">13. Contact</h2>
             <p className="text-body-sm leading-relaxed">
               If you have any questions about these Terms and Conditions, please contact us at{' '}
-              <a href="mailto:legal@trycarpal.com" className="text-primary-accent hover:underline">
-                legal@trycarpal.com
+              <a href="mailto:legal@trycar.com" className="text-primary-accent hover:underline">
+                legal@trycar.com
               </a>.
             </p>
           </section>

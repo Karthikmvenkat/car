@@ -10,7 +10,7 @@ const footerLinks = {
     { href: '/vehicles?bodyStyle=sedan', label: 'Sedans' },
   ],
   about: [
-    { href: '/about', label: 'About CarPal' },
+    { href: '/about', label: 'About CAR' },
     { href: '/how-it-works', label: 'How It Works' },
     { href: '/stories', label: 'Customer Stories' },
     { href: '/contact', label: 'Contact Us' },
@@ -53,7 +53,7 @@ export function Footer() {
                   />
                 </svg>
               </div>
-              <span className="text-xl font-bold">CarPal</span>
+              <span className="text-xl font-bold">CAR</span>
             </Link>
             <p className="text-body-sm text-white/60 mb-6 max-w-xs">
               Your next car, a better way. Transparent pricing, thoughtful
@@ -156,7 +156,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-caption text-white/40">
-            &copy; {new Date().getFullYear()} CarPal. All rights reserved.
+            &copy; {new Date().getFullYear()} CAR. All rights reserved.
           </p>
           <p className="text-caption text-white/40">
             Designed with care for car enthusiasts everywhere.

@@ -159,7 +159,7 @@ function EnquireForm() {
                   htmlFor="consent"
                   className="text-caption text-primary-muted leading-relaxed"
                 >
-                  I consent to CarPal collecting my information to respond to
+                  I consent to CAR collecting my information to respond to
                   this enquiry. See our{' '}
                   <Link href="/privacy" className="text-primary-accent hover:underline">
                     Privacy Policy

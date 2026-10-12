@@ -46,7 +46,7 @@ export default function AdminSettingsPage() {
               </label>
               <input
                 type="text"
-                defaultValue="CarPal"
+                defaultValue="CAR"
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent"
               />
             </div>
@@ -56,7 +56,7 @@ export default function AdminSettingsPage() {
               </label>
               <input
                 type="text"
-                defaultValue="https://trycarpal.com"
+                defaultValue="https://trycar.com"
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent"
               />
             </div>
@@ -97,7 +97,7 @@ export default function AdminSettingsPage() {
               </label>
               <input
                 type="email"
-                defaultValue="support@trycarpal.com"
+                defaultValue="support@trycar.com"
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent"
               />
             </div>

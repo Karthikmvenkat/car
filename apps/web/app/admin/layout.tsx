@@ -156,7 +156,7 @@ export default function AdminLayout({
             <span className="text-white font-bold text-sm">C</span>
           </div>
           <div>
-            <span className="text-lg font-bold text-primary-text">CarPal</span>
+            <span className="text-lg font-bold text-primary-text">CAR</span>
             <span className="text-caption text-primary-muted ml-2">Admin</span>
           </div>
         </div>

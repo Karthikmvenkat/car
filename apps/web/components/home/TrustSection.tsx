@@ -75,7 +75,7 @@ export function TrustSection() {
       <div className="container-main">
         {/* Header */}
         <div className="trust-header text-center max-w-2xl mx-auto mb-16" style={{ opacity: 0 }}>
-          <p className="text-caption text-primary-accent mb-2">Why CarPal</p>
+          <p className="text-caption text-primary-accent mb-2">Why CAR</p>
           <h2 className="text-display-md font-bold text-primary-text tracking-tight">
             A Better Way to Find Your Car
           </h2>

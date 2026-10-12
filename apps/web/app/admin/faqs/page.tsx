@@ -3,8 +3,8 @@
 import { useState } from 'react';
 
 const demoFaqs = [
-  { id: '1', question: 'How does CarPal work?', category: 'General', answer: 'CarPal connects you with a curated selection of premium vehicles. Browse our inventory, enquire about vehicles you like, and schedule test drives. Our team provides transparent guidance throughout the process.' },
-  { id: '2', question: 'Is there a fee to use CarPal?', category: 'General', answer: 'No, browsing and enquiring about vehicles on CarPal is completely free. We are compensated by our dealer partners when a sale is completed.' },
+  { id: '1', question: 'How does CAR work?', category: 'General', answer: 'CAR connects you with a curated selection of premium vehicles. Browse our inventory, enquire about vehicles you like, and schedule test drives. Our team provides transparent guidance throughout the process.' },
+  { id: '2', question: 'Is there a fee to use CAR?', category: 'General', answer: 'No, browsing and enquiring about vehicles on CAR is completely free. We are compensated by our dealer partners when a sale is completed.' },
   { id: '3', question: 'Can I schedule a test drive online?', category: 'Vehicles', answer: 'Yes! Each vehicle page has a "Book a Test Drive" option. Select your preferred date and time, and our team will confirm your appointment.' },
   { id: '4', question: 'Do you offer financing?', category: 'Buying Process', answer: 'We work with several lending partners and can help connect you with financing options. Submit an enquiry on any vehicle and mention your interest in financing.' },
   { id: '5', question: 'How do I create an account?', category: 'Account & Privacy', answer: 'Click "Get Started" in the navigation and fill out the registration form. You can also browse without an account, but having one lets you save vehicles and track enquiries.' },

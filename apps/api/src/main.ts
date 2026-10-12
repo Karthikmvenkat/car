@@ -30,6 +30,9 @@ async function bootstrap() {
       if (origin.endsWith('.vercel.app')) return callback(null, true);
       // Allow any .onrender.com domain
       if (origin.endsWith('.onrender.com')) return callback(null, true);
+      // Allow Firebase Hosting domains
+      if (origin.endsWith('.web.app')) return callback(null, true);
+      if (origin.endsWith('.firebaseapp.com')) return callback(null, true);
       if (allowedOrigins.includes(origin)) return callback(null, true);
       // In development, allow all origins
       if (process.env.NODE_ENV !== 'production') return callback(null, true);
@@ -55,8 +58,8 @@ async function bootstrap() {
 
   // Swagger
   const config = new DocumentBuilder()
-    .setTitle('CarPal API')
-    .setDescription('CarPal automotive platform API')
+    .setTitle('CAR API')
+    .setDescription('CAR automotive platform API')
     .setVersion('1.0')
     .addBearerAuth()
     .build();
@@ -65,7 +68,7 @@ async function bootstrap() {
 
   const port = process.env.PORT || 4000;
   await app.listen(port);
-  console.log(`CarPal API running on http://localhost:${port}`);
+  console.log(`CAR API running on http://localhost:${port}`);
   console.log(`Swagger docs at http://localhost:${port}/api/docs`);
 }
 

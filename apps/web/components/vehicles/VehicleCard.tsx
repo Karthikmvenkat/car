@@ -23,7 +23,7 @@ export function VehicleCard({ vehicle, index = 0 }: VehicleCardProps) {
       style={{ animationDelay: `${index * 0.08}s` }}
     >
       {/* Image */}
-      <div className="relative aspect-[4/3] overflow-hidden bg-primary-surface">
+      <div className="relative aspect-[16/10] overflow-hidden bg-primary-surface">
         <img
           src={primaryImage?.url || '/images/placeholder-car.svg'}
           alt={primaryImage?.alt || `${vehicle.make} ${vehicle.model}`}
@@ -71,9 +71,9 @@ export function VehicleCard({ vehicle, index = 0 }: VehicleCardProps) {
       </div>
 
       {/* Content */}
-      <div className="p-5">
+      <div className="p-4">
         {/* Title */}
-        <div className="mb-3">
+        <div className="mb-2">
           <h3 className="text-heading-sm font-semibold text-primary-text group-hover:text-primary-accent transition-colors">
             {vehicle.year} {vehicle.make} {vehicle.model}
           </h3>
@@ -85,7 +85,7 @@ export function VehicleCard({ vehicle, index = 0 }: VehicleCardProps) {
         </div>
 
         {/* Specs */}
-        <div className="flex flex-wrap gap-3 mb-4">
+        <div className="flex flex-wrap gap-3 mb-3">
           <span className="inline-flex items-center gap-1.5 text-caption text-primary-muted">
             <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
@@ -108,7 +108,7 @@ export function VehicleCard({ vehicle, index = 0 }: VehicleCardProps) {
         </div>
 
         {/* Price and CTA */}
-        <div className="flex items-center justify-between pt-3 border-t border-primary-border">
+        <div className="flex items-center justify-between pt-2.5 border-t border-primary-border">
           <div>
             <p className="text-caption text-primary-muted">Starting at</p>
             <p className="text-heading-md font-bold text-primary-text">

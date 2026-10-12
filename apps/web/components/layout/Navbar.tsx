@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -11,17 +12,24 @@ import { useFavorites } from '@/contexts/FavoritesContext';
 const navLinks = [
   { href: '/vehicles', label: 'Discover' },
   { href: '/how-it-works', label: 'How It Works' },
-  { href: '/about', label: 'Why CarPal' },
+  { href: '/about', label: 'Why CAR' },
   { href: '/stories', label: 'Customer Stories' },
 ];
 
 export function Navbar() {
   const router = useRouter();
+  const pathname = usePathname();
   const { user, logout, isLoading } = useAuth();
   const { count: favCount } = useFavorites();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+
+  // On non-homepage pages, always show solid navbar (no dark hero behind them)
+  const isSolid = useMemo(() => {
+    const isHome = pathname === '/';
+    return isScrolled || !isHome;
+  }, [isScrolled, pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,7 +75,7 @@ export function Navbar() {
       <header
         className={cn(
           'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
-          isScrolled
+          isSolid
             ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-primary-border'
             : 'bg-transparent'
         )}
@@ -77,12 +85,12 @@ export function Navbar() {
           <Link
             href="/"
             className="flex items-center gap-2 group"
-            aria-label="CarPal Home"
+            aria-label="CAR Home"
           >
             <div
               className={cn(
                 'w-9 h-9 rounded-lg flex items-center justify-center transition-colors duration-300',
-                isScrolled ? 'bg-primary-accent' : 'bg-white/20 backdrop-blur-sm'
+                isSolid ? 'bg-primary-accent' : 'bg-white/20 backdrop-blur-sm'
               )}
             >
               <svg
@@ -109,10 +117,10 @@ export function Navbar() {
             <span
               className={cn(
                 'text-xl font-bold tracking-tight transition-colors duration-300',
-                isScrolled ? 'text-primary-text' : 'text-white'
+                isSolid ? 'text-primary-text' : 'text-white'
               )}
             >
-              CarPal
+              CAR
             </span>
           </Link>
 
@@ -124,7 +132,7 @@ export function Navbar() {
                 href={link.href}
                 className={cn(
                   'text-body-sm font-medium transition-colors duration-300 hover:opacity-80',
-                  isScrolled ? 'text-primary-text' : 'text-white/90'
+                  isSolid ? 'text-[#171A18]' : 'text-white/90'
                 )}
               >
                 {link.label}
@@ -143,8 +151,8 @@ export function Navbar() {
                   }}
                   className={cn(
                     'flex items-center gap-2 px-3 py-2 rounded-lg transition-colors',
-                    isScrolled
-                      ? 'text-primary-text hover:bg-primary-surface'
+                    isSolid
+                      ? 'text-[#171A18] hover:bg-[#E9EDE6]'
                       : 'text-white/90 hover:bg-white/10'
                   )}
                 >
@@ -212,8 +220,8 @@ export function Navbar() {
                   href="/signin"
                   className={cn(
                     'text-body-sm font-medium transition-colors duration-300',
-                    isScrolled
-                      ? 'text-primary-text hover:text-primary-accent'
+                    isSolid
+                      ? 'text-[#171A18] hover:text-[#7D8A78]'
                       : 'text-white/90 hover:text-white'
                   )}
                 >
@@ -231,8 +239,8 @@ export function Navbar() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={cn(
               'md:hidden p-2 rounded-lg transition-colors',
-              isScrolled
-                ? 'text-primary-text hover:bg-primary-surface'
+              isSolid
+                ? 'text-[#171A18] hover:bg-[#E9EDE6]'
                 : 'text-white hover:bg-white/10'
             )}
             aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}

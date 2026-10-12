@@ -8,7 +8,7 @@ const testimonials = [
     name: 'Sarah Mitchell',
     role: 'Purchased BMW M4',
     quote:
-      'CarPal made the entire experience effortless. The transparent pricing and expert guidance helped me find exactly what I was looking for.',
+      'CAR made the entire experience effortless. The transparent pricing and expert guidance helped me find exactly what I was looking for.',
     avatar: 'SM',
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
     name: 'James Chen',
     role: 'Purchased Mercedes EQE',
     quote:
-      'I was skeptical about buying a car online, but CarPal\'s process was seamless. The test drive scheduling was a game-changer.',
+      'I was skeptical about buying a car online, but CAR\'s process was seamless. The test drive scheduling was a game-changer.',
     avatar: 'JC',
   },
   {
@@ -60,7 +60,7 @@ export function Testimonials() {
           </h2>
           <p className="text-body-lg text-primary-muted mt-4">
             Real experiences from customers who found their perfect vehicle
-            through CarPal.
+            through CAR.
           </p>
         </div>
 

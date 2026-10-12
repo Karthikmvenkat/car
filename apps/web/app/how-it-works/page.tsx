@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How CarPal Works',
+  title: 'How CAR Works',
   description:
-    'Learn how CarPal makes finding and buying your next car simple, transparent, and enjoyable.',
+    'Learn how CAR makes finding and buying your next car simple, transparent, and enjoyable.',
 };
 
 export default function HowItWorksPage() {
@@ -13,7 +13,7 @@ export default function HowItWorksPage() {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-caption text-primary-accent mb-2">Our Process</p>
           <h1 className="text-display-lg font-bold text-primary-text tracking-tight mb-6">
-            How CarPal Works
+            How CAR Works
           </h1>
           <p className="text-body-lg text-primary-muted">
             A streamlined, transparent process designed to make your car buying

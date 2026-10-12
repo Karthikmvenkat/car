@@ -2,22 +2,6 @@
   "hosting": {
     "public": "apps/web/out",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
-      {
-        "source": "/api/**",
-        "run": {
-          "serviceId": "carpal-api",
-          "region": "us-central1"
-        }
-      },
-      {
-        "source": "**",
-        "run": {
-          "serviceId": "carpal-web",
-          "region": "us-central1"
-        }
-      }
-    ],
     "headers": [
       {
         "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|avif|ico|css|js|woff2|woff)",
@@ -29,9 +13,5 @@
         ]
       }
     ]
-  },
-  "firestore": {
-    "database": "(default)",
-    "location": "us-central"
   }
 }

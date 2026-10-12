@@ -112,7 +112,7 @@ export default function RegisterPage() {
             Create your account
           </h1>
           <p className="text-body-sm text-primary-muted">
-            Join CarPal to save vehicles, track enquiries, and more
+            Join CAR to save vehicles, track enquiries, and more
           </p>
         </div>
 

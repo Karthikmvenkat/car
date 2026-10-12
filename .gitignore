@@ -10,6 +10,12 @@ apps/web/.next/
 apps/web/out/
 apps/api/dist/
 
+# Firebase Functions build artifacts
+functions/api/
+functions/prisma/
+functions/lib/
+functions/node_modules/
+
 # Environment
 .env
 .env.local
@@ -43,3 +49,4 @@ coverage/
 # Misc
 *.tsbuildinfo
 .cache/
+.neon

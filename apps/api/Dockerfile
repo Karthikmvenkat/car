@@ -8,7 +8,7 @@ COPY apps/api/package.json apps/api/
 COPY prisma/ prisma/
 
 # Install all dependencies (including dev)
-RUN npm ci --workspace=@carpal/api
+RUN npm ci --workspace=@car/api
 
 # Copy source
 COPY apps/api/ apps/api/
@@ -18,7 +18,7 @@ COPY tsconfig.base.json* ./
 RUN npx prisma generate
 
 # Build the API
-RUN npm run build --workspace=@carpal/api
+RUN npm run build --workspace=@car/api
 
 # ---- Production stage ----
 FROM node:20-alpine AS runner
@@ -32,7 +32,7 @@ COPY package.json package-lock.json* ./
 COPY apps/api/package.json apps/api/
 COPY prisma/ prisma/
 
-RUN npm ci --workspace=@carpal/api --omit=dev
+RUN npm ci --workspace=@car/api --omit=dev
 
 # Copy built app
 COPY --from=builder /app/apps/api/dist apps/api/dist
