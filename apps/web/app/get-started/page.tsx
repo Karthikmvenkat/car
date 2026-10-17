@@ -1,15 +1,15 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Get Started with CAR',
-  description: 'Learn how to find your perfect car with CAR. Simple steps to discover, explore, and connect.',
+  title: 'Get Started with CarPal',
+  description: 'Learn how to find your perfect car with CarPal. Simple steps to discover, explore, and connect.',
 };
 
 export default function GetStartedPage() {
   return (
     <div className="bg-primary-bg">
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative page-shell overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/5 to-transparent" />
         <div className="container-main relative">
           <div className="max-w-2xl mx-auto text-center">
@@ -20,7 +20,7 @@ export default function GetStartedPage() {
               Your journey to the right car starts here
             </h1>
             <p className="text-body-lg text-primary-muted mb-8">
-              CAR makes finding and enquiring about vehicles simple, transparent, and stress-free. Here's how to get started.
+              CarPal makes finding and enquiring about vehicles simple, transparent, and stress-free. Here's how to get started.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/vehicles" className="btn-primary">
@@ -174,14 +174,14 @@ export default function GetStartedPage() {
       {/* CTA */}
       <section className="py-20">
         <div className="container-main">
-          <div className="bg-primary-dark rounded-2xl p-12 md:p-16 text-center relative overflow-hidden">
+          <div className="bg-primary-dark rounded-2xl p-6 md:p-12 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(125,138,120,0.15),transparent_70%)]" />
             <div className="relative">
               <h2 className="text-display-sm font-semibold text-white mb-4">
                 Ready to find your perfect car?
               </h2>
               <p className="text-body-md text-white/70 mb-8 max-w-lg mx-auto">
-                Join thousands of satisfied customers who found their ideal vehicle through CAR.
+                Join thousands of satisfied customers who found their ideal vehicle through CarPal.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link href="/vehicles" className="btn-primary">

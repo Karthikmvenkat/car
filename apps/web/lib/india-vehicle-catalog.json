@@ -1,0 +1,511 @@
+{
+  "updatedAt": "2026-10-15",
+  "source": "https://www.cardekho.com/newcars",
+  "makes": [
+    {
+      "name": "Aston Martin",
+      "models": [
+        "DB12",
+        "DBX",
+        "Vanquish",
+        "Vantage"
+      ]
+    },
+    {
+      "name": "Audi",
+      "models": [
+        "A4",
+        "A6",
+        "Q3",
+        "Q3 Sportback",
+        "Q5",
+        "Q7",
+        "Q8",
+        "RS Q8",
+        "S5 Sportback",
+        "SQ8"
+      ]
+    },
+    {
+      "name": "Bajaj",
+      "models": [
+        "Qute"
+      ]
+    },
+    {
+      "name": "Bentley",
+      "models": [
+        "Bentayga",
+        "Continental",
+        "Flying Spur"
+      ]
+    },
+    {
+      "name": "Blinq Mobility",
+      "models": [
+        "Blinq RYDE"
+      ]
+    },
+    {
+      "name": "BMW",
+      "models": [
+        "2 Series Gran Coupe",
+        "3 Series",
+        "3 Series Long Wheelbase",
+        "5 Series",
+        "7 Series",
+        "i4",
+        "i5",
+        "i5 LWB",
+        "i7",
+        "iX",
+        "iX1",
+        "M2",
+        "M4 Competition",
+        "M4 CS",
+        "M440i",
+        "M5",
+        "M8 Coupe Competition",
+        "X1",
+        "X1 LWB",
+        "X3",
+        "X5",
+        "X6",
+        "X7",
+        "XM",
+        "Z4"
+      ]
+    },
+    {
+      "name": "BYD",
+      "models": [
+        "Atto 3",
+        "eMAX 7",
+        "Seal",
+        "Sealion 7"
+      ]
+    },
+    {
+      "name": "Citroen",
+      "models": [
+        "Aircross X",
+        "Basalt X",
+        "C3 X",
+        "C5 Aircross",
+        "e-C3 X"
+      ]
+    },
+    {
+      "name": "Ferrari",
+      "models": [
+        "296 GTB",
+        "812",
+        "849 Testarossa",
+        "Amalfi",
+        "F8 Tributo",
+        "Roma",
+        "SF90 Stradale"
+      ]
+    },
+    {
+      "name": "Force",
+      "models": [
+        "Gurkha",
+        "Gurkha 5 Door",
+        "Urbania"
+      ]
+    },
+    {
+      "name": "Honda",
+      "models": [
+        "Amaze",
+        "Amaze 2nd Gen",
+        "City",
+        "Elevate",
+        "ZR-V"
+      ]
+    },
+    {
+      "name": "Hyundai",
+      "models": [
+        "Alcazar",
+        "Aura",
+        "Creta",
+        "Creta Electric",
+        "Creta N Line",
+        "Exter",
+        "Grand i10 Nios",
+        "i20",
+        "i20 N Line",
+        "IONIQ 5",
+        "Prime HB",
+        "Prime SD",
+        "Venue",
+        "Venue N Line",
+        "Verna"
+      ]
+    },
+    {
+      "name": "Isuzu",
+      "models": [
+        "D-Max",
+        "Hi-Lander",
+        "MU-X",
+        "S-CAB",
+        "S-CAB Z",
+        "V-Cross"
+      ]
+    },
+    {
+      "name": "Jaguar",
+      "models": [
+        "F-Pace"
+      ]
+    },
+    {
+      "name": "Jeep",
+      "models": [
+        "Compass",
+        "Grand Cherokee",
+        "Meridian",
+        "Wrangler"
+      ]
+    },
+    {
+      "name": "Kia",
+      "models": [
+        "Carens",
+        "Carens Clavis",
+        "Carens Clavis EV",
+        "Carnival",
+        "EV6",
+        "EV9",
+        "Seltos",
+        "Sonet",
+        "Sorento",
+        "Syros",
+        "Syros EV"
+      ]
+    },
+    {
+      "name": "Lamborghini",
+      "models": [
+        "Huracan EVO",
+        "Revuelto",
+        "Temerario",
+        "Urus"
+      ]
+    },
+    {
+      "name": "Land Rover",
+      "models": [
+        "Defender",
+        "Discovery",
+        "Discovery Sport",
+        "Range Rover",
+        "Range Rover Evoque",
+        "Range Rover Sport",
+        "Range Rover Velar"
+      ]
+    },
+    {
+      "name": "Lexus",
+      "models": [
+        "ES 350h",
+        "ES Electric",
+        "LM",
+        "LX",
+        "NX",
+        "RX"
+      ]
+    },
+    {
+      "name": "Lotus",
+      "models": [
+        "Eletre",
+        "Emeya",
+        "Emira"
+      ]
+    },
+    {
+      "name": "Mahindra",
+      "models": [
+        "BE 6 SPORTEQ",
+        "Bolero",
+        "Bolero Camper",
+        "Bolero Neo",
+        "Bolero Neo Plus",
+        "Bolero Pik-Up",
+        "Scorpio",
+        "Scorpio N",
+        "Thar OG",
+        "Thar ROXX",
+        "XEV 9e",
+        "XEV 9S",
+        "XUV 3XO",
+        "XUV 3XO EV",
+        "XUV 7XO",
+        "XUV400 EV"
+      ]
+    },
+    {
+      "name": "Maruti Suzuki",
+      "models": [
+        "Alto K10",
+        "Alto Tour H1",
+        "Baleno",
+        "Brezza",
+        "Celerio",
+        "Dzire",
+        "Dzire Tour S",
+        "e Vitara",
+        "Eeco",
+        "Eeco Cargo",
+        "Eeco Tour V",
+        "Ertiga",
+        "Ertiga Tour",
+        "FRONX",
+        "Grand Vitara",
+        "Invicto",
+        "Jimny",
+        "S-Presso",
+        "Swift",
+        "Victoris",
+        "Wagon R",
+        "Wagon R tour",
+        "XL6"
+      ]
+    },
+    {
+      "name": "Maserati",
+      "models": [
+        "GranCabrio",
+        "GranTurismo",
+        "Grecale",
+        "Levante",
+        "Quattroporte"
+      ]
+    },
+    {
+      "name": "Mclaren",
+      "models": [
+        "750S",
+        "GT"
+      ]
+    },
+    {
+      "name": "Mercedes-Benz",
+      "models": [
+        "AMG A 45 S",
+        "AMG C 63",
+        "AMG C43",
+        "AMG CLE 53",
+        "AMG E 53",
+        "AMG EQS",
+        "AMG GLC 43",
+        "AMG GLE 53",
+        "AMG GT 4 Door Coupe",
+        "AMG GT Coupe",
+        "AMG S 63",
+        "AMG SL",
+        "C-Class",
+        "CLA Electric",
+        "CLE Cabriolet",
+        "E-Class",
+        "EQS",
+        "EQS SUV",
+        "G-Class",
+        "G-Class Electric",
+        "GLA",
+        "GLC",
+        "GLE",
+        "GLS",
+        "Maybach EQS SUV",
+        "Maybach GLS",
+        "Maybach S-Class",
+        "Maybach SL 680",
+        "S-Class",
+        "V Class"
+      ]
+    },
+    {
+      "name": "MG Motor",
+      "models": [
+        "MG Astor",
+        "MG Comet EV",
+        "MG Cyberster",
+        "MG Hector",
+        "MG Hector Plus",
+        "MG Hector Tomahawk EV",
+        "MG Hector Tomahawk PHEV",
+        "MG M9",
+        "MG Majestor",
+        "MG Windsor EV",
+        "MG ZS EV"
+      ]
+    },
+    {
+      "name": "Mini",
+      "models": [
+        "Cooper Convertible",
+        "Cooper S",
+        "Countryman",
+        "Countryman C",
+        "Countryman Electric"
+      ]
+    },
+    {
+      "name": "Nissan",
+      "models": [
+        "Gravite",
+        "Magnite",
+        "Tekton",
+        "X-Trail"
+      ]
+    },
+    {
+      "name": "PMV",
+      "models": [
+        "EaS E"
+      ]
+    },
+    {
+      "name": "Porsche",
+      "models": [
+        "911",
+        "Cayenne",
+        "Cayenne Coupe",
+        "Cayenne Electric",
+        "Macan",
+        "Macan EV",
+        "Panamera",
+        "Taycan"
+      ]
+    },
+    {
+      "name": "Pravaig",
+      "models": [
+        "DEFY"
+      ]
+    },
+    {
+      "name": "Renault",
+      "models": [
+        "Duster",
+        "Kiger",
+        "KWID",
+        "Triber"
+      ]
+    },
+    {
+      "name": "Rolls-Royce",
+      "models": [
+        "Cullinan",
+        "Ghost Series II",
+        "Phantom",
+        "Spectre"
+      ]
+    },
+    {
+      "name": "Skoda",
+      "models": [
+        "Kodiaq",
+        "Kodiaq RS",
+        "Kushaq",
+        "Kylaq",
+        "Octavia RS",
+        "Slavia"
+      ]
+    },
+    {
+      "name": "Strom Motors",
+      "models": [
+        "R3"
+      ]
+    },
+    {
+      "name": "Tata",
+      "models": [
+        "Aeris",
+        "Altroz",
+        "Curvv",
+        "Curvv EV",
+        "Harrier",
+        "Harrier EV",
+        "Nexon",
+        "Nexon EV",
+        "Punch",
+        "Punch EV",
+        "Safari",
+        "Sierra",
+        "Sierra EV",
+        "Tiago",
+        "Tiago EV",
+        "Tigor EV",
+        "Xpres",
+        "Xpres T EV",
+        "Yodha Pickup"
+      ]
+    },
+    {
+      "name": "Tesla",
+      "models": [
+        "Model Y"
+      ]
+    },
+    {
+      "name": "Toyota",
+      "models": [
+        "Camry",
+        "Fortuner",
+        "Fortuner Legender",
+        "Glanza",
+        "Hilux",
+        "Innova Crysta",
+        "Innova Hycross",
+        "Land Cruiser 300",
+        "Rumion",
+        "Taisor",
+        "Urban Cruiser EBELLA",
+        "Urban Cruiser Hyryder",
+        "Vellfire"
+      ]
+    },
+    {
+      "name": "Vayve Mobility",
+      "models": [
+        "Eva"
+      ]
+    },
+    {
+      "name": "VinFast",
+      "models": [
+        "Limo Green",
+        "VF MPV 7",
+        "VF6",
+        "VF7"
+      ]
+    },
+    {
+      "name": "Volkswagen",
+      "models": [
+        "Golf GTI",
+        "Taigun",
+        "Tayron",
+        "Tiguan R-Line",
+        "Virtus"
+      ]
+    },
+    {
+      "name": "Volvo",
+      "models": [
+        "EC40",
+        "EX30",
+        "EX40",
+        "EX90",
+        "XC60",
+        "XC90"
+      ]
+    }
+  ]
+}

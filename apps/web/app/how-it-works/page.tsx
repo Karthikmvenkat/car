@@ -1,19 +1,19 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How CAR Works',
+  title: 'How CarPal Works',
   description:
-    'Learn how CAR makes finding and buying your next car simple, transparent, and enjoyable.',
+    'Learn how CarPal makes finding and buying your next car simple, transparent, and enjoyable.',
 };
 
 export default function HowItWorksPage() {
   return (
-    <div className="pt-32 pb-20">
+    <div className="page-shell">
       <div className="container-main">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-caption text-primary-accent mb-2">Our Process</p>
           <h1 className="text-display-lg font-bold text-primary-text tracking-tight mb-6">
-            How CAR Works
+            How CarPal Works
           </h1>
           <p className="text-body-lg text-primary-muted">
             A streamlined, transparent process designed to make your car buying
@@ -74,7 +74,7 @@ export default function HowItWorksPage() {
           ].map((item) => (
             <div
               key={item.step}
-              className="grid grid-cols-1 md:grid-cols-[100px_1fr] gap-8"
+              className="grid grid-cols-1 md:grid-cols-[100px_1fr] gap-6"
             >
               <div className="flex md:justify-center">
                 <div className="w-16 h-16 rounded-2xl bg-primary-accent/10 flex items-center justify-center">

@@ -1,46 +1,48 @@
 'use client';
 
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
-
-// Demo data — in production this comes from the API
-const demoVehicles = [
-  { id: '1', make: 'BMW', model: 'M4 Competition', year: 2024, price: 82900, mileage: 1200, status: 'published', featured: true, image: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=400' },
-  { id: '2', make: 'Mercedes', model: 'EQE 350+', year: 2024, price: 74900, mileage: 800, status: 'published', featured: true, image: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=400' },
-  { id: '3', make: 'Porsche', model: '911 Carrera S', year: 2023, price: 129500, mileage: 3400, status: 'published', featured: false, image: 'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=400' },
-  { id: '4', make: 'Audi', model: 'RS e-tron GT', year: 2024, price: 147500, mileage: 500, status: 'published', featured: true, image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400' },
-  { id: '5', make: 'Range Rover', model: 'Sport P530', year: 2024, price: 98700, mileage: 2100, status: 'draft', featured: false, image: 'https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=400' },
-  { id: '6', make: 'Tesla', model: 'Model S Plaid', year: 2024, price: 108900, mileage: 1500, status: 'published', featured: false, image: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=400' },
-];
-
-const statusColors: Record<string, string> = {
-  published: 'bg-green-50 text-green-700',
-  draft: 'bg-gray-100 text-gray-600',
-  archived: 'bg-red-50 text-red-600',
-};
+import { api, assetUrl } from '@/lib/api-client';
+import { useAuth } from '@/contexts/AuthContext';
+import type { AdminVehicleListItem } from '@/lib/configurator-types';
+import { IdentityBadge, JobStatusText, Notice, PipelineBadge, inputClass, smallBtn } from '@/components/configurator/admin-ui';
 
 export default function AdminVehiclesPage() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [statusFilter, setStatusFilter] = useState('all');
+  const { token } = useAuth();
+  const [vehicles, setVehicles] = useState<AdminVehicleListItem[] | null>(null);
+  const [error, setError] = useState('');
+  const [search, setSearch] = useState('');
+  const [publication, setPublication] = useState('all');
 
-  const filteredVehicles = demoVehicles.filter((v) => {
-    const matchesSearch =
-      `${v.make} ${v.model}`.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesStatus = statusFilter === 'all' || v.status === statusFilter;
-    return matchesSearch && matchesStatus;
+  const load = useCallback(async () => {
+    if (!token) return;
+    try {
+      setVehicles(await api.get<AdminVehicleListItem[]>('/admin/configurator/vehicles', token));
+      setError('');
+    } catch (e: any) {
+      setError(e.message || 'Could not load vehicles');
+    }
+  }, [token]);
+
+  useEffect(() => {
+    load();
+    // Keep pipeline progress fresh while jobs are running.
+    const t = setInterval(load, 8000);
+    return () => clearInterval(t);
+  }, [load]);
+
+  const filtered = (vehicles ?? []).filter((v) => {
+    const text = `${v.make} ${v.model} ${v.variant ?? ''} ${v.year}`.toLowerCase();
+    return text.includes(search.toLowerCase()) && (publication === 'all' || v.publicationStatus === publication);
   });
 
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-heading-md font-semibold text-primary-text">
-            Vehicle Inventory
-          </h1>
+          <h1 className="text-heading-md font-semibold text-primary-text">Vehicle Inventory</h1>
           <p className="text-body-sm text-primary-muted">
-            {demoVehicles.length} vehicles total
+            {vehicles ? `${vehicles.length} vehicle(s) in the 3D configurator pipeline` : 'Loading…'}
           </p>
         </div>
         <Link href="/admin/vehicles/new" className="btn-primary inline-flex items-center gap-2">
@@ -51,127 +53,87 @@ export default function AdminVehiclesPage() {
         </Link>
       </div>
 
-      {/* Filters */}
+      {error && <Notice tone="error">{error}</Notice>}
+
       <div className="flex flex-col sm:flex-row gap-3">
-        <div className="flex-1">
-          <input
-            type="text"
-            placeholder="Search vehicles..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent"
-          />
-        </div>
-        <select
-          value={statusFilter}
-          onChange={(e) => setStatusFilter(e.target.value)}
-          className="px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent bg-white"
-        >
-          <option value="all">All Status</option>
-          <option value="published">Published</option>
-          <option value="draft">Draft</option>
-          <option value="archived">Archived</option>
+        <input className={inputClass} placeholder="Search make, model, variant…" value={search} onChange={(e) => setSearch(e.target.value)} />
+        <select className={`${inputClass} sm:w-48`} value={publication} onChange={(e) => setPublication(e.target.value)}>
+          <option value="all">All</option>
+          <option value="PUBLISHED">Published</option>
+          <option value="UNPUBLISHED">Unpublished</option>
         </select>
       </div>
 
-      {/* Table */}
       <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead>
-              <tr className="border-b border-gray-100 bg-gray-50/50">
-                <th className="text-left px-6 py-3 text-caption font-medium text-primary-muted uppercase tracking-wider">
-                  Vehicle
-                </th>
-                <th className="text-left px-6 py-3 text-caption font-medium text-primary-muted uppercase tracking-wider">
-                  Year
-                </th>
-                <th className="text-left px-6 py-3 text-caption font-medium text-primary-muted uppercase tracking-wider">
-                  Price
-                </th>
-                <th className="text-left px-6 py-3 text-caption font-medium text-primary-muted uppercase tracking-wider">
-                  Mileage
-                </th>
-                <th className="text-left px-6 py-3 text-caption font-medium text-primary-muted uppercase tracking-wider">
-                  Status
-                </th>
-                <th className="text-left px-6 py-3 text-caption font-medium text-primary-muted uppercase tracking-wider">
-                  Featured
-                </th>
-                <th className="text-right px-6 py-3 text-caption font-medium text-primary-muted uppercase tracking-wider">
-                  Actions
-                </th>
+          <table className="w-full text-body-sm">
+            <thead className="bg-gray-50 text-caption uppercase tracking-wider text-primary-muted">
+              <tr>
+                <th className="text-left px-4 py-3 font-medium">Vehicle</th>
+                <th className="text-left px-4 py-3 font-medium">Pipeline</th>
+                <th className="text-left px-4 py-3 font-medium">3D model</th>
+                <th className="text-left px-4 py-3 font-medium">Latest job</th>
+                <th className="text-left px-4 py-3 font-medium">Site</th>
+                <th className="px-4 py-3" />
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-50">
-              {filteredVehicles.map((vehicle) => (
-                <tr key={vehicle.id} className="hover:bg-gray-50/50 transition-colors">
-                  <td className="px-6 py-4">
+            <tbody className="divide-y divide-gray-100">
+              {vehicles && filtered.length === 0 && (
+                <tr>
+                  <td colSpan={6} className="px-4 py-10 text-center text-primary-muted">
+                    No vehicles yet. <Link href="/admin/vehicles/new" className="underline">Add the first one</Link>.
+                  </td>
+                </tr>
+              )}
+              {filtered.map((v) => (
+                <tr key={v.id} className="hover:bg-gray-50">
+                  <td className="px-4 py-3">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-8 rounded bg-gray-100 overflow-hidden flex-shrink-0">
-                        <img
-                          src={vehicle.image}
-                          alt={`${vehicle.make} ${vehicle.model}`}
-                          className="w-full h-full object-cover"
-                        />
+                      <div className="relative w-16 h-11 rounded-md bg-gray-100 overflow-hidden flex-shrink-0">
+                        {v.thumbnailUrl && (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={assetUrl(v.thumbnailUrl)!} alt="" className="w-full h-full object-cover" />
+                        )}
+                        {v.thumbnailIsAi && (
+                          <span className="absolute bottom-0 inset-x-0 bg-black/60 text-[9px] text-white text-center">AI image</span>
+                        )}
                       </div>
                       <div>
-                        <p className="text-body-sm font-medium text-primary-text">
-                          {vehicle.make} {vehicle.model}
-                        </p>
+                        <p className="font-medium text-primary-text">{v.year} {v.make} {v.model}</p>
+                        <p className="text-caption text-primary-muted">{[v.variant, v.market, `${v.colourCount} colours`].filter(Boolean).join(' · ')}</p>
                       </div>
                     </div>
                   </td>
-                  <td className="px-6 py-4 text-body-sm text-primary-muted">{vehicle.year}</td>
-                  <td className="px-6 py-4 text-body-sm font-medium text-primary-text">
-                    ${vehicle.price.toLocaleString()}
-                  </td>
-                  <td className="px-6 py-4 text-body-sm text-primary-muted">
-                    {vehicle.mileage.toLocaleString()} mi
-                  </td>
-                  <td className="px-6 py-4">
-                    <span
-                      className={cn(
-                        'inline-flex px-2 py-0.5 rounded-full text-caption font-medium capitalize',
-                        statusColors[vehicle.status] || 'bg-gray-100 text-gray-700'
-                      )}
-                    >
-                      {vehicle.status}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4">
-                    {vehicle.featured ? (
-                      <span className="text-caption font-medium text-primary-accent">Featured</span>
+                  <td className="px-4 py-3"><PipelineBadge status={v.assetStatus} /></td>
+                  <td className="px-4 py-3"><IdentityBadge status={v.identity} /></td>
+                  <td className="px-4 py-3">
+                    {v.latestJob ? (
+                      <div className="space-y-1 min-w-[140px]">
+                        <JobStatusText status={v.latestJob.jobStatus} />
+                        <div className="h-1.5 w-full rounded-full bg-gray-100 overflow-hidden">
+                          <div className="h-full bg-primary-accent" style={{ width: `${v.latestJob.progress}%` }} />
+                        </div>
+                      </div>
                     ) : (
                       <span className="text-caption text-primary-muted">—</span>
                     )}
                   </td>
-                  <td className="px-6 py-4 text-right">
-                    <div className="flex items-center justify-end gap-2">
-                      <button className="p-1.5 rounded-lg hover:bg-gray-100 text-primary-muted hover:text-primary-text transition-colors">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                          <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
-                          <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
-                        </svg>
-                      </button>
-                      <button className="p-1.5 rounded-lg hover:bg-red-50 text-primary-muted hover:text-red-600 transition-colors">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                          <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2" />
-                        </svg>
-                      </button>
-                    </div>
+                  <td className="px-4 py-3 text-caption">
+                    {v.publicationStatus === 'PUBLISHED' ? (
+                      <Link href={`/configurator?vehicle=${v.slug}`} className="text-green-700 underline">Live</Link>
+                    ) : (
+                      <span className="text-primary-muted">Unpublished</span>
+                    )}
+                  </td>
+                  <td className="px-4 py-3 text-right">
+                    {v.make === 'Kia' && v.model === 'Sonet' && <Link href="/vehicles/2024-kia-sonet" className={`${smallBtn} mr-2`}>Colour preview</Link>}
+                    <Link href={`/admin/vehicles/pipeline?id=${v.id}`} className={smallBtn}>Review</Link>
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-
-        {filteredVehicles.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-body-sm text-primary-muted">No vehicles found</p>
-          </div>
-        )}
       </div>
     </div>
   );

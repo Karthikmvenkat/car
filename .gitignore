@@ -50,3 +50,13 @@ coverage/
 *.tsbuildinfo
 .cache/
 .neon
+
+# Configurator local storage / test fixtures
+uploads/
+apps/api/uploads/
+.tmp-fixtures/
+
+# Alternative Next.js build output
+apps/web/.next-*/
+# Local Firebase cache
+.firebase/

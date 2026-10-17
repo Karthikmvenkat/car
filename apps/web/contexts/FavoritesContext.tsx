@@ -17,23 +17,26 @@ const STORAGE_KEY = 'car_favorites';
 
 export function FavoritesProvider({ children }: { children: ReactNode }) {
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [hydrated, setHydrated] = useState(false);
 
   // Load from localStorage on mount
   useEffect(() => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
-        setFavorites(JSON.parse(stored));
+        const parsed:unknown=JSON.parse(stored);
+        if(Array.isArray(parsed))setFavorites(parsed.filter((id):id is string=>typeof id==='string'));
       }
     } catch {
       // ignore parse errors
     }
+    setHydrated(true);
   }, []);
 
   // Persist to localStorage on change
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(favorites));
-  }, [favorites]);
+    if(hydrated)localStorage.setItem(STORAGE_KEY, JSON.stringify(favorites));
+  }, [favorites,hydrated]);
 
   const isFavorite = (vehicleId: string) => favorites.includes(vehicleId);
 

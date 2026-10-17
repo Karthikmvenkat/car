@@ -2,17 +2,20 @@
 
 import Link from 'next/link';
 import { useFavorites } from '@/contexts/FavoritesContext';
-import { demoVehicles } from '@/lib/demo-data';
+import { usePublishedVehicles } from '@/lib/use-published-vehicles';
 import { VehicleCard } from '@/components/vehicles/VehicleCard';
 import { formatPrice } from '@/lib/utils';
 
 export default function FavoritesPage() {
   const { favorites, removeFavorite } = useFavorites();
 
-  const savedVehicles = demoVehicles.filter((v) => favorites.includes(v.id));
+  const {vehicles,loading,error}=usePublishedVehicles();
+  const savedVehicles = vehicles.filter((v) => favorites.includes(v.id));
+  if(loading)return <div className="page-shell container-main" role="status">Loading saved vehicles…</div>;
+  if(error)return <div className="page-shell container-main" role="alert">{error}</div>;
 
   return (
-    <div className="pt-32 pb-20 min-h-screen">
+    <div className="page-shell min-h-screen">
       <div className="container-main">
         {/* Header */}
         <div className="text-center mb-10">

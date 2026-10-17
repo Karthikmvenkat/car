@@ -19,8 +19,8 @@ export function CtaBanner() {
     <section ref={sectionRef} className="section-padding">
       <div className="container-main">
         <div
-          className="cta-animate relative rounded-3xl overflow-hidden bg-primary-dark p-12 md:p-20 text-center"
-          style={{ opacity: 0 }}
+          className="cta-animate relative rounded-3xl overflow-hidden bg-primary-dark p-6 sm:p-10 md:p-12 text-center"
+
         >
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
@@ -34,7 +34,7 @@ export function CtaBanner() {
           </div>
 
           <div className="relative z-10 max-w-2xl mx-auto">
-            <div className="cta-animate" style={{ opacity: 0 }}>
+            <div className="cta-animate" >
               <p className="text-caption text-primary-accent mb-3">
                 Ready to Start?
               </p>
@@ -42,12 +42,12 @@ export function CtaBanner() {
                 Your Dream Car Awaits
               </h2>
               <p className="text-body-lg text-white/60 mb-8">
-                Join thousands of satisfied customers who found their perfect
-                vehicle through CAR. Start your journey today.
+                Explore the details, compare your favourites and take the
+                next step with CarPal.
               </p>
             </div>
 
-            <div className="cta-animate flex flex-wrap justify-center gap-4" style={{ opacity: 0 }}>
+            <div className="cta-animate flex flex-wrap justify-center gap-4" >
               <Link href="/vehicles" className="btn-primary px-10 py-4 text-body-md">
                 Browse Vehicles
                 <svg

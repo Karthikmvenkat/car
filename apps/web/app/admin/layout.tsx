@@ -1,9 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { useAuth } from '@/contexts/AuthContext';
+import { isStaffRole } from '@/lib/admin-auth';
 
 const sidebarLinks = [
   {
@@ -17,6 +19,7 @@ const sidebarLinks = [
     items: [
       { href: '/admin/vehicles', label: 'Vehicles', icon: 'car' },
       { href: '/admin/vehicles/new', label: 'Add Vehicle', icon: 'plus' },
+      { href: '/admin/3d-library', label: '3D Model Sources', icon: 'car' },
       { href: '/admin/brands', label: 'Brands & Models', icon: 'tag' },
     ],
   },
@@ -126,15 +129,49 @@ export default function AdminLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
+  const router = useRouter();
+  const { user, isLoading, logout } = useAuth();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const contentRef=useRef<HTMLDivElement>(null);
+  const sidebarRef=useRef<HTMLElement>(null);
+  const menuButtonRef=useRef<HTMLButtonElement>(null);
+  const [desktop,setDesktop]=useState(false);
+  useEffect(()=>{const media=window.matchMedia('(min-width: 1024px)');const update=()=>{setDesktop(media.matches);if(media.matches)setIsSidebarOpen(false);};update();media.addEventListener('change',update);return()=>media.removeEventListener('change',update);},[]);
+  useEffect(()=>{
+    if(!isSidebarOpen||desktop)return;
+    const panel=sidebarRef.current;
+    const previous=document.activeElement as HTMLElement|null;
+    const focusable=()=>Array.from(panel?.querySelectorAll<HTMLElement>('a[href],button:not([disabled])')??[]);
+    focusable()[0]?.focus();
+    const key=(e:KeyboardEvent)=>{if(e.key==='Escape'){e.preventDefault();setIsSidebarOpen(false);}if(e.key==='Tab'){const items=focusable();const first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}}};
+    document.addEventListener('keydown',key);
+    return()=>{document.removeEventListener('keydown',key);queueMicrotask(()=>{if(menuButtonRef.current?.isConnected)menuButtonRef.current.focus();else previous?.focus();});};
+  },[isSidebarOpen,desktop]);
+  const isLogin = pathname === '/admin/login';
+  const allowed = !!user && isStaffRole(user.role);
+  useEffect(()=>{sidebarRef.current?.toggleAttribute('inert',!desktop&&!isSidebarOpen);contentRef.current?.toggleAttribute('inert',!desktop&&isSidebarOpen);},[desktop,isSidebarOpen,allowed]);
+
+  useEffect(() => {
+    if (isLogin || isLoading || allowed) return;
+    const next = typeof window !== 'undefined' ? window.location.pathname + window.location.search : '/admin';
+    router.replace(`/admin/login?next=${encodeURIComponent(next)}`);
+  }, [isLogin, isLoading, allowed, router]);
 
   // Don't show admin shell on login page
-  if (pathname === '/admin/login') {
+  if (isLogin) {
     return <>{children}</>;
   }
 
+  if (!allowed) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <p className="text-body-sm text-primary-muted">{isLoading ? 'Checking your session…' : 'Redirecting to admin login…'}</p>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-gray-50 flex">
+    <div className="carpal-admin min-h-screen bg-primary-bg flex">
       {/* Sidebar Overlay (mobile) */}
       {isSidebarOpen && (
         <div
@@ -144,7 +181,9 @@ export default function AdminLayout({
       )}
 
       {/* Sidebar */}
-      <aside
+      <aside ref={sidebarRef} id="admin-sidebar"
+        role={!desktop&&isSidebarOpen?'dialog':undefined} aria-modal={!desktop&&isSidebarOpen?true:undefined} aria-label="Admin navigation"
+        aria-hidden={!desktop&&!isSidebarOpen?true:undefined}
         className={cn(
           'fixed top-0 left-0 bottom-0 w-64 bg-white border-r border-gray-200 z-50 transform transition-transform duration-300 lg:translate-x-0 lg:static lg:z-auto',
           isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
@@ -156,13 +195,14 @@ export default function AdminLayout({
             <span className="text-white font-bold text-sm">C</span>
           </div>
           <div>
-            <span className="text-lg font-bold text-primary-text">CAR</span>
+            <span className="text-lg font-bold text-primary-text">CarPal</span>
             <span className="text-caption text-primary-muted ml-2">Admin</span>
           </div>
         </div>
 
+        <button className="absolute right-2 top-3 w-11 h-11 lg:hidden text-white" aria-label="Close admin navigation" onClick={()=>setIsSidebarOpen(false)}>✕</button>
         {/* Navigation */}
-        <nav className="p-4 space-y-6 overflow-y-auto h-[calc(100vh-4rem)]">
+        <nav className="p-4 space-y-6 overflow-y-auto h-[calc(100dvh-4rem)]">
           {sidebarLinks.map((group) => (
             <div key={group.group}>
               <p className="text-caption text-primary-muted uppercase tracking-wider font-medium mb-2 px-3">
@@ -199,20 +239,23 @@ export default function AdminLayout({
       </aside>
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col min-w-0">
+      <div className="flex-1 flex flex-col min-w-0" ref={contentRef}>
         {/* Top Bar */}
         <header className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-4 lg:px-8 sticky top-0 z-30">
           <div className="flex items-center gap-4">
             <button
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-              className="lg:hidden p-2 rounded-lg hover:bg-gray-100 text-primary-muted"
+              className="lg:hidden p-3 rounded-lg hover:bg-gray-100 text-primary-muted"
+              ref={menuButtonRef}
               aria-label="Toggle sidebar"
+              aria-expanded={isSidebarOpen}
+              aria-controls="admin-sidebar"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
-            <h1 className="text-heading-sm font-semibold text-primary-text hidden sm:block">
+            <p className="text-heading-sm font-semibold text-primary-text hidden sm:block">
               {pathname === '/admin'
                 ? 'Dashboard'
                 : pathname
@@ -220,23 +263,33 @@ export default function AdminLayout({
                     .pop()
                     ?.replace(/-/g, ' ')
                     .replace(/\b\w/g, (l) => l.toUpperCase())}
-            </h1>
+            </p>
           </div>
           <div className="flex items-center gap-4">
             <Link
               href="/"
-              className="text-body-sm text-primary-muted hover:text-primary-text transition-colors"
+              className="text-body-sm text-primary-muted hover:text-primary-text transition-colors py-3"
             >
               View site
             </Link>
+            <span className="hidden md:inline text-caption text-primary-muted">{user.email}</span>
+            <button
+              onClick={() => {
+                logout();
+                router.replace('/admin/login');
+              }}
+              className="text-body-sm text-primary-muted hover:text-primary-text transition-colors"
+            >
+              Sign out
+            </button>
             <div className="w-8 h-8 rounded-full bg-primary-accent flex items-center justify-center">
-              <span className="text-caption text-white font-medium">A</span>
+              <span className="text-caption text-white font-medium">{user.name?.charAt(0).toUpperCase() || 'A'}</span>
             </div>
           </div>
         </header>
 
         {/* Page Content */}
-        <main className="flex-1 p-4 lg:p-8 overflow-auto">{children}</main>
+        <div className="flex-1 min-w-0 p-4 sm:p-6 lg:p-8">{children}</div>
       </div>
     </div>
   );

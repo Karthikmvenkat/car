@@ -1,11 +1,32 @@
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+import { NestExpressApplication } from '@nestjs/platform-express';
+import * as path from 'path';
+import compression = require('compression');
 import { AppModule } from './app.module';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+
+  // gzip JSON and GLB responses (Meshopt-compressed GLBs shrink a further ~40%)
+  app.use(compression({ filter: (req, res) => /model\/gltf|json|octet-stream/.test(String(res.getHeader('Content-Type') || '')) || compression.filter(req, res) }));
+  app.useBodyParser('json', { limit: '1mb' });
+
+  // Locally stored 3D models and images (swap StorageService for S3/CDN in production)
+  app.useStaticAssets(path.resolve(process.env.UPLOAD_DIR || path.join(process.cwd(), 'uploads')), {
+    prefix: '/uploads/',
+    maxAge: '7d',
+    immutable: true,
+    index: false,
+    dotfiles: 'deny',
+    setHeaders: (res) => {
+      res.setHeader('Access-Control-Allow-Origin', '*');
+      res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
+      res.setHeader('X-Content-Type-Options', 'nosniff');
+    },
+  });
 
   // Global prefix
   app.setGlobalPrefix('api');
@@ -30,6 +51,7 @@ async function bootstrap() {
       if (origin.endsWith('.vercel.app')) return callback(null, true);
       // Allow any .onrender.com domain
       if (origin.endsWith('.onrender.com')) return callback(null, true);
+      if (origin.endsWith('.koyeb.app')) return callback(null, true);
       // Allow Firebase Hosting domains
       if (origin.endsWith('.web.app')) return callback(null, true);
       if (origin.endsWith('.firebaseapp.com')) return callback(null, true);

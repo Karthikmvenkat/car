@@ -11,19 +11,21 @@ const config: Config = {
       colors: {
         // CAR Design Tokens
         primary: {
-          bg: '#F7F7F2', // warm ivory
-          text: '#171A18', // deep charcoal
-          muted: '#727871', // muted grey
-          accent: '#7D8A78', // muted sage
-          surface: '#E9EDE6', // pale accent surface
-          sand: '#EAE5DC', // warm sand
-          border: '#E3E3DC', // soft grey
-          dark: '#202521', // dark cinematic
+          bg: '#F3F6FA',
+          text: '#10243A',
+          muted: '#64748B',
+          accent: '#2864FF',
+          surface: '#EAF0FF',
+          sand: '#F0F4FA',
+          border: '#E2E8F0',
+          dark: '#0B1A2C',
+          hover: '#1D4ED8',
         },
         white: '#FFFFFF',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-manrope)', 'var(--font-inter)', 'sans-serif'],
       },
       fontSize: {
         'display-xl': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],

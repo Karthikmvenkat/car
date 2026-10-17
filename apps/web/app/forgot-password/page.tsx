@@ -25,9 +25,7 @@ export default function ForgotPasswordPage() {
     setError('');
 
     try {
-      // TODO: Implement actual password reset API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setIsSubmitted(true);
+      setError('Password reset email is not connected yet. Contact hello@trycar.com for account assistance. No reset email has been sent.');
     } catch (err) {
       setError('Something went wrong. Please try again.');
     } finally {
@@ -36,7 +34,7 @@ export default function ForgotPasswordPage() {
   };
 
   return (
-    <div className="min-h-screen bg-primary-bg py-12 px-4 sm:px-6 lg:px-8">
+    <div className="page-shell min-h-screen bg-primary-bg px-4 sm:px-6 lg:px-8">
       <div className="max-w-md mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-display-sm font-semibold text-primary-text mb-2">

@@ -7,6 +7,7 @@ export default function AdminContentPage() {
 
   return (
     <div className="space-y-6">
+      <p role="note" className="p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm">This editor is a preview of existing configuration fields. Server persistence is not connected; use the inventory screens for live vehicle changes.</p>
       <div>
         <h1 className="text-heading-md font-semibold text-primary-text mb-1">
           Homepage Content
@@ -120,7 +121,7 @@ export default function AdminContentPage() {
           </div>
 
           <div className="flex justify-end pt-4 border-t border-gray-100">
-            <button className="btn-primary">Save Changes</button>
+            <button disabled title="Server persistence is not configured" className="btn-primary opacity-50 cursor-not-allowed">Save Changes</button>
           </div>
         </div>
       )}
@@ -207,7 +208,7 @@ export default function AdminContentPage() {
             </label>
             <input
               type="text"
-              defaultValue="CAR — Find Your Perfect Car"
+              defaultValue="CarPal — Find Your Perfect Car"
               className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent"
             />
           </div>
@@ -232,7 +233,7 @@ export default function AdminContentPage() {
             />
           </div>
           <div className="flex justify-end pt-4 border-t border-gray-100">
-            <button className="btn-primary">Save SEO Settings</button>
+            <button disabled title="Server persistence is not configured" className="btn-primary opacity-50 cursor-not-allowed">Save SEO Settings</button>
           </div>
         </div>
       )}

@@ -21,6 +21,8 @@ export class RolesGuard implements CanActivate {
       return false;
     }
 
-    return requiredRoles.some((role) => user.role.name === role);
+    // JWT payload carries the role as a plain string (e.g. "SUPER_ADMIN")
+    const userRole = typeof user.role === 'string' ? user.role : user.role.name;
+    return requiredRoles.includes(userRole);
   }
 }

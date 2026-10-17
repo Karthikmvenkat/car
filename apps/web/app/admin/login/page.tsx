@@ -1,14 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useAuth } from '@/contexts/AuthContext';
+import { isStaffRole } from '@/lib/admin-auth';
 
 export default function AdminLoginPage() {
   const router = useRouter();
+  const { login, logout, user, isLoading } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState('');
+
+  const nextPath = () => {
+    if (typeof window === 'undefined') return '/admin';
+    const next = new URLSearchParams(window.location.search).get('next');
+    // Only allow internal admin paths.
+    return next && next.startsWith('/admin') && !next.startsWith('//') ? next : '/admin';
+  };
+
+  useEffect(() => {
+    if (!isLoading && user && isStaffRole(user.role)) router.replace(nextPath());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoading, user]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,11 +35,15 @@ export default function AdminLoginPage() {
     setError('');
 
     try {
-      // TODO: Implement actual authentication
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      router.push('/admin');
-    } catch {
-      setError('Invalid credentials. Please try again.');
+      const signedIn = await login(email, password);
+      if (!isStaffRole(signedIn.role)) {
+        logout();
+        setError('This account does not have admin access.');
+        return;
+      }
+      router.replace(nextPath());
+    } catch (err: any) {
+      setError(err?.status === 401 ? 'Invalid credentials. Please try again.' : err?.message || 'Could not reach the server.');
     } finally {
       setIsSubmitting(false);
     }
@@ -41,7 +60,7 @@ export default function AdminLoginPage() {
             Admin Login
           </h1>
           <p className="text-body-sm text-primary-muted">
-            Sign in to manage your CAR dashboard
+            Sign in to manage your CarPal dashboard
           </p>
         </div>
 

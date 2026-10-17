@@ -7,6 +7,7 @@ import { BookingsModule } from './modules/bookings/bookings.module';
 import { UsersModule } from './modules/users/users.module';
 import { BrandsModule } from './modules/brands/brands.module';
 import { ContentModule } from './modules/content/content.module';
+import { ConfiguratorModule } from './modules/configurator/configurator.module';
 import { HealthController } from './health.controller';
 
 @Module({
@@ -19,6 +20,7 @@ import { HealthController } from './health.controller';
     UsersModule,
     BrandsModule,
     ContentModule,
+    ConfiguratorModule,
   ],
   controllers: [HealthController],
 })

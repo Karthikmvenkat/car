@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-import { api } from '@/lib/api-client';
+import { api, ApiError } from '@/lib/api-client';
 
 interface User {
   id: string;
@@ -16,7 +16,7 @@ interface AuthContextType {
   user: User | null;
   token: string | null;
   isLoading: boolean;
-  login: (email: string, password: string) => Promise<void>;
+  login: (email: string, password: string) => Promise<User>;
   register: (name: string, email: string, password: string, phone?: string) => Promise<void>;
   googleAuth: (credential: string) => Promise<void>;
   logout: () => void;
@@ -35,16 +35,23 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const storedUser = localStorage.getItem('auth_user');
 
     if (storedToken && storedUser) {
+      let cachedUser: User;
+      try { cachedUser=JSON.parse(storedUser); } catch {
+        localStorage.removeItem('auth_token');localStorage.removeItem('auth_user');setIsLoading(false);return;
+      }
       setToken(storedToken);
-      setUser(JSON.parse(storedUser));
+      setUser(cachedUser);
       // Verify token is still valid
       api.get('/auth/me', storedToken)
         .then((userData) => {
           setUser(userData);
           localStorage.setItem('auth_user', JSON.stringify(userData));
         })
-        .catch(() => {
-          // Token invalid, clear auth state
+        .catch((error: unknown) => {
+          // A transport/server failure must not discard an otherwise valid login.
+          // Protected API calls still enforce the existing JWT and role guards.
+          if (!(error instanceof ApiError) || ![401,403].includes(error.status)) return;
+          // Token rejected, clear auth state
           localStorage.removeItem('auth_token');
           localStorage.removeItem('auth_user');
           setToken(null);
@@ -58,7 +65,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  const login = async (email: string, password: string) => {
+  const login = async (email: string, password: string): Promise<User> => {
     const response = await api.post('/auth/login', { email, password });
     const { user: userData, token: authToken } = response;
 
@@ -66,6 +73,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setUser(userData);
     localStorage.setItem('auth_token', authToken);
     localStorage.setItem('auth_user', JSON.stringify(userData));
+    return userData;
   };
 
   const register = async (

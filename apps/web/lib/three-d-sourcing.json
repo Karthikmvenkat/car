@@ -1,0 +1,4879 @@
+{
+  "checkedAt": "2026-10-15T10:00:42.420Z",
+  "targetYear": 2026,
+  "downloadConfigured": false,
+  "note": "Candidates only. Exact model year, Indian body shape, trim, licence and paint materials require review. No assets downloaded.",
+  "entries": [
+    {
+      "make": "Audi",
+      "model": "A4",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Audi A4 (B5)",
+          "url": "https://sketchfab.com/3d-models/none-b5861ddefcb8478b858b3150aa44cd7f",
+          "thumbnail": "https://media.sketchfab.com/models/b5861ddefcb8478b858b3150aa44cd7f/thumbnails/332bf2d85b874baab8adabcd036956bc/725238e4f5c248ae94844d9b96477ea5.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi A4 B8",
+          "url": "https://sketchfab.com/3d-models/none-70f0688e077b4933a740150e9d946642",
+          "thumbnail": "https://media.sketchfab.com/models/70f0688e077b4933a740150e9d946642/thumbnails/61d3089842624d2886e8e2324d8d9c8e/6c3088e37070404fb8f29efc5591d267.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2005 Audi A4 3.2 FSI quattro",
+          "url": "https://sketchfab.com/3d-models/none-fd2e6813f8224d58b104dfbfc1ab3173",
+          "thumbnail": "https://media.sketchfab.com/models/fd2e6813f8224d58b104dfbfc1ab3173/thumbnails/42ebfbe61fe1416fb5f1de89d635b20f/feb261461bd84cdaab4ca9a0c910d951.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2005, 2004) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Audi",
+      "model": "A6",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Audi A6 C8 Limousine",
+          "url": "https://sketchfab.com/3d-models/none-c9b7cf9c176b458785edd0b12e235364",
+          "thumbnail": "https://media.sketchfab.com/models/c9b7cf9c176b458785edd0b12e235364/thumbnails/6c988c1eecc24053a385d8741dc7fd17/6ca419118f9d4092887ac98f7e756305.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi A6",
+          "url": "https://sketchfab.com/3d-models/none-4f9673a399984da4ba00a9c47d91f32a",
+          "thumbnail": "https://media.sketchfab.com/models/4f9673a399984da4ba00a9c47d91f32a/thumbnails/9b9cee5bf2644942b4af45f66867e18d/3afe9acb7ac04b7f95a2ff2544bc34a0.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi A6 55 TFSI Quattro (C8)",
+          "url": "https://sketchfab.com/3d-models/none-04925f2cea0c4090a58d13d88e3f16d9",
+          "thumbnail": "https://media.sketchfab.com/models/04925f2cea0c4090a58d13d88e3f16d9/thumbnails/a7f4553ec1954c939ff3c99aa4d6ab99/df5cea55492543afbb470bca4a9db730.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Audi",
+      "model": "Q3",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Audi Q3",
+          "url": "https://sketchfab.com/3d-models/none-8a98eabcce994019a25ca89a142a82c5",
+          "thumbnail": "https://media.sketchfab.com/models/8a98eabcce994019a25ca89a142a82c5/thumbnails/d0621d5dec4a42e99c438193b84ae8f0/c1c9d4bf82204a5fadefd9955b1b7719.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "AUDI Q3 SPORTBACK",
+          "url": "https://sketchfab.com/3d-models/none-a0159b9bee094c2d8f9b9d5694c94f45",
+          "thumbnail": "https://media.sketchfab.com/models/a0159b9bee094c2d8f9b9d5694c94f45/thumbnails/5ec0798b293b4c1d81ae56aa8e0d4a85/2db55a2a03e74601a15d17a37a43a48d.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi Q3 Sportback",
+          "url": "https://sketchfab.com/3d-models/none-9288cf39af0d40a3babcde4a565bacc2",
+          "thumbnail": "https://media.sketchfab.com/models/9288cf39af0d40a3babcde4a565bacc2/thumbnails/9fcf0fb9e1f14c2d8e33bb2a9ace0862/8c67730ee48f4aaa8761cd5fa1c8680a.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Audi",
+      "model": "Q3 Sportback",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "AUDI Q3 SPORTBACK",
+          "url": "https://sketchfab.com/3d-models/none-a0159b9bee094c2d8f9b9d5694c94f45",
+          "thumbnail": "https://media.sketchfab.com/models/a0159b9bee094c2d8f9b9d5694c94f45/thumbnails/5ec0798b293b4c1d81ae56aa8e0d4a85/2db55a2a03e74601a15d17a37a43a48d.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi Q3 Sportback",
+          "url": "https://sketchfab.com/3d-models/none-9288cf39af0d40a3babcde4a565bacc2",
+          "thumbnail": "https://media.sketchfab.com/models/9288cf39af0d40a3babcde4a565bacc2/thumbnails/9fcf0fb9e1f14c2d8e33bb2a9ace0862/8c67730ee48f4aaa8761cd5fa1c8680a.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi RS Q3 Sportback lidar scan",
+          "url": "https://sketchfab.com/3d-models/none-b0a503e669e84c2784a434b2f62c911b",
+          "thumbnail": "https://media.sketchfab.com/models/b0a503e669e84c2784a434b2f62c911b/thumbnails/edca0db8ce174b359d6551ac9cee163a/88dd09660a6645b7ae30a19d0a585ca8.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available",
+            "Low detail (0 faces)"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Audi",
+      "model": "Q5",
+      "year": 2026,
+      "status": "licence_review",
+      "candidates": [
+        {
+          "name": "audi q5 quattro",
+          "url": "https://sketchfab.com/3d-models/none-0e90e51ccb07466aa8cd7cdc5c049c67",
+          "thumbnail": "https://media.sketchfab.com/models/0e90e51ccb07466aa8cd7cdc5c049c67/thumbnails/b7231d1ea026441bb6c7661dd5c79f30/abac548df15341daadac114fbf0e4697.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 Audi Q5 e-tron",
+          "url": "https://sketchfab.com/3d-models/none-feed105b37ad4b65b6841604f2428468",
+          "thumbnail": "https://media.sketchfab.com/models/feed105b37ad4b65b6841604f2428468/thumbnails/6fb454a7f29544dab4a5e0293abb0ea6/66e1ad9561b14b3cb581bccec93237a6.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023, 2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 Audi Q5 quattro S line Premium Plus 45 TFSI",
+          "url": "https://sketchfab.com/3d-models/none-60fea790b21c48bcb379be2a6d2c1f81",
+          "thumbnail": "https://media.sketchfab.com/models/60fea790b21c48bcb379be2a6d2c1f81/thumbnails/4ea505d46ad84cfdb1ff855709a390e2/1a64d548e70f40b597a0073e4830be7b.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023, 2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Audi",
+      "model": "Q7",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Audi Q7",
+          "url": "https://sketchfab.com/3d-models/none-2ef3b73a139f4aa89b5afe24fba621de",
+          "thumbnail": "https://media.sketchfab.com/models/2ef3b73a139f4aa89b5afe24fba621de/thumbnails/f9fa252e22f3436baef1be8a4d83216b/fd00e5488df7484d8472cecd1e91aaa5.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi Q7 V12",
+          "url": "https://sketchfab.com/3d-models/none-0e5e9dae93c9456d896daa4bbe77eea2",
+          "thumbnail": "https://media.sketchfab.com/models/0e5e9dae93c9456d896daa4bbe77eea2/thumbnails/a1100046e93f493f9524e31feddce28a/8a0e0860c27f4ebc8730d2b4524c649c.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2009 Audi Q7 V12 TDI",
+          "url": "https://sketchfab.com/3d-models/none-fb78f278a774418ebb3cc53a995adddc",
+          "thumbnail": "https://media.sketchfab.com/models/fb78f278a774418ebb3cc53a995adddc/thumbnails/dadd280952c34ba594625181c039d5dc/1e1368823f5c48dd846ca9aa36b6e7bb.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2009) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Audi",
+      "model": "Q8",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Audi RS Q8",
+          "url": "https://sketchfab.com/3d-models/none-56b47fab08fc49fc98ff6147fb22291a",
+          "thumbnail": "https://media.sketchfab.com/models/56b47fab08fc49fc98ff6147fb22291a/thumbnails/a63811859a384d3f95274cd794927613/fedcc9ee20ef42b79276d5b0ee795e6e.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi Q8",
+          "url": "https://sketchfab.com/3d-models/none-3d31bcc0f05a4becbd86e5981afe9f86",
+          "thumbnail": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.65,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available",
+            "Very heavy (2,094,681 faces) — needs decimation"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 Audi Q8",
+          "url": "https://sketchfab.com/3d-models/none-bf68dd80cdd7449eb34d7f39d58861cb",
+          "thumbnail": "https://media.sketchfab.com/models/bf68dd80cdd7449eb34d7f39d58861cb/thumbnails/d3fe9e45ba3241d290baa5aa822884a3/bcd264e0cbfa47c8a6ed649ac0bdf04e.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Audi",
+      "model": "RS Q8",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Audi RS Q8",
+          "url": "https://sketchfab.com/3d-models/none-56b47fab08fc49fc98ff6147fb22291a",
+          "thumbnail": "https://media.sketchfab.com/models/56b47fab08fc49fc98ff6147fb22291a/thumbnails/a63811859a384d3f95274cd794927613/fedcc9ee20ef42b79276d5b0ee795e6e.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 Audi Q8 RS",
+          "url": "https://sketchfab.com/3d-models/none-d0281820861f49f9a6ef3acca951a2cd",
+          "thumbnail": "https://media.sketchfab.com/models/d0281820861f49f9a6ef3acca951a2cd/thumbnails/2472b388e0d049929a9c8d88e04929c6/c2670ffd905f4566b691b02367ee809a.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020, 2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi RS Q8",
+          "url": "https://sketchfab.com/3d-models/none-1e94de20ad3f443388a76a5b2e6610b7",
+          "thumbnail": "https://media.sketchfab.com/models/1e94de20ad3f443388a76a5b2e6610b7/thumbnails/82da63a517c34ad1ba26cc01f2208766/28416ce199cf427284f326e2f7b66cd7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Audi",
+      "model": "S5 Sportback",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2010 Audi S5 Sportback",
+          "url": "https://sketchfab.com/3d-models/none-6abdc12ead2c4710a0c28e1a5cb44288",
+          "thumbnail": "https://media.sketchfab.com/models/6abdc12ead2c4710a0c28e1a5cb44288/thumbnails/689e77c37ed94dccbf583dfcbbe9a06f/281c3a1e2f5346dca536e13821ca31b2.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi S5 Sportback (S5II)",
+          "url": "https://sketchfab.com/3d-models/none-2c81f1aee94243cfa4ba96cc57f8db9e",
+          "thumbnail": "https://media.sketchfab.com/models/2c81f1aee94243cfa4ba96cc57f8db9e/thumbnails/72872ff03228448e968c8770f4a8acba/7cd28cee2d144aafaf98d20383879815.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi S5 Sportback",
+          "url": "https://sketchfab.com/3d-models/none-4fb3d5a1c1ab47ee947d19533c74137e",
+          "thumbnail": "https://media.sketchfab.com/models/4fb3d5a1c1ab47ee947d19533c74137e/thumbnails/2f9259c0f9fb457cab900ebf603ddac5/a9c755607f1848f1933e6566391731f8.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Audi",
+      "model": "SQ8",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2024 Audi SQ8 Quattro",
+          "url": "https://sketchfab.com/3d-models/none-c12aef5e34614276b80e54e301092a27",
+          "thumbnail": "https://media.sketchfab.com/models/c12aef5e34614276b80e54e301092a27/thumbnails/e5e09475f86d4703a6caa59e626c2384/f9143bb981ce474d9171e96a82203f11.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024, 2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 Audi SQ8 Sportback e tron",
+          "url": "https://sketchfab.com/3d-models/none-1f97c9a452e94a20bfac715488f38887",
+          "thumbnail": "https://media.sketchfab.com/models/1f97c9a452e94a20bfac715488f38887/thumbnails/4b64a391192d4182855ded30b28de3d5/9f95279380fe492db6af81b8e2708703.jpeg",
+          "licence": "CC Attribution-NonCommercial",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Audi SQ8 E-tron 2024",
+          "url": "https://sketchfab.com/3d-models/none-ce5c1e1753e447538fbdb4b6c66c6280",
+          "thumbnail": "https://media.sketchfab.com/models/ce5c1e1753e447538fbdb4b6c66c6280/thumbnails/98eb5a80c3c24dae9025dac4a18ea180/da09e6b94967437a809c19ffd4cef5e4.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "2 Series Gran Coupe",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "BMW_2_ Series_ Gran_ Coupe 2025",
+          "url": "https://sketchfab.com/3d-models/none-b2a5686f4e244824a7ceb6d97ef255ec",
+          "thumbnail": "https://media.sketchfab.com/models/b2a5686f4e244824a7ceb6d97ef255ec/thumbnails/4949a7ba2e144f87b4c001fb642eb1a6/7e45a6fdcb244e899aa2445c70949a1a.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW M235i Gran Coupé",
+          "url": "https://sketchfab.com/3d-models/none-23aea45df6da44fab8785df6c3b09ecd",
+          "thumbnail": "https://media.sketchfab.com/models/23aea45df6da44fab8785df6c3b09ecd/thumbnails/107b730973834ebaa60f42c6d6ea675d/e17b75c9d0fe4b34808d1c612fab8a4b.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2020, 2024, 2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2019 BMW M235i xDrive Gran Coupé",
+          "url": "https://sketchfab.com/3d-models/none-1efbe2ff21414af89fb14c70655cc88b",
+          "thumbnail": "https://media.sketchfab.com/models/1efbe2ff21414af89fb14c70655cc88b/thumbnails/d6ba476daceb4e9986360aef7157e655/43a7c0d0175642c6b7ce04a97b3e16dc.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2019) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "3 Series",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Bmw 318ti e46 compact",
+          "url": "https://sketchfab.com/3d-models/none-7aa3ddcdff9f40fea35331255062038d",
+          "thumbnail": "https://media.sketchfab.com/models/7aa3ddcdff9f40fea35331255062038d/thumbnails/7f2859f85e954f97be946e9d617c92c3/e504c852d6bc4a068515d9466967ca5c.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW 3-Series e36 [Street]",
+          "url": "https://sketchfab.com/3d-models/none-13d0a12ecda04317b96ce1e618300412",
+          "thumbnail": "https://media.sketchfab.com/models/13d0a12ecda04317b96ce1e618300412/thumbnails/a4c0b461361f412298f146d2ed16c1cc/ac1b2df1e03d4d1db7f4796e50057522.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW 3 Series touring (E46) 2001",
+          "url": "https://sketchfab.com/3d-models/none-478330312c3d46fd94999c3133ce0366",
+          "thumbnail": "https://media.sketchfab.com/models/478330312c3d46fd94999c3133ce0366/thumbnails/cb05c18aa66b415e8265eb24702e6870/f067762dc9a244fa908247a529ddafe6.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2001) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "3 Series Long Wheelbase",
+      "year": 2026,
+      "status": "licence_review",
+      "candidates": [
+        {
+          "name": "2021 BMW 3 Series 325LI",
+          "url": "https://sketchfab.com/3d-models/none-6465b6ee36e24233b5b269b99471f8ef",
+          "thumbnail": "https://media.sketchfab.com/models/6465b6ee36e24233b5b269b99471f8ef/thumbnails/1f1f870d5dfa4482909ec5e6044494e6/23c1ac09b3964e63b3b75b584442cb7b.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2021, 2019, 2020) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2013 BMW 335i Gran Turismo (F34)",
+          "url": "https://sketchfab.com/3d-models/none-e4f91073e4374de5a3ff0858f25400d2",
+          "thumbnail": "https://media.sketchfab.com/models/e4f91073e4374de5a3ff0858f25400d2/thumbnails/34745ae6c3574ccdb5c1300181c1f6c3/fa804ac01dd14f2790f85aa5816e64f4.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2013) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "5 Series",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Bmw 318ti e46 compact",
+          "url": "https://sketchfab.com/3d-models/none-7aa3ddcdff9f40fea35331255062038d",
+          "thumbnail": "https://media.sketchfab.com/models/7aa3ddcdff9f40fea35331255062038d/thumbnails/7f2859f85e954f97be946e9d617c92c3/e504c852d6bc4a068515d9466967ca5c.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2004 Mazda B-Series UN 2500 Double Cab",
+          "url": "https://sketchfab.com/3d-models/none-e25bd7759aa5478b9ea3d0b1622bdcfc",
+          "thumbnail": "https://media.sketchfab.com/models/e25bd7759aa5478b9ea3d0b1622bdcfc/thumbnails/ec3b172580a14d4eba670eabb4cf9f86/757cfc722bb64b8cbc56d8563d4daaa3.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "1999 Mazda RX-7 FD",
+          "url": "https://sketchfab.com/3d-models/none-ff9c8b4fd8124cb1b54211baff7d6444",
+          "thumbnail": "https://media.sketchfab.com/models/ff9c8b4fd8124cb1b54211baff7d6444/thumbnails/62f84f2eb24f4495a80717c071c460c5/1427c6b92011408a884a4d705a5af3c2.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "7 Series",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "1999 Mazda RX-7 FD",
+          "url": "https://sketchfab.com/3d-models/none-ff9c8b4fd8124cb1b54211baff7d6444",
+          "thumbnail": "https://media.sketchfab.com/models/ff9c8b4fd8124cb1b54211baff7d6444/thumbnails/62f84f2eb24f4495a80717c071c460c5/1427c6b92011408a884a4d705a5af3c2.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW 7-series (F01)",
+          "url": "https://sketchfab.com/3d-models/none-0806c39847ae42e5996917f50527dda0",
+          "thumbnail": "https://media.sketchfab.com/models/0806c39847ae42e5996917f50527dda0/thumbnails/1b6b4a43715a4050b1a8f9e75f65dcaf/2fdff7d03cf042e187ad9e7399d2c2e6.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW 7-series M short",
+          "url": "https://sketchfab.com/3d-models/none-c48115d498d24126a0c9215bd6602071",
+          "thumbnail": "https://media.sketchfab.com/models/c48115d498d24126a0c9215bd6602071/thumbnails/986087a94965445099c0659e4bae4bc5/b2495ac3bd1e4d8c9edbf75d09e40129.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "i4",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2022 BMW i4",
+          "url": "https://sketchfab.com/3d-models/none-1f23525ab55746899e3645e3352981c2",
+          "thumbnail": "https://media.sketchfab.com/models/1f23525ab55746899e3645e3352981c2/thumbnails/e5607752fcba486a950a535ea27dba3b/b515d0a8b1034c29bae446f12c75d11f.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 BMW i4",
+          "url": "https://sketchfab.com/3d-models/none-7b3f0ead6c6146f7a26450bca78b81ff",
+          "thumbnail": "https://media.sketchfab.com/models/7b3f0ead6c6146f7a26450bca78b81ff/thumbnails/2844560b04894a4d8432ecf770bd9bb8/402f5134aadd4ed4b13b4fdc1701735f.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 BMW i4 M50",
+          "url": "https://sketchfab.com/3d-models/none-d95ee495ba634e5d95c16144d0a0f92e",
+          "thumbnail": "https://media.sketchfab.com/models/d95ee495ba634e5d95c16144d0a0f92e/thumbnails/f8a8308987664d3bab7ba8bcb8f89658/2c7094c021114fc99849e5d64712f1f5.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "i5",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "i5",
+          "url": "https://sketchfab.com/3d-models/none-1e52b6b8821040c2aea037b7c029a20d",
+          "thumbnail": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 BMW I5 M60",
+          "url": "https://sketchfab.com/3d-models/none-207fd872d28b4cafa7fefe061ae98e26",
+          "thumbnail": "https://media.sketchfab.com/models/207fd872d28b4cafa7fefe061ae98e26/thumbnails/49c83e54ac554e7e852c48f8a9fce09c/20fdd5943beb4d7c998ef85d344246fd.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "i5 LWB",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "BMW",
+      "model": "i7",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2023 BMW i7",
+          "url": "https://sketchfab.com/3d-models/none-e5454f274c4f44fa84e274c2583d7f5c",
+          "thumbnail": "https://media.sketchfab.com/models/e5454f274c4f44fa84e274c2583d7f5c/thumbnails/dcbb3f6ce015483b8ae768f93237c24e/6e563541c9d142a285290aabcfd1eec2.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 BMW I7 G70",
+          "url": "https://sketchfab.com/3d-models/none-07937cca69864dfe9f4b4ed235fc32f7",
+          "thumbnail": "https://media.sketchfab.com/models/07937cca69864dfe9f4b4ed235fc32f7/thumbnails/d77631eac57848c3a14bd8e4b2477e0f/df9757f9ebfd4b16a057eea51585bfbc.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW i7 M70",
+          "url": "https://sketchfab.com/3d-models/none-5ef18af79916408ababa187fb0428429",
+          "thumbnail": "https://media.sketchfab.com/models/5ef18af79916408ababa187fb0428429/thumbnails/a23128760da34288996f89a6c411bb0c/7bd2508ac98148ce9846c5f51de4c5d2.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "iX",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2024 BMW iX",
+          "url": "https://sketchfab.com/3d-models/none-b277d6b6109845ffb3cc5de325e71948",
+          "thumbnail": "https://media.sketchfab.com/models/b277d6b6109845ffb3cc5de325e71948/thumbnails/a28b8dc0402142748871de3c98b89177/ac3545c043ff4221b57a8bf9f11dfe7f.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 BMW iX",
+          "url": "https://sketchfab.com/3d-models/none-585fcc212673463f8f867c8eaa0e11cb",
+          "thumbnail": "https://media.sketchfab.com/models/585fcc212673463f8f867c8eaa0e11cb/thumbnails/803b7c304cfe4c4fbc96d4c8926a7e90/c4bd8b702aa140f68ce6ae105f48c863.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "iX1",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "BMW-X1-U11",
+          "url": "https://sketchfab.com/3d-models/none-c793a3a1a2cf439d80e3ea4365daa35c",
+          "thumbnail": "https://media.sketchfab.com/models/c793a3a1a2cf439d80e3ea4365daa35c/thumbnails/bdee08565f584192af1bb3a26d5e3ef0/d63bf806cf5043dfaece2276e999029f.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "M2",
+      "year": 2026,
+      "status": "licence_review",
+      "candidates": [
+        {
+          "name": "2026 BMW M2 CS",
+          "url": "https://sketchfab.com/3d-models/none-e9cc1241ed1d41dd83b1f10c3fee7d75",
+          "thumbnail": "https://media.sketchfab.com/models/e9cc1241ed1d41dd83b1f10c3fee7d75/thumbnails/678bfa7db5b94507a1d8aecee57a62a1/d0c31268a4294a3aaabe1ddf09625438.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2026 BMW M2 CS",
+          "url": "https://sketchfab.com/3d-models/none-c1d48a2fad5146948f9297d38aaf0df9",
+          "thumbnail": "https://media.sketchfab.com/models/c1d48a2fad5146948f9297d38aaf0df9/thumbnails/f74d7338f4744b2bafbf414345400636/f88e98d86eec4ece9bf89a0c1a911dd2.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2026 ZACOE BMW G87 M2 Widebody Carbon Fiber Kit",
+          "url": "https://sketchfab.com/3d-models/none-d15e7b05cd7543b19b36bdcbc5f27b59",
+          "thumbnail": "https://media.sketchfab.com/models/d15e7b05cd7543b19b36bdcbc5f27b59/thumbnails/8ea656f808a846098345326daff174b1/499f76ce33594696939d147466e31317.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "M4 Competition",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2026 BMW M4 Competition",
+          "url": "https://sketchfab.com/3d-models/none-dcfe4bf7b03948eca9e6d7de382bb9eb",
+          "thumbnail": "https://media.sketchfab.com/models/dcfe4bf7b03948eca9e6d7de382bb9eb/thumbnails/5585c36346a040fab9f4a2f29cb24437/86cd7ce4776340b0ac3b1ebbd0c26f80.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2025 BMW M4 Competition",
+          "url": "https://sketchfab.com/3d-models/none-f8141ecd755547989c9209784b71ad43",
+          "thumbnail": "https://media.sketchfab.com/models/f8141ecd755547989c9209784b71ad43/thumbnails/ee40835361884cfbb150e56f5b06c790/f2782b7a374f4d0baa943d30fd5d0547.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025, 2024)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2024 BMW M4 Coupe Competition",
+          "url": "https://sketchfab.com/3d-models/none-a1ddd0f09bce44dbae1b1c9e0e18dda5",
+          "thumbnail": "https://media.sketchfab.com/models/a1ddd0f09bce44dbae1b1c9e0e18dda5/thumbnails/dccd3c99561e4aa689ae11b48619f855/6ae65bd0dec44e5a825a5077653a8eb8.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2024, 2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "M4 CS",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2025 BMW M4 CS VR46 Edition",
+          "url": "https://sketchfab.com/3d-models/none-3d111a7ed0f544bc9215e3038db4c8dc",
+          "thumbnail": "https://media.sketchfab.com/models/3d111a7ed0f544bc9215e3038db4c8dc/thumbnails/bcf9914546264bfabe008f49f79ecdd3/5b789ba9a8f8400b9b49458f301fafa8.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2025 BMW M4 CS",
+          "url": "https://sketchfab.com/3d-models/none-ab5cb316fba1425ab5ed38661ecb0c27",
+          "thumbnail": "https://media.sketchfab.com/models/ab5cb316fba1425ab5ed38661ecb0c27/thumbnails/45538a81fb00485d808b0ef8e35ed09e/c37e1ec42fff44d596f907fac5842ac5.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2025 BMW m4 cs touring",
+          "url": "https://sketchfab.com/3d-models/none-5262b837809a48deb0793847e52e6bb8",
+          "thumbnail": "https://media.sketchfab.com/models/5262b837809a48deb0793847e52e6bb8/thumbnails/0b20dc73e7824b35bd71463109297c86/6cccefbdd06243f192bdcf5a9976fc5f.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "M440i",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2022 BMW M440i xDrive Gran Coupé",
+          "url": "https://sketchfab.com/3d-models/none-a41efb9c01e64d9d81a7896d2bbbb167",
+          "thumbnail": "https://media.sketchfab.com/models/a41efb9c01e64d9d81a7896d2bbbb167/thumbnails/0a48355ee58c48c693851d34458bfb90/e98629f72c054215a6b82cd894860703.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW M440i Convertible 2021",
+          "url": "https://sketchfab.com/3d-models/none-75147446ebaa49a6b10d7d51139c23a6",
+          "thumbnail": "https://media.sketchfab.com/models/75147446ebaa49a6b10d7d51139c23a6/thumbnails/77ade3b6bd674ba395204165162a58f1/bdab16fee9c8466e8309587f31fe3780.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 BMW M440i X-Drive Gran Coupe",
+          "url": "https://sketchfab.com/3d-models/none-7ed02d51c8154b49ae83705c039c6fd8",
+          "thumbnail": "https://media.sketchfab.com/models/7ed02d51c8154b49ae83705c039c6fd8/thumbnails/442150cbcb13467bbd4a4f960fffe093/ea923dd42e114513a8bf1a12cd39555a.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "M5",
+      "year": 2026,
+      "status": "licence_review",
+      "candidates": [
+        {
+          "name": "Bmw M5 Competition ( The Midnight Spectre )",
+          "url": "https://sketchfab.com/3d-models/none-2831975e80604b58b88237e8c5174a93",
+          "thumbnail": "https://media.sketchfab.com/models/2831975e80604b58b88237e8c5174a93/thumbnails/9b2e24c21fd341db853142cd52bec8cb/d4aedf568de54cc0a57ca246344e63f5.jpeg",
+          "licence": "CC Attribution-NonCommercial-NoDerivs",
+          "commercialUse": false,
+          "modification": false,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW M5 (E34)",
+          "url": "https://sketchfab.com/3d-models/none-10a95624ce5046f5805bd9d17256e033",
+          "thumbnail": "https://media.sketchfab.com/models/10a95624ce5046f5805bd9d17256e033/thumbnails/ea896000be824eb785fff8789a82216c/2817e1a7e64b4c40a7812a56016dc4ca.jpeg",
+          "licence": "CC Attribution-NonCommercial",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW M5 ( The Carbon Storm )",
+          "url": "https://sketchfab.com/3d-models/none-7e3b3c92754c4f93b6482297b81a2016",
+          "thumbnail": "https://media.sketchfab.com/models/7e3b3c92754c4f93b6482297b81a2016/thumbnails/15c0ef892b35448aa398111ab3087238/e01a568a57164c3c88cc6d540a45aa35.jpeg",
+          "licence": "CC Attribution-NonCommercial-NoDerivs",
+          "commercialUse": false,
+          "modification": false,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "M8 Coupe Competition",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "BMW M8 F92 Coupé Competition",
+          "url": "https://sketchfab.com/3d-models/none-25d5b4f6d13e4217afa09bbf89f8d993",
+          "thumbnail": "https://media.sketchfab.com/models/25d5b4f6d13e4217afa09bbf89f8d993/thumbnails/2f9d2c8473ea4f3c8b4e20f6e7ddc9de/849b7c7ef2c34d68b0a84712608ff708.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "bmw m8 gran coupe Competition [FREE]",
+          "url": "https://sketchfab.com/3d-models/none-c1898153d7c9492a996489e5165f5c57",
+          "thumbnail": "https://media.sketchfab.com/models/c1898153d7c9492a996489e5165f5c57/thumbnails/bdef14f8f4724a81b1a315bac832f25c/4ff9aabd81a9445ebfd0105c521b3ea6.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 BMW M8 Competition Coupé",
+          "url": "https://sketchfab.com/3d-models/none-f68a25584899494391c8f2ae28c03b2f",
+          "thumbnail": "https://media.sketchfab.com/models/f68a25584899494391c8f2ae28c03b2f/thumbnails/bfe037abe2af46959fd54d168c428594/0c43022a5fd54befb8c1c6f4933ca7d3.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "X1",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "BMW X1",
+          "url": "https://sketchfab.com/3d-models/none-3835ac29df8b4bb19a2f64a24bf28a80",
+          "thumbnail": "https://media.sketchfab.com/models/3835ac29df8b4bb19a2f64a24bf28a80/thumbnails/3abed64b4680476c8f3bf2718d4e3aba/2176742a2b5a499dba888ab56be07755.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 BMW X1",
+          "url": "https://sketchfab.com/3d-models/none-3b22e6d5e0f1497da46bc59a3a8443c1",
+          "thumbnail": "https://media.sketchfab.com/models/3b22e6d5e0f1497da46bc59a3a8443c1/thumbnails/8c16848b9cfc42cb8dea3557e018e6ef/47590c10fce74f60b8e06b26b0f0e7c3.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 BMW X1 xDrive 18d",
+          "url": "https://sketchfab.com/3d-models/none-4ca3a2247af44e51919074565ed93486",
+          "thumbnail": "https://media.sketchfab.com/models/4ca3a2247af44e51919074565ed93486/thumbnails/61e7d1574547474ca02f96fd688f6a47/1d0c5ae1ccd445eca1c6bf7c55f1a69f.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "X1 LWB",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "BMW",
+      "model": "X3",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2026 BMW X3",
+          "url": "https://sketchfab.com/3d-models/none-73212a0045524ca0804b82b813847a94",
+          "thumbnail": "https://media.sketchfab.com/models/73212a0045524ca0804b82b813847a94/thumbnails/d0a7dfa679af479490fd5654dc8f56ab/b3fc043db8204b0ca43520b022a7ce95.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW X3 M40i",
+          "url": "https://sketchfab.com/3d-models/none-3e916a0f038a4f46a9d16f3f69c5ebaf",
+          "thumbnail": "https://media.sketchfab.com/models/3e916a0f038a4f46a9d16f3f69c5ebaf/thumbnails/093507ffebd84a7690ffbdbd9acc5127/5b41f7c8d79045389c635eff89f4ff02.jpeg",
+          "licence": "CC Attribution-NonCommercial",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2024 BMW X3 M40i",
+          "url": "https://sketchfab.com/3d-models/none-d35d04aac7f242d997af5d8d2d7fbeca",
+          "thumbnail": "https://media.sketchfab.com/models/d35d04aac7f242d997af5d8d2d7fbeca/thumbnails/bdc99ad3a59847d9a72e3be52c464be6/60598ee654ff4fd39fd3bfd894480760.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024, 2014) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "X5",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "BMW X5",
+          "url": "https://sketchfab.com/3d-models/none-f1adb5c9133f4938a9ee03076c2a1e5a",
+          "thumbnail": "https://media.sketchfab.com/models/f1adb5c9133f4938a9ee03076c2a1e5a/thumbnails/0c46366cb36a4b77bde2f7a20da674d2/ab3bc0387a9c4e71b332382d7de9e4b7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 BMW X5 M Competition",
+          "url": "https://sketchfab.com/3d-models/none-9b211d525797457e988c903f67d0b753",
+          "thumbnail": "https://media.sketchfab.com/models/9b211d525797457e988c903f67d0b753/thumbnails/73a635eda48b458a8cab195188a274e6/1494bfd3ee6c4f00bff0f6f9155823cb.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2019 BMW X5 xDrive30d",
+          "url": "https://sketchfab.com/3d-models/none-850fb32f984c4630969840fc61f44902",
+          "thumbnail": "https://media.sketchfab.com/models/850fb32f984c4630969840fc61f44902/thumbnails/067b17d5edc640fd8a8cce914c9d16cc/44339985802a4031b722bd7a48716235.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2019) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "X6",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "BMW X6 M (G06)",
+          "url": "https://sketchfab.com/3d-models/none-9a1778479324447e881fef98c675ac58",
+          "thumbnail": "https://media.sketchfab.com/models/9a1778479324447e881fef98c675ac58/thumbnails/975a0f92b5ed4854bcd02bfc9f52284f/da85c68825e04f02b20973f635a140c5.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2016 BMW X6 M",
+          "url": "https://sketchfab.com/3d-models/none-9cba50132a864bd79bfab48bd631574d",
+          "thumbnail": "https://media.sketchfab.com/models/9cba50132a864bd79bfab48bd631574d/thumbnails/74ea8f6974094a208f9ab6cd0c4a3c25/22627d5443684c8693df2aaab931a5d4.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2016, 2009) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2015 BMW X6 F16",
+          "url": "https://sketchfab.com/3d-models/none-3e1551da01db4bfbb1ff6aa765cb4ff3",
+          "thumbnail": "https://media.sketchfab.com/models/3e1551da01db4bfbb1ff6aa765cb4ff3/thumbnails/44b5cb0bf4b84a59b4f47d69d366ea30/0a86cc9ffe7f4c62990c9808435a3216.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2015) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "X7",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "BMW X7 xDrive 50i",
+          "url": "https://sketchfab.com/3d-models/none-4274f483285f48d1840064dea31b2518",
+          "thumbnail": "https://media.sketchfab.com/models/4274f483285f48d1840064dea31b2518/thumbnails/4990fee129744f97ab54e55772bef02c/593609ac961c4eaa96c54e93599bf8c2.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW X7 M60i",
+          "url": "https://sketchfab.com/3d-models/none-5664218111d345c6b79c64ae48c6dd8b",
+          "thumbnail": "https://media.sketchfab.com/models/5664218111d345c6b79c64ae48c6dd8b/thumbnails/f97ec841e42944f3a636f9cdd1e9762d/c7ee53c439fc44aab9ec2ec9d744a5ff.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW X7",
+          "url": "https://sketchfab.com/3d-models/none-3dd065c7eefc4701af71b6e4b3f21a4f",
+          "thumbnail": "https://media.sketchfab.com/models/3dd065c7eefc4701af71b6e4b3f21a4f/thumbnails/6548d3e25f5e4cdfbd6a89854799700c/92ee296747284ef5a17356954a0db61d.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "XM",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "BMW XM",
+          "url": "https://sketchfab.com/3d-models/none-ecf5e8ff57394973963e2d0a88785336",
+          "thumbnail": "https://media.sketchfab.com/models/ecf5e8ff57394973963e2d0a88785336/thumbnails/334009887c274834bb8e946dcdf8c696/efd48ebfcd214ad9863e36c0169dccc4.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BMW XM - 2023",
+          "url": "https://sketchfab.com/3d-models/none-0365cea69e924f698484d7d705df6b76",
+          "thumbnail": "https://media.sketchfab.com/models/0365cea69e924f698484d7d705df6b76/thumbnails/7c995c1bcbc74d1ba59d194a53c45ec4/9fb8f9174a3147bdb7b8950305919f22.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 BMW XM",
+          "url": "https://sketchfab.com/3d-models/none-2ca46250349c41b68fd1462ca4c6375b",
+          "thumbnail": "https://media.sketchfab.com/models/2ca46250349c41b68fd1462ca4c6375b/thumbnails/f54a3a59c5a142bba5411f1565ef15d2/f676645fbc644bfbaf8eaa456de21af7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "BMW",
+      "model": "Z4",
+      "year": 2026,
+      "status": "licence_review",
+      "candidates": [
+        {
+          "name": "2014 BMW Z4 sDrive35is",
+          "url": "https://sketchfab.com/3d-models/none-6a1fd02fa5fa46488a131777c569354e",
+          "thumbnail": "https://media.sketchfab.com/models/6a1fd02fa5fa46488a131777c569354e/thumbnails/91fa1286462d4007aa33909d3079a184/1fe9578cffaa4957bb748629aaa34836.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2014, 2013, 2009) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2006 BMW Z4 M Coupe (E86)",
+          "url": "https://sketchfab.com/3d-models/none-66f0d4ade9594962ac98dfd5523f8680",
+          "thumbnail": "https://media.sketchfab.com/models/66f0d4ade9594962ac98dfd5523f8680/thumbnails/a87c424f5dd7492f9ac6f3125fa2aa34/df46102af8df41b4ae5e9b938c8cffc7.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2006, 2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2019 BMW Z4 M40i",
+          "url": "https://sketchfab.com/3d-models/none-c6178ca22425467080939e29e1b42f8c",
+          "thumbnail": "https://media.sketchfab.com/models/c6178ca22425467080939e29e1b42f8c/thumbnails/e69056f616434df5ac1d53d21eb5bada/cabd3b13fed146ca92349c32b84026b6.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2019) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Honda",
+      "model": "Amaze",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "PS1 Horror Game Hatchback Car",
+          "url": "https://sketchfab.com/3d-models/none-a225dec3db924f949e8facb46477b2b3",
+          "thumbnail": "https://media.sketchfab.com/models/a225dec3db924f949e8facb46477b2b3/thumbnails/201a59518f554033be45c928b8709c34/e4da5d8f7a9d43bd8f73e99f8c8dfc15.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available",
+            "Low detail (722 faces)"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Honda",
+      "model": "Amaze 2nd Gen",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Honda",
+      "model": "City",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Honda City RS",
+          "url": "https://sketchfab.com/3d-models/none-1d5a7dc0b3674e779bf88afdd2f4fd46",
+          "thumbnail": "https://media.sketchfab.com/models/1d5a7dc0b3674e779bf88afdd2f4fd46/thumbnails/66edddb328df4c32b9258a43b860a4d3/0eabf855b3754bfe91f354bda6b25167.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Honda City E II (1984)",
+          "url": "https://sketchfab.com/3d-models/none-aafbb7e449f94535a9ae8ea8eba4cfef",
+          "thumbnail": "https://media.sketchfab.com/models/aafbb7e449f94535a9ae8ea8eba4cfef/thumbnails/f1bfd9ca40b4490c885d16a2fafa61d7/fd1b2ceb9a804039b21db75f463e4882.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (1984) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2008 Honda City V AT",
+          "url": "https://sketchfab.com/3d-models/none-65e2974c74254021b027b223190418e8",
+          "thumbnail": "https://media.sketchfab.com/models/65e2974c74254021b027b223190418e8/thumbnails/4d463e00fff54f63a48f7b32cf64b592/36ad4abbcf0641659f5a5a096e81c5a7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2008) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Honda",
+      "model": "Elevate",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2024 Honda Elevate ZX CVT",
+          "url": "https://sketchfab.com/3d-models/none-0e4eb2c531a647c597f745717c8db68b",
+          "thumbnail": "https://media.sketchfab.com/models/0e4eb2c531a647c597f745717c8db68b/thumbnails/d318050059854bdeb313a47eb507f265/4f27bc7d899540d2a594af11d5963b00.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024, 2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Honda",
+      "model": "ZR-V",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Honda ZR-V",
+          "url": "https://sketchfab.com/3d-models/none-db9893a42e0f4695a172beb849d207c8",
+          "thumbnail": "https://media.sketchfab.com/models/db9893a42e0f4695a172beb849d207c8/thumbnails/9dd3eaf7fa9d4c96be8f6bbd0f83365c/ffbbee852c4a4065a3b352061bda4eb8.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 Honda ZR-V",
+          "url": "https://sketchfab.com/3d-models/none-33eb3630e2ef4693b908322683784734",
+          "thumbnail": "https://media.sketchfab.com/models/33eb3630e2ef4693b908322683784734/thumbnails/f85bbc75eaef4809ac052836f85c75df/81723663a718458d990219ee67fdaeca.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Honda-ZRV",
+          "url": "https://sketchfab.com/3d-models/none-0235d82eb81d432e8af6f91663c19d9d",
+          "thumbnail": "https://media.sketchfab.com/models/0235d82eb81d432e8af6f91663c19d9d/thumbnails/5b9c211cd4394b2c94ddc75fc3a84517/082641b4a13146a7809378f91d3b37a0.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Hyundai",
+      "model": "Alcazar",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Hyundai",
+      "model": "Aura",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "hyundai i10 (aura)",
+          "url": "https://sketchfab.com/3d-models/none-064ab4fa32104628890b4b130c4db143",
+          "thumbnail": "https://media.sketchfab.com/models/064ab4fa32104628890b4b130c4db143/thumbnails/ce1b59503bb44e54a6ac7eaf21b59bf1/b73bbc08a95347ac8c27d2f0e705de7e.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2021 Hyundai  Aura (With Textures)",
+          "url": "https://sketchfab.com/3d-models/none-8704d4b199ed4f878b87f4af34c38f79",
+          "thumbnail": "https://media.sketchfab.com/models/8704d4b199ed4f878b87f4af34c38f79/thumbnails/597b355447d14659b9d381d394fc027d/127a109a6c4f46ceb57f24a7c06bc9bf.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Hyundai Aura / Grand i10 Sedan",
+          "url": "https://sketchfab.com/3d-models/none-bcace281860e494ba4e87b53eaf088ba",
+          "thumbnail": "https://media.sketchfab.com/models/bcace281860e494ba4e87b53eaf088ba/thumbnails/dcc3fb11982341d7b0f393bac7577c19/4458da1ae52844ff93084443eb52690b.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2020) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Hyundai",
+      "model": "Creta",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Hyundai Creta",
+          "url": "https://sketchfab.com/3d-models/none-f03d934f58064882ba3dd2d732519410",
+          "thumbnail": "https://media.sketchfab.com/models/f03d934f58064882ba3dd2d732519410/thumbnails/72dda980fff64201b612e6ce5c486148/6f3749d27925449399175d80d602d8c7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 Hyundai Creta",
+          "url": "https://sketchfab.com/3d-models/none-3cc28d4cf5574383b7dc030638ee6199",
+          "thumbnail": "https://media.sketchfab.com/models/3cc28d4cf5574383b7dc030638ee6199/thumbnails/35ced1f089024abbaa43f64e93f5b5d6/6181423275f5456590a8746c606164b4.jpeg",
+          "licence": "CC Attribution-NonCommercial",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023, 2022, 2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 Hyundai ix25 - 2022 Hyundai Creta",
+          "url": "https://sketchfab.com/3d-models/none-fa88bbdbe0df406b8eab167b9591d2f2",
+          "thumbnail": "https://media.sketchfab.com/models/fa88bbdbe0df406b8eab167b9591d2f2/thumbnails/d2e48ac052b6453b8d16fd5689de3742/cb04863068db4da2817a8609f8cc349f.jpeg",
+          "licence": "CC Attribution-NonCommercial",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020, 2022, 2019) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Hyundai",
+      "model": "Creta Electric",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Hyundai",
+      "model": "Creta N Line",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Hyundai",
+      "model": "Exter",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Hyundai",
+      "model": "Grand i10 Nios",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Hyundai Grand i10 NIOS (with light textures)",
+          "url": "https://sketchfab.com/3d-models/none-392c09589156423eabcf8cd011b2c755",
+          "thumbnail": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 Hyundai Grand i10 NIOS",
+          "url": "https://sketchfab.com/3d-models/none-1635e9b0f7254e1d8688f4316498bfad",
+          "thumbnail": "https://media.sketchfab.com/models/1635e9b0f7254e1d8688f4316498bfad/thumbnails/1bfc1ecd7f294016a5c1602a7258c77b/310e68df959948218022e9bedb981306.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020, 2019) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 Hyundai Grand i10 NIOS",
+          "url": "https://sketchfab.com/3d-models/none-d6edc956ab774c30a9418bb994136cfa",
+          "thumbnail": "https://media.sketchfab.com/models/d6edc956ab774c30a9418bb994136cfa/thumbnails/5a11fb1406a441a38da917019c11ee4b/a859e2962113458da77a3f9ac2862a40.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "HYUNDAI I20 2026",
+          "url": "https://sketchfab.com/3d-models/none-cac46d2f40f644f593044bd57e43c376",
+          "thumbnail": "https://media.sketchfab.com/models/cac46d2f40f644f593044bd57e43c376/thumbnails/f5cbd5fda660465a85f96d4a5a0179b5/e6b2250256ad4b9fafab38a787c2adc4.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Hyundai i20 N Line",
+          "url": "https://sketchfab.com/3d-models/none-ed61e7bd2fdb498aa97cb389b1440633",
+          "thumbnail": "https://media.sketchfab.com/models/ed61e7bd2fdb498aa97cb389b1440633/thumbnails/be1ab458635b49d7b8f97a93afc13cec/c48359648cb94138bcde46c02f01026a.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Hyundai i20 Asta",
+          "url": "https://sketchfab.com/3d-models/none-4c1bdfba5f104a3cb3cb89c9680e11c3",
+          "thumbnail": "https://media.sketchfab.com/models/4c1bdfba5f104a3cb3cb89c9680e11c3/thumbnails/206fc5fd96b74803b57905a9160781dc/93db6deb3ea74d42b320b80757cb9f6a.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2008) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20 N Line",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2022 Hyundai i20 N Line",
+          "url": "https://sketchfab.com/3d-models/none-ed61e7bd2fdb498aa97cb389b1440633",
+          "thumbnail": "https://media.sketchfab.com/models/ed61e7bd2fdb498aa97cb389b1440633/thumbnails/be1ab458635b49d7b8f97a93afc13cec/c48359648cb94138bcde46c02f01026a.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 Hyundai i20 N- Line",
+          "url": "https://sketchfab.com/3d-models/none-6c267be59fb94253bff935616eddcc99",
+          "thumbnail": "https://media.sketchfab.com/models/6c267be59fb94253bff935616eddcc99/thumbnails/f576e544cc0e498e999fba5dec51553f/36c875c0335c4b15addeb508e906f22d.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Hyundai",
+      "model": "IONIQ 5",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Hyundai Ioniq 5",
+          "url": "https://sketchfab.com/3d-models/none-a50cd53f948f4e5da0db9df921181855",
+          "thumbnail": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.65,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available",
+            "Very heavy (2,492,577 faces) — needs decimation"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2024 Hyundai Ioniq 5 N",
+          "url": "https://sketchfab.com/3d-models/none-8d16325eb7974a948627b3cd77f30f52",
+          "thumbnail": "https://media.sketchfab.com/models/8d16325eb7974a948627b3cd77f30f52/thumbnails/3834131a17d943e1bf9b857143b48f62/1e07ace50a3f4f2a81b3502191e3da5e.jpeg",
+          "licence": "CC Attribution-NonCommercial",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024, 2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2024 Hyundai Ioniq 5 N NPX1 Concept",
+          "url": "https://sketchfab.com/3d-models/none-357dc384d32342dea4be8f2511b969b3",
+          "thumbnail": "https://media.sketchfab.com/models/357dc384d32342dea4be8f2511b969b3/thumbnails/2a356e2ce65c4bf081785a86b3af539e/fd55191b25af4b4ea2d28ada2d3c2dee.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024, 2019) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Hyundai",
+      "model": "Prime HB",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Hyundai",
+      "model": "Prime SD",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Hyundai",
+      "model": "Venue",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Hyundai Venue 2025",
+          "url": "https://sketchfab.com/3d-models/none-8c35967cadbd4a55a94aad9e743ce0f7",
+          "thumbnail": "https://media.sketchfab.com/models/8c35967cadbd4a55a94aad9e743ce0f7/thumbnails/f33a26b21f944b6dacec24e1cbcb1c57/7836c0e2f6b040e09c36b2c231ede035.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Hyundai",
+      "model": "Venue N Line",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Hyundai",
+      "model": "Verna",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Verna",
+          "url": "https://sketchfab.com/3d-models/none-132840063af24357900df22baeefe5fb",
+          "thumbnail": "https://media.sketchfab.com/models/132840063af24357900df22baeefe5fb/thumbnails/91bfd961b6e44231b3d91f649a446e56/2cd440dac9fc4751994742181b1d6d42.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2010 HYUNDAI VERNA",
+          "url": "https://sketchfab.com/3d-models/none-118e03b3288042c0b5e710741a3ba447",
+          "thumbnail": "https://media.sketchfab.com/models/118e03b3288042c0b5e710741a3ba447/thumbnails/51b7b9268c614cd1b29aeb3174213eec/e85b614582944c97a1159cacdd987972.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2010) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2013 Hyundai Accent",
+          "url": "https://sketchfab.com/3d-models/none-8270bf067a5247f687b2d38b3b1eae39",
+          "thumbnail": "https://media.sketchfab.com/models/8270bf067a5247f687b2d38b3b1eae39/thumbnails/452cb94d670344e8a53cead118d24bec/aaa76a791b864e578cbbef7cc4fbd5ee.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2013, 2000) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Jaguar",
+      "model": "F-Pace",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Jaguar F- Pace",
+          "url": "https://sketchfab.com/3d-models/none-f3865ee652474fcc969196e4bfc3493d",
+          "thumbnail": "https://media.sketchfab.com/models/f3865ee652474fcc969196e4bfc3493d/thumbnails/e2d63e50e490440e8c5b0a0ef2a119d0/2cb6858e7b80421fa0a178bfe222318c.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "jaguar f-pace",
+          "url": "https://sketchfab.com/3d-models/none-f02a53a87b744d09a6cedceb568c4580",
+          "thumbnail": "https://media.sketchfab.com/models/f02a53a87b744d09a6cedceb568c4580/thumbnails/761cd28ae15f4d8bb0590736e812d140/043db39919df493ea09868a4c38a024c.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Kia",
+      "model": "Carens",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Kia Carens",
+          "url": "https://sketchfab.com/3d-models/none-9e7ded9b8dcc48b095eb9721be4cca87",
+          "thumbnail": "https://media.sketchfab.com/models/9e7ded9b8dcc48b095eb9721be4cca87/thumbnails/7301b5b938e04c43beb174b4ecf441bc/db88e25450b34c06b0db0414777b2145.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Kia Carens 2002",
+          "url": "https://sketchfab.com/3d-models/none-57c9627be50347e195afa2feb50fccc7",
+          "thumbnail": "https://media.sketchfab.com/models/57c9627be50347e195afa2feb50fccc7/thumbnails/23b28439648e4b8f8893f40b4aa0f9b9/7e18436d8a134691ac7ba8a8a0b73f65.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2002) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Kia Carens 2010",
+          "url": "https://sketchfab.com/3d-models/none-36c0db47c10a478f86e97cf20f175e22",
+          "thumbnail": "https://media.sketchfab.com/models/36c0db47c10a478f86e97cf20f175e22/thumbnails/0e296f74a50f4915aab228c450eb6ae8/8a6c9c8717bb4d21a2272a99ffd7119e.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2010) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Kia",
+      "model": "Carens Clavis",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Kia",
+      "model": "Carens Clavis EV",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Kia",
+      "model": "Carnival",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Kia Carnival 2026",
+          "url": "https://sketchfab.com/3d-models/none-c43e34a6597a4b8f854745697b1f62d5",
+          "thumbnail": "https://media.sketchfab.com/models/c43e34a6597a4b8f854745697b1f62d5/thumbnails/1b8a9e39e59d49c495c7edcae7508d08/ec4208fe1d2149b29c0898b896183bc7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Kia Carnival",
+          "url": "https://sketchfab.com/3d-models/none-ab0623b403b3471b844c518de9c3ee3b",
+          "thumbnail": "https://media.sketchfab.com/models/ab0623b403b3471b844c518de9c3ee3b/thumbnails/1abd60b6a4424f80b894234018351a10/99c5da78d6c04f4aa7fe501184303f34.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Kia Carnival",
+          "url": "https://sketchfab.com/3d-models/none-85cc817cc9984fafb879760df5af3ae8",
+          "thumbnail": "https://media.sketchfab.com/models/85cc817cc9984fafb879760df5af3ae8/thumbnails/cf6caba463d340148febfb463cddd063/ce8a6db4fe8044a88551a7518913f062.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Kia",
+      "model": "EV6",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2022_kia_ev6_gt-line",
+          "url": "https://sketchfab.com/3d-models/none-57467658c12c40c58b2e5e497877d57e",
+          "thumbnail": "https://media.sketchfab.com/models/57467658c12c40c58b2e5e497877d57e/thumbnails/7edc07b0c5ec401bb17f45c510202d33/0b515de5736f46b2997717292a439751.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Kia EV6",
+          "url": "https://sketchfab.com/3d-models/none-44d11e83ef40492bb4bc3d9fbc41e5e0",
+          "thumbnail": "https://media.sketchfab.com/models/44d11e83ef40492bb4bc3d9fbc41e5e0/thumbnails/5bc7c897444942ee8690c2e34fc12b94/4f50d0b750964b68adcdc5b48bdb6247.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Kia EV6 GT-Line AWD",
+          "url": "https://sketchfab.com/3d-models/none-776181e22d694282b90c50969298b84c",
+          "thumbnail": "https://media.sketchfab.com/models/776181e22d694282b90c50969298b84c/thumbnails/62cf941567214365a43576a84814fc06/7d8d742182fa48f19f2a28ff533b3dfa.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Kia",
+      "model": "EV9",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "kia_ev9_gtline_24",
+          "url": "https://sketchfab.com/3d-models/none-dfca2d5babb84f1081b63c6e185d34d7",
+          "thumbnail": "https://media.sketchfab.com/models/dfca2d5babb84f1081b63c6e185d34d7/thumbnails/48fda64d5af146d8835e7063a7b1b220/046cd21083cf48e3870b0368b645ff62.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2024 Kia EV9 GT-Line",
+          "url": "https://sketchfab.com/3d-models/none-1e3c87edd3224342bc4eac5bf15a2d90",
+          "thumbnail": "https://media.sketchfab.com/models/1e3c87edd3224342bc4eac5bf15a2d90/thumbnails/2cbd8668a658402ab7ad3cf69903b364/bd7e3610ee0248de85e7f2b50237d396.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024, 2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2024 Kia EV9 Gt-Line + Interior",
+          "url": "https://sketchfab.com/3d-models/none-788d679249a94a20981f40eb13a99c1c",
+          "thumbnail": "https://media.sketchfab.com/models/788d679249a94a20981f40eb13a99c1c/thumbnails/951f19e40bc74b9abcab34494c9915a9/aceb68f69784430b83cc28927be5515f.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Kia",
+      "model": "Seltos",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Kia Seltos (2022)",
+          "url": "https://sketchfab.com/3d-models/none-8a5862040602494d8ab94e21251c5d6b",
+          "thumbnail": "https://media.sketchfab.com/models/8a5862040602494d8ab94e21251c5d6b/thumbnails/d389eca4a5034337b0ad2f5fd9cf7f81/857c09da03a04d9dbd742e99cefdc425.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Kia Seltos SX-TGDI 2021",
+          "url": "https://sketchfab.com/3d-models/none-7b57354723d945cd864cda2cf0f5447d",
+          "thumbnail": "https://media.sketchfab.com/models/7b57354723d945cd864cda2cf0f5447d/thumbnails/05107c911ef04a7ea3e4e4342f11ac92/6c2955d937ba4ae48216cf87fce4bc7f.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2021 Kia Seltos SX",
+          "url": "https://sketchfab.com/3d-models/none-dec4bcb474894cf189dcb0441cc904e1",
+          "thumbnail": "https://media.sketchfab.com/models/dec4bcb474894cf189dcb0441cc904e1/thumbnails/ee160203ac194598b6c2ce6ee2aeee1e/767c02fa718f41af9e38f5f22d229cbb.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Kia",
+      "model": "Sonet",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Kia Sonet 2025",
+          "url": "https://sketchfab.com/3d-models/none-5bafb5ee75db4597ad116bc0db03b4da",
+          "thumbnail": "https://media.sketchfab.com/models/5bafb5ee75db4597ad116bc0db03b4da/thumbnails/745098298a964d38a98bffec8c88c946/a6461073abca42e1b7a1c407ca82b3e5.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Kia Sonet",
+          "url": "https://sketchfab.com/3d-models/none-8c89dba49fed4457839a434480f57c03",
+          "thumbnail": "https://media.sketchfab.com/models/8c89dba49fed4457839a434480f57c03/thumbnails/cdf0ed90028e4f81a0aaaba088772537/422df60221384fd6be4a4e8d455244ec.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Kia Sonet 2023",
+          "url": "https://sketchfab.com/3d-models/none-2404c3131b7e439ebb41d0d664044f15",
+          "thumbnail": "https://media.sketchfab.com/models/2404c3131b7e439ebb41d0d664044f15/thumbnails/b552102dccb144efa3a87477610b7bd2/1338dcfa0eb34da291fbbd4d6aa774ba.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Kia",
+      "model": "Sorento",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2022 Kia Sorento PHEV Executive Line",
+          "url": "https://sketchfab.com/3d-models/none-340ded1d34c149a095b3281a1232494a",
+          "thumbnail": "https://media.sketchfab.com/models/340ded1d34c149a095b3281a1232494a/thumbnails/a080d965b3da4d46b13439776b878d3b/5b69826ee39044dda57b403b003888ff.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2005 Kia Sorento",
+          "url": "https://sketchfab.com/3d-models/none-a32f818c9e694dcfac43496163745473",
+          "thumbnail": "https://media.sketchfab.com/models/a32f818c9e694dcfac43496163745473/thumbnails/2300ec789b0e45bea057755f3707aa6f/c303070a42e043b9ab1405e8efb5a9ea.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2005) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Kia Sorento 2014",
+          "url": "https://sketchfab.com/3d-models/none-6cfea2e7fe474032b2b7a0f388fc2e6f",
+          "thumbnail": "https://media.sketchfab.com/models/6cfea2e7fe474032b2b7a0f388fc2e6f/thumbnails/319a17cc65e64650a7f6431d42d1ec23/6ffc514cd02c4c5eb9fcbcf2266c1219.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2014) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Kia",
+      "model": "Syros",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Kia Syros",
+          "url": "https://sketchfab.com/3d-models/none-8a10dec603454a93ac61c422ec3a32db",
+          "thumbnail": "https://media.sketchfab.com/models/8a10dec603454a93ac61c422ec3a32db/thumbnails/0f8b6c10351043b09322f304a2f2d3ee/a4dd6bfaed814d92b80abd880487f390.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Kia",
+      "model": "Syros EV",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Mahindra",
+      "model": "BE 6 SPORTEQ",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Mahindra",
+      "model": "Bolero",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Bus Simulator India - Traffic Cars",
+          "url": "https://sketchfab.com/3d-models/none-a0c72a6277bf4301bb3e5db4ccb194b6",
+          "thumbnail": "https://media.sketchfab.com/models/a0c72a6277bf4301bb3e5db4ccb194b6/thumbnails/b1142cc9cbfb47199b7712cc12ede1d8/19ec78d6de594c5b8afcc7842f456fd7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year within ±1 (2016, 2018, 2015, 2020, 2021, 2009, 2012, 2014, 2023, 2010, 1990, 1998, 2022, 2025, 2019)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "BOLERO MAXITRUCK",
+          "url": "https://sketchfab.com/3d-models/none-e8a1eed782024ab9936238885d48eb9e",
+          "thumbnail": "https://media.sketchfab.com/models/e8a1eed782024ab9936238885d48eb9e/thumbnails/3d877279a2d34b6d83e2270d505f0c20/b3503b1a208244d28bb8a2b6728a69bb.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Bolero Car modified with alloy wheel",
+          "url": "https://sketchfab.com/3d-models/none-2d986b6fd6d4406f9c68612636524b80",
+          "thumbnail": "https://media.sketchfab.com/models/2d986b6fd6d4406f9c68612636524b80/thumbnails/1891d19e9e2e4ce19f169f3a817fd58e/f2ddb623a46149b5a0dbddbe45d3a2c0.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.65,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available",
+            "Very heavy (2,574,723 faces) — needs decimation"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Mahindra",
+      "model": "Bolero Camper",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Mahindra",
+      "model": "Bolero Neo",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Bolero Car modified with alloy wheel",
+          "url": "https://sketchfab.com/3d-models/none-2d986b6fd6d4406f9c68612636524b80",
+          "thumbnail": "https://media.sketchfab.com/models/2d986b6fd6d4406f9c68612636524b80/thumbnails/1891d19e9e2e4ce19f169f3a817fd58e/f2ddb623a46149b5a0dbddbe45d3a2c0.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.55,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available",
+            "Very heavy (2,574,723 faces) — needs decimation"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Tuv 300 and Bolero neo",
+          "url": "https://sketchfab.com/3d-models/none-9c535f8ff7974d948eb9bd80ace73434",
+          "thumbnail": "https://media.sketchfab.com/models/9c535f8ff7974d948eb9bd80ace73434/thumbnails/8a03b903ffad40069b938c6ee32289a1/0a19aa715f844c8482fd6e86f6ce569a.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Mahindra",
+      "model": "Bolero Neo Plus",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Mahindra",
+      "model": "Bolero Pik-Up",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Mahindra",
+      "model": "Scorpio",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Bus Simulator India - Traffic Cars",
+          "url": "https://sketchfab.com/3d-models/none-a0c72a6277bf4301bb3e5db4ccb194b6",
+          "thumbnail": "https://media.sketchfab.com/models/a0c72a6277bf4301bb3e5db4ccb194b6/thumbnails/b1142cc9cbfb47199b7712cc12ede1d8/19ec78d6de594c5b8afcc7842f456fd7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year within ±1 (2016, 2018, 2015, 2020, 2021, 2009, 2012, 2014, 2023, 2010, 1990, 1998, 2022, 2025, 2019)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Scorpio (high poly)",
+          "url": "https://sketchfab.com/3d-models/none-72d817ff5bb5467a9a4af5b8bcec3049",
+          "thumbnail": "https://media.sketchfab.com/models/72d817ff5bb5467a9a4af5b8bcec3049/thumbnails/827d2820ca5a4ef99199d2d0ea66c827/a96e89a1d27043febb8dc5aebe8575b7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Mahindra Scorpio-N",
+          "url": "https://sketchfab.com/3d-models/none-538b10f2860f44e694dc3e9d3e223bf8",
+          "thumbnail": "https://media.sketchfab.com/models/538b10f2860f44e694dc3e9d3e223bf8/thumbnails/965f805d5fdf4e51b29de1c3bd5ba77b/68c8b894ef854cfba3f250ed6a7041a0.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2002) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Mahindra",
+      "model": "Scorpio N",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2022 Mahindra Scorpio-N",
+          "url": "https://sketchfab.com/3d-models/none-538b10f2860f44e694dc3e9d3e223bf8",
+          "thumbnail": "https://media.sketchfab.com/models/538b10f2860f44e694dc3e9d3e223bf8/thumbnails/965f805d5fdf4e51b29de1c3bd5ba77b/68c8b894ef854cfba3f250ed6a7041a0.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2002) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022-mahindra-scorpio-n indian car",
+          "url": "https://sketchfab.com/3d-models/none-1c50b3ba7a3a4b7cba5820fdfcc6ebbb",
+          "thumbnail": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Mahindra",
+      "model": "Thar OG",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Mahindra",
+      "model": "Thar ROXX",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Mahindra - Thar Roxx",
+          "url": "https://sketchfab.com/3d-models/none-f85210fe98774b7fab1199d8ee151ead",
+          "thumbnail": "https://media.sketchfab.com/models/f85210fe98774b7fab1199d8ee151ead/thumbnails/64032af8451349198b881e5c7b098632/cadea4c20b4e4325a48a8f9e06830c71.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Mahindra",
+      "model": "XEV 9e",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Mahindra",
+      "model": "XEV 9S",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Mahindra",
+      "model": "XUV 3XO",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "XUV 3XO",
+          "url": "https://sketchfab.com/3d-models/none-816995d6c3454462b62c8c44ea39ae65",
+          "thumbnail": "https://media.sketchfab.com/models/816995d6c3454462b62c8c44ea39ae65/thumbnails/b51053cdf9da44b3ad266ef77e1ecd90/7a8d13032d9641168e0f660183ccd407.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Mahindra",
+      "model": "XUV 3XO EV",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Mahindra",
+      "model": "XUV 7XO",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Mahindra",
+      "model": "XUV400 EV",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "MG Motor",
+      "model": "Hector",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "MG Hector",
+          "url": "https://sketchfab.com/3d-models/none-7e2c58a323824944883010cf228efd0b",
+          "thumbnail": "https://media.sketchfab.com/models/7e2c58a323824944883010cf228efd0b/thumbnails/b7872fa7611846888e01a1ea4ae1ac6c/61f0794699c947ac8c9bf110d0b70727.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "MG_Hector",
+          "url": "https://sketchfab.com/3d-models/none-85afc4f3daf5445fb527fcfa2e1b3997",
+          "thumbnail": "https://media.sketchfab.com/models/85afc4f3daf5445fb527fcfa2e1b3997/thumbnails/ad67e522a3de41809fce3b76b538e551/cd4d96b4c5974957a727fd5263ec8d85.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Nissan",
+      "model": "Gravite",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Nissan",
+      "model": "Magnite",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Nissan",
+      "model": "Tekton",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Nissan",
+      "model": "X-Trail",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Nissan X-Trail | photogrammetry",
+          "url": "https://sketchfab.com/3d-models/none-997a08cfe14a4ddb894e4201a3bbbcd0",
+          "thumbnail": "https://media.sketchfab.com/models/997a08cfe14a4ddb894e4201a3bbbcd0/thumbnails/78530c930be94c048f76d9a2ba1154ed/e5d4dd7c40c14ca0aba0b983b328da28.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 Nissan X-Trail 4x4-i",
+          "url": "https://sketchfab.com/3d-models/none-f9f2cbdacac74ee7acfe1c731195ccaa",
+          "thumbnail": "https://media.sketchfab.com/models/f9f2cbdacac74ee7acfe1c731195ccaa/thumbnails/7a07db0ef03a41f9b51dae0cdedca9db/e26bffbd2b7a4f76ab611824d4f4dedb.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Nissan X-Trail MK3 T32 2013-2021",
+          "url": "https://sketchfab.com/3d-models/none-30663a0fbc9e4e32b6f7adacca2b603c",
+          "thumbnail": "https://media.sketchfab.com/models/30663a0fbc9e4e32b6f7adacca2b603c/thumbnails/cbc66132fd1e477a9bab21e8fe16262c/0a993f3777334007a643fa351b333913.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2013, 2021, 2014) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Skoda",
+      "model": "Kodiaq",
+      "year": 2026,
+      "status": "licence_review",
+      "candidates": [
+        {
+          "name": "2022 Skoda Kodiaq TSI 330",
+          "url": "https://sketchfab.com/3d-models/none-ad0fb4edf2c245338ddfcc9639555584",
+          "thumbnail": "https://media.sketchfab.com/models/ad0fb4edf2c245338ddfcc9639555584/thumbnails/8b5cdc272a45405f803824f3940f609f/f15b0a8ad789422db378ef361bed4cad.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 Skoda Kodiaq GT",
+          "url": "https://sketchfab.com/3d-models/none-f51ac857e1f3468db3a81d88fe2f8406",
+          "thumbnail": "https://media.sketchfab.com/models/f51ac857e1f3468db3a81d88fe2f8406/thumbnails/4bfc070623e6493b99e6b726df92d157/ad0f4cd33a3b486d831abce110d616ab.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020, 2019, 2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 Skoda Kodiaq TSI 380 4X4",
+          "url": "https://sketchfab.com/3d-models/none-e3c4154a228d4be19ce156b2fa900afe",
+          "thumbnail": "https://media.sketchfab.com/models/e3c4154a228d4be19ce156b2fa900afe/thumbnails/49b337d220744cc19c95438fbf1007a8/277ae7222c8c42a596eac7b1800c5de3.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020, 2023, 2017) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Skoda",
+      "model": "Kodiaq RS",
+      "year": 2026,
+      "status": "licence_review",
+      "candidates": [
+        {
+          "name": "2020 Skoda Kodiaq GT",
+          "url": "https://sketchfab.com/3d-models/none-f51ac857e1f3468db3a81d88fe2f8406",
+          "thumbnail": "https://media.sketchfab.com/models/f51ac857e1f3468db3a81d88fe2f8406/thumbnails/4bfc070623e6493b99e6b726df92d157/ad0f4cd33a3b486d831abce110d616ab.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2020, 2019, 2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Skoda",
+      "model": "Kushaq",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Skoda",
+      "model": "Kylaq",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Skoda",
+      "model": "Octavia RS",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2025 Skoda Octavia RS",
+          "url": "https://sketchfab.com/3d-models/none-5c1ffc9110464efd8181fc51598814a7",
+          "thumbnail": "https://media.sketchfab.com/models/5c1ffc9110464efd8181fc51598814a7/thumbnails/17c9f99058734f6888f03f4d7aabc676/fb07505037d14fdeb3b8068205b45423.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025, 2024)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2025 Skoda Octavia RS Combi",
+          "url": "https://sketchfab.com/3d-models/none-e584bb09fa6547a0a3ca7c1ec7c2053a",
+          "thumbnail": "https://media.sketchfab.com/models/e584bb09fa6547a0a3ca7c1ec7c2053a/thumbnails/778d1557112143f2b06d21a2237f0c99/fb22ffe6f93d4122a5053af98115c29d.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2025 Skoda Octavia RS",
+          "url": "https://sketchfab.com/3d-models/none-c59316589a07488485fd4c4d480fb24e",
+          "thumbnail": "https://media.sketchfab.com/models/c59316589a07488485fd4c4d480fb24e/thumbnails/6ed7f7e80b1b4ae8bef88e4e4e96b80e/374e30214eda4777bc04d0a47e6e1c20.jpeg",
+          "licence": "CC Attribution-NonCommercial",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.75,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available",
+            "Very heavy (2,283,072 faces) — needs decimation"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Skoda",
+      "model": "Slavia",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Volkswagen Virtus",
+          "url": "https://sketchfab.com/3d-models/none-dc048757d60d4095bc1ff3eca7785475",
+          "thumbnail": "https://media.sketchfab.com/models/dc048757d60d4095bc1ff3eca7785475/thumbnails/c636add13e034a3faae6746a3ecfdf8d/80fa64a8ef4d43c5ac063e8b272da2a5.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2017, 2018, 2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Tata",
+      "model": "Aeris",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Tata",
+      "model": "Altroz",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Tata_tiago 2026 Gen 4",
+          "url": "https://sketchfab.com/3d-models/none-be2329603e70431f948ca732ffe59f51",
+          "thumbnail": "https://media.sketchfab.com/models/be2329603e70431f948ca732ffe59f51/thumbnails/53ce7d29afc84bb3b85a130724fea369/f1ed8a6ce9124f81aab57ab42629e744.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Tata Altroz",
+          "url": "https://sketchfab.com/3d-models/none-8105211db24442f2a7ac6f37e25bb6d2",
+          "thumbnail": "https://media.sketchfab.com/models/8105211db24442f2a7ac6f37e25bb6d2/thumbnails/0db11f1ab59540c78344e7522a7e3783/3bc26571b6d34b0590ec8da840939b1c.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Tata Altroz",
+          "url": "https://sketchfab.com/3d-models/none-1d13459cf2e644ac9d2466f97cc1c201",
+          "thumbnail": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.65,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available",
+            "Very heavy (3,789,661 faces) — needs decimation"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Tata",
+      "model": "Curvv",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Tata Curvv",
+          "url": "https://sketchfab.com/3d-models/none-cb93a78208b4473bbfc19f582ee41acd",
+          "thumbnail": "https://media.sketchfab.com/models/cb93a78208b4473bbfc19f582ee41acd/thumbnails/5b0ab932e41749749a56c509cedd76b2/387c1bd9be0047cd8bd1c0e8384c4b5b.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Tata",
+      "model": "Curvv EV",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Tata",
+      "model": "Harrier",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "3 d model of tata harrier car",
+          "url": "https://sketchfab.com/3d-models/none-5955db3b145540b3baf4eddaf586ccef",
+          "thumbnail": "https://media.sketchfab.com/models/5955db3b145540b3baf4eddaf586ccef/thumbnails/ff6b41fb98b74e7f88f4972b76b52615/2070220810d846a69d5623224ce840a3.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Tata Tiago",
+          "url": "https://sketchfab.com/3d-models/none-7ae10b287a184453b19a83ed5b37c007",
+          "thumbnail": "https://media.sketchfab.com/models/7ae10b287a184453b19a83ed5b37c007/thumbnails/939f4d8889a94d15b1345bd04cdd9841/16be16b2d9734c089528e768760555bc.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.3,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2016) — likely a different generation or facelift",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2021 Tata Safari",
+          "url": "https://sketchfab.com/3d-models/none-3051714dba91468f9d3f4f15305c2541",
+          "thumbnail": "https://media.sketchfab.com/models/3051714dba91468f9d3f4f15305c2541/thumbnails/85e3914334fc415298e13c9a962abdee/f448f53dabbb480c8d366b75f91ae88e.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.3,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2021, 1998) — likely a different generation or facelift",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Tata",
+      "model": "Harrier EV",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Tata",
+      "model": "Nexon",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Bus Simulator India - Traffic Cars",
+          "url": "https://sketchfab.com/3d-models/none-a0c72a6277bf4301bb3e5db4ccb194b6",
+          "thumbnail": "https://media.sketchfab.com/models/a0c72a6277bf4301bb3e5db4ccb194b6/thumbnails/b1142cc9cbfb47199b7712cc12ede1d8/19ec78d6de594c5b8afcc7842f456fd7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year within ±1 (2016, 2018, 2015, 2020, 2021, 2009, 2012, 2014, 2023, 2010, 1990, 1998, 2022, 2025, 2019)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Tata",
+      "model": "Nexon EV",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Bus Simulator India - Traffic Cars",
+          "url": "https://sketchfab.com/3d-models/none-a0c72a6277bf4301bb3e5db4ccb194b6",
+          "thumbnail": "https://media.sketchfab.com/models/a0c72a6277bf4301bb3e5db4ccb194b6/thumbnails/b1142cc9cbfb47199b7712cc12ede1d8/19ec78d6de594c5b8afcc7842f456fd7.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year within ±1 (2016, 2018, 2015, 2020, 2021, 2009, 2012, 2014, 2023, 2010, 1990, 1998, 2022, 2025, 2019)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Tata",
+      "model": "Punch",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2027 Tata Punch Concept",
+          "url": "https://sketchfab.com/3d-models/none-a222afe163e242daa67f9ae63b9dddb0",
+          "thumbnail": "https://media.sketchfab.com/models/a222afe163e242daa67f9ae63b9dddb0/thumbnails/da2164c4776a4e07aed64baf2abe2226/3953d05b987c4f79be7c07d9cd88fd68.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2027)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Tata Punch",
+          "url": "https://sketchfab.com/3d-models/none-1a85da7678ba4f708cfbee0d9303c5d7",
+          "thumbnail": "https://media.sketchfab.com/models/1a85da7678ba4f708cfbee0d9303c5d7/thumbnails/ae2c674dd870417fa7cb679ce9e12d6e/4a29e8eeee9d4c94b04c4ca05dce0334.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Tata",
+      "model": "Punch EV",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Tata",
+      "model": "Safari",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2021 Tata Safari",
+          "url": "https://sketchfab.com/3d-models/none-3051714dba91468f9d3f4f15305c2541",
+          "thumbnail": "https://media.sketchfab.com/models/3051714dba91468f9d3f4f15305c2541/thumbnails/85e3914334fc415298e13c9a962abdee/f448f53dabbb480c8d366b75f91ae88e.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.4,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2021, 1998) — likely a different generation or facelift",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Tata",
+      "model": "Sierra",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Tata",
+      "model": "Sierra EV",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Tata",
+      "model": "Tiago",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Tata_tiago 2026 Gen 4",
+          "url": "https://sketchfab.com/3d-models/none-be2329603e70431f948ca732ffe59f51",
+          "thumbnail": "https://media.sketchfab.com/models/be2329603e70431f948ca732ffe59f51/thumbnails/53ce7d29afc84bb3b85a130724fea369/f1ed8a6ce9124f81aab57ab42629e744.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Tata_tiago sport + 2025",
+          "url": "https://sketchfab.com/3d-models/none-09a41195ed5c495884705b2a39538aad",
+          "thumbnail": "https://media.sketchfab.com/models/09a41195ed5c495884705b2a39538aad/thumbnails/6a09a3aeec5846f3a5c222032e0983be/01c632ef07864d15aab34ed1b847c159.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Tata Tiago",
+          "url": "https://sketchfab.com/3d-models/none-7ae10b287a184453b19a83ed5b37c007",
+          "thumbnail": "https://media.sketchfab.com/models/7ae10b287a184453b19a83ed5b37c007/thumbnails/939f4d8889a94d15b1345bd04cdd9841/16be16b2d9734c089528e768760555bc.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.4,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2016) — likely a different generation or facelift",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Tata",
+      "model": "Tiago EV",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Tata_tiago sport + 2025",
+          "url": "https://sketchfab.com/3d-models/none-09a41195ed5c495884705b2a39538aad",
+          "thumbnail": "https://media.sketchfab.com/models/09a41195ed5c495884705b2a39538aad/thumbnails/6a09a3aeec5846f3a5c222032e0983be/01c632ef07864d15aab34ed1b847c159.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Tata",
+      "model": "Tigor EV",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Tata",
+      "model": "Xpres",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Tata",
+      "model": "Xpres T EV",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Tata",
+      "model": "Yodha Pickup",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2025 Toyota Camry (XV80) Hybrid",
+          "url": "https://sketchfab.com/3d-models/none-53f8cbf2483940fba956f4e740a3a4ae",
+          "thumbnail": "https://media.sketchfab.com/models/53f8cbf2483940fba956f4e740a3a4ae/thumbnails/108240674a06492db7d9a18edb931869/ae879d20fb0f4ae4ae2f049805428409.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "toyota camry v80",
+          "url": "https://sketchfab.com/3d-models/none-98c70e5aa53446728fea4d8f448bbf33",
+          "thumbnail": "https://media.sketchfab.com/models/98c70e5aa53446728fea4d8f448bbf33/thumbnails/b1afed68b2254d7a8ffb81af1cd0b61e/2dede53130ec4fae9128eb1df81b095c.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "NASCAR 2016 Toyota Camry",
+          "url": "https://sketchfab.com/3d-models/none-bce1e1bde2de445589a8f226bd92922c",
+          "thumbnail": "https://media.sketchfab.com/models/bce1e1bde2de445589a8f226bd92922c/thumbnails/95935e24594b47d38c676901740e1e17/e5ef4c33d802402ab9e102c3f733443d.jpeg",
+          "licence": "CC Attribution-NonCommercial",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2016) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Toyota",
+      "model": "Fortuner",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2025 Toyota Fortuner Sigma 4 Neo Drive",
+          "url": "https://sketchfab.com/3d-models/none-f0a74cbf36d94b3099410312d7abf154",
+          "thumbnail": "https://media.sketchfab.com/models/f0a74cbf36d94b3099410312d7abf154/thumbnails/6cb6dc009c934e2694098c9bf653b3c4/78e051d78b1c4849b5582a936a8efee3.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Toyota Fortuner 2021",
+          "url": "https://sketchfab.com/3d-models/none-a70b997f11b7482e9affbf318a508f85",
+          "thumbnail": "https://media.sketchfab.com/models/a70b997f11b7482e9affbf318a508f85/thumbnails/93458943b48e478eaeccb0cefd38024a/fa5f990a08f7432e856eef08a206321f.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2021) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 Toyota Fortuner Legender",
+          "url": "https://sketchfab.com/3d-models/none-3d9701bc2610466198f2cea996bd0fdc",
+          "thumbnail": "https://media.sketchfab.com/models/3d9701bc2610466198f2cea996bd0fdc/thumbnails/77a8ec447b55407d90d5f405a9f49245/0c56fcb2ba6a48479eab8f9be958755b.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Toyota",
+      "model": "Fortuner Legender",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2025 Toyota Fortuner Sigma 4 Neo Drive",
+          "url": "https://sketchfab.com/3d-models/none-f0a74cbf36d94b3099410312d7abf154",
+          "thumbnail": "https://media.sketchfab.com/models/f0a74cbf36d94b3099410312d7abf154/thumbnails/6cb6dc009c934e2694098c9bf653b3c4/78e051d78b1c4849b5582a936a8efee3.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2020 Toyota Fortuner Legender",
+          "url": "https://sketchfab.com/3d-models/none-3d9701bc2610466198f2cea996bd0fdc",
+          "thumbnail": "https://media.sketchfab.com/models/3d9701bc2610466198f2cea996bd0fdc/thumbnails/77a8ec447b55407d90d5f405a9f49245/0c56fcb2ba6a48479eab8f9be958755b.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2020) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Toyota Fortuner Legender Tuned",
+          "url": "https://sketchfab.com/3d-models/none-d2fcf47de2114a88b529fb7b0c507d1b",
+          "thumbnail": "https://media.sketchfab.com/models/d2fcf47de2114a88b529fb7b0c507d1b/thumbnails/8285b8adbbc94bc2a480125bb1fe49ee/701354071fe74f7b8ea861e87380108f.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Toyota",
+      "model": "Glanza",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2022 Maruti Suzuki Baleno",
+          "url": "https://sketchfab.com/3d-models/none-438c1b0c1a4e4732aa1a3cbb505d19e5",
+          "thumbnail": "https://media.sketchfab.com/models/438c1b0c1a4e4732aa1a3cbb505d19e5/thumbnails/ad5603eea7e5426d941d6786e6d8cbba/98de7c212e974500b278a5dc9cabe67b.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.3,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2022, 2015) — likely a different generation or facelift",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Toyota",
+      "model": "Hilux",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2026 Toyota Hilux BEV",
+          "url": "https://sketchfab.com/3d-models/none-c42464054a614342841bf55ba718b64f",
+          "thumbnail": "https://media.sketchfab.com/models/c42464054a614342841bf55ba718b64f/thumbnails/c483026942cb4e7aaada1cb6814e3e0e/1284f5d6476f40f5a91e0098c33acf72.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Hilux TOYOTA 2026",
+          "url": "https://sketchfab.com/3d-models/none-a8638c345c97459ea673bc3ffc3d033e",
+          "thumbnail": "https://media.sketchfab.com/models/a8638c345c97459ea673bc3ffc3d033e/thumbnails/522a3806fce946548ea7fb8a0708a0f6/beff3a71be654b29bcbfba7b1a5ff1c9.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2026 Toyota Hilux",
+          "url": "https://sketchfab.com/3d-models/none-9743da567da24663a92c33619fe06746",
+          "thumbnail": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Toyota",
+      "model": "Innova Crysta",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Toyota innova crysta _ Highpoly",
+          "url": "https://sketchfab.com/3d-models/none-e205b11fb138455989e1c4b9fcc7b64a",
+          "thumbnail": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Innova Crysta Alloy Wheel",
+          "url": "https://sketchfab.com/3d-models/none-45e4293040984a6e9a3ae4817247637b",
+          "thumbnail": "https://media.sketchfab.com/models/45e4293040984a6e9a3ae4817247637b/thumbnails/831e3725d0e448908d0a85d33d1dc9e8/038b85fbdc624435bf93f09663836572.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available",
+            "Low detail (18,356 faces)"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Alloy Wheel",
+          "url": "https://sketchfab.com/3d-models/none-517248a54d9f4c84a10b31f5e0fcc469",
+          "thumbnail": "https://media.sketchfab.com/models/517248a54d9f4c84a10b31f5e0fcc469/thumbnails/ff8d7c730fe24584acede18005025ea9/83a0efb79bad40598772d155f0f21567.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Toyota",
+      "model": "Innova Hycross",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Toyota Kijang Innova Zenix 2023 (highpoly)",
+          "url": "https://sketchfab.com/3d-models/none-c8e1bbc9292b4e198dba839c32f02fa9",
+          "thumbnail": "https://media.sketchfab.com/models/c8e1bbc9292b4e198dba839c32f02fa9/thumbnails/4aece0031cd74797874596d49c6aadf2/bc96170e60024ad6bc976195e7403855.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2023, 2004) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Toyota",
+      "model": "Land Cruiser 300",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "2022 Toyota Land Cruiser 300 VX.R",
+          "url": "https://sketchfab.com/3d-models/none-3dfcd7904cdb4e52afa3ce59fa59e1a5",
+          "thumbnail": "https://media.sketchfab.com/models/3dfcd7904cdb4e52afa3ce59fa59e1a5/thumbnails/2e01405aa778487dbc156a5154edcb18/bdf334ac8c874e0db6e2e693e5fc25b5.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2007) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Toyota Land Cruiser 300 VX.R",
+          "url": "https://sketchfab.com/3d-models/none-60865a4b5d174b0ea102fc40d8f49936",
+          "thumbnail": "https://media.sketchfab.com/models/60865a4b5d174b0ea102fc40d8f49936/thumbnails/1b607d1dc8744fa88aad04589b2c74bb/b9e17c2083324317901adfc4fd736772.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022_ Toyota_ Land_ Cruiser_300_VX",
+          "url": "https://sketchfab.com/3d-models/none-1b085c709c304ace8017a9bb0c26ad48",
+          "thumbnail": "https://media.sketchfab.com/thumbnails/4c57687b657445e1b46c83b35e494ad4/640.jpg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Toyota",
+      "model": "Rumion",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Toyota Avensis MK10 (E140,E150) 2006-2013",
+          "url": "https://sketchfab.com/3d-models/none-0b20ef50634b4961812805da3e50c867",
+          "thumbnail": "https://media.sketchfab.com/models/0b20ef50634b4961812805da3e50c867/thumbnails/91b8476bc68945258f1ffd25564a4858/135f5b70db2b41a69eb3ae9337f4afd8.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2006, 2013) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Suzuki Ertiga",
+          "url": "https://sketchfab.com/3d-models/none-4f14afac3ac44ec4a2fb153e18452f8b",
+          "thumbnail": "https://media.sketchfab.com/models/4f14afac3ac44ec4a2fb153e18452f8b/thumbnails/99dc8e9c51bb4dc3a000d1d5aea86a7c/a25e9c4f93ac469e8c44a8343c1c0a10.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.3,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2022, 2012, 2018) — likely a different generation or facelift",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Suzuki Ertiga",
+          "url": "https://sketchfab.com/3d-models/none-83cbb18e94814ae5aaa5de3dd288e648",
+          "thumbnail": "https://media.sketchfab.com/models/83cbb18e94814ae5aaa5de3dd288e648/thumbnails/dc6a261d03e347ba965e432634dc89ca/a86a4783e7cc4405a7d4d8e6544df421.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.3,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2012, 2018) — likely a different generation or facelift",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Toyota",
+      "model": "Taisor",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Toyota",
+      "model": "Urban Cruiser EBELLA",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Toyota",
+      "model": "Urban Cruiser Hyryder",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Suzuki Grand Vitara",
+          "url": "https://sketchfab.com/3d-models/none-2479f3620eea4320a6b30950347a768c",
+          "thumbnail": "https://media.sketchfab.com/models/2479f3620eea4320a6b30950347a768c/thumbnails/7795a4a0d7cb4c988a93f61462a94a21/da7da304b65d4fd999810ea733266ad4.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.3,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2022) — likely a different generation or facelift",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Toyota",
+      "model": "Vellfire",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Toyota Vellfire Aero 2015",
+          "url": "https://sketchfab.com/3d-models/none-009ef02eaf1942a2821676e03c351d34",
+          "thumbnail": "https://media.sketchfab.com/models/009ef02eaf1942a2821676e03c351d34/thumbnails/af1507c7142844a3853ec8686cd0bc05/b92040f858e143478b94f7a26df4ef90.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2015) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Toyota Vellfire",
+          "url": "https://sketchfab.com/3d-models/none-e1fedbdb2d2440679ae3be3c3310473d",
+          "thumbnail": "https://media.sketchfab.com/models/e1fedbdb2d2440679ae3be3c3310473d/thumbnails/c81830ce17374081a520ff14eda98074/0717b5401120424598ced5bca9bd737b.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.5,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2017) — likely a different generation or facelift",
+            "GLB archive available",
+            "Low detail (18,712 faces)"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Toyota Vellfire",
+          "url": "https://sketchfab.com/3d-models/none-dfb120181c604d419976c64997145eab",
+          "thumbnail": "https://media.sketchfab.com/models/dfb120181c604d419976c64997145eab/thumbnails/145337ef72e64c23b8f5a5b91498a6cd/d3c9dbb95970459485b6ce4f857a87c3.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.4,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2020) — likely a different generation or facelift",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf GTI",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Volkswagen Golf GTI (2025)",
+          "url": "https://sketchfab.com/3d-models/none-84fe6c2b9feb4c8a854d16f3daf33eab",
+          "thumbnail": "https://media.sketchfab.com/models/84fe6c2b9feb4c8a854d16f3daf33eab/thumbnails/e672d8caba714cb388e84ab7db554a77/fb82dcfad9da4d33914bdc62f2f72bbc.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.8,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2025 Volkswagen Golf GTI",
+          "url": "https://sketchfab.com/3d-models/none-350453074a1049d6a0351e8eb51e4b44",
+          "thumbnail": "https://media.sketchfab.com/models/350453074a1049d6a0351e8eb51e4b44/thumbnails/b8714491821647c9ac22e4c7f40e149b/af1eb4865dfe4633a7076cbe57407102.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.75,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year within ±1 (2025)",
+            "GLB archive available",
+            "Very heavy (2,248,578 faces) — needs decimation"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2016 Volkswagen Golf GTI Clubsport Mk7",
+          "url": "https://sketchfab.com/3d-models/none-492301d401ea4fb7bb1cb63e980051d0",
+          "thumbnail": "https://media.sketchfab.com/models/492301d401ea4fb7bb1cb63e980051d0/thumbnails/4b17a76d69714162b478c08fad90463e/708cb98dfe914a43b60f260b4e7131fa.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2016, 2015) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Taigun",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Volkswagen Taigun (2024)",
+          "url": "https://sketchfab.com/3d-models/none-0311e48c19c34b95a411addd58b4863d",
+          "thumbnail": "https://media.sketchfab.com/models/0311e48c19c34b95a411addd58b4863d/thumbnails/9bc5620bd5d848579432255068fb098c/932547767843438f9866ac4600a6b59b.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2022 Volkswagen Virtus GT",
+          "url": "https://sketchfab.com/3d-models/none-3955e5c050f843398b49b2b21ab2f232",
+          "thumbnail": "https://media.sketchfab.com/models/3955e5c050f843398b49b2b21ab2f232/thumbnails/b0a571640a604476bf579ce6d0e8c1c9/ff52d053cb5646be8553534edf2a8d66.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.3,
+          "reasons": [
+            "Model name only in tags/description",
+            "Make matches",
+            "Year mismatch (2022, 2018) — likely a different generation or facelift",
+            "GLB archive available",
+            "Stylised / toy model"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Tayron",
+      "year": 2026,
+      "status": "not_found",
+      "candidates": []
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Tiguan R-Line",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Volkswagen Tiguan R-Line",
+          "url": "https://sketchfab.com/3d-models/none-6886e629076d468e81060a8ae089755c",
+          "thumbnail": "https://media.sketchfab.com/models/6886e629076d468e81060a8ae089755c/thumbnails/dc85cd81d57b4644996f8fd653983500/55841219857e4a979f9c38790e32c2f4.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.7,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "No model year stated",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2024 Volkswagen Tiguan L Pro 380TSI 4WD R-line",
+          "url": "https://sketchfab.com/3d-models/none-0703b26f5c6446dabf1ab3caecce586f",
+          "thumbnail": "https://media.sketchfab.com/models/0703b26f5c6446dabf1ab3caecce586f/thumbnails/8b12671913704e8bba8133383d51ac3a/facf5e65ed8b444eaf5250c75730c783.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2023 Volkswagen Tiguan Allspace R- Line",
+          "url": "https://sketchfab.com/3d-models/none-e6bbe389e4a442c38df5d3b3cb3c7d2b",
+          "thumbnail": "https://media.sketchfab.com/models/e6bbe389e4a442c38df5d3b3cb3c7d2b/thumbnails/5b2100a6dbf94b81aaf48fdfc52e852a/df84543417a942d28b0b5a0218a1f103.jpeg",
+          "licence": "CC Attribution",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2023) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Virtus",
+      "year": 2026,
+      "status": "candidate_review",
+      "candidates": [
+        {
+          "name": "Volkswagen Virtus (2026)",
+          "url": "https://sketchfab.com/3d-models/none-c15def87455f4cccaeff748c329da788",
+          "thumbnail": "https://media.sketchfab.com/models/c15def87455f4cccaeff748c329da788/thumbnails/df403c8db0d74e8fbd86cd8d8281a09a/812153c6fb984606adbc72ef145cb9f8.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.9,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year 2026 matches",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "2024 Volkswagen Virtus TSI",
+          "url": "https://sketchfab.com/3d-models/none-2678bb3bfbe1482cb6faa084674e100b",
+          "thumbnail": "https://media.sketchfab.com/models/2678bb3bfbe1482cb6faa084674e100b/thumbnails/aa583b7c7aef4da8a640b4a6d553209e/959d558ebbfa411ebe18331d4b246811.jpeg",
+          "licence": "CC Attribution-NonCommercial-ShareAlike",
+          "commercialUse": false,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2024) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        },
+        {
+          "name": "Volkswagen Virtus 2022",
+          "url": "https://sketchfab.com/3d-models/none-6bb56284281340ed9d428ceac5951da5",
+          "thumbnail": "https://media.sketchfab.com/models/6bb56284281340ed9d428ceac5951da5/thumbnails/aa22eedc181e4138a6605eacde13c619/9fb2123f0cf241b7aede74108f0ce0e4.jpeg",
+          "licence": "Free Standard",
+          "commercialUse": true,
+          "modification": true,
+          "downloadable": true,
+          "matchScore": 0.6,
+          "reasons": [
+            "Model name in title",
+            "Make matches",
+            "Year mismatch (2022, 2017) — likely a different generation or facelift",
+            "GLB archive available"
+          ],
+          "yearVerified": false
+        }
+      ]
+    }
+  ]
+}

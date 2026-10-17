@@ -74,8 +74,8 @@ export function TrustSection() {
     <section ref={sectionRef} className="section-padding">
       <div className="container-main">
         {/* Header */}
-        <div className="trust-header text-center max-w-2xl mx-auto mb-16" style={{ opacity: 0 }}>
-          <p className="text-caption text-primary-accent mb-2">Why CAR</p>
+        <div className="trust-header text-center max-w-2xl mx-auto mb-16" >
+          <p className="text-caption text-primary-accent mb-2">Why CarPal</p>
           <h2 className="text-display-md font-bold text-primary-text tracking-tight">
             A Better Way to Find Your Car
           </h2>
@@ -91,7 +91,7 @@ export function TrustSection() {
             <div
               key={value.title}
               className="trust-card flex gap-5 p-6 lg:p-8 rounded-2xl border border-primary-border hover:border-primary-accent/30 hover:shadow-md transition-all duration-300"
-              style={{ opacity: 0 }}
+
             >
               <div className="shrink-0 w-12 h-12 rounded-xl bg-primary-surface flex items-center justify-center text-primary-accent">
                 {value.icon}

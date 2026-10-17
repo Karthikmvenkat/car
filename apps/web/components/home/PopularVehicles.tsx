@@ -20,19 +20,13 @@ export function PopularVehicles({ vehicles }: PopularVehiclesProps) {
       start: 'top 82%',
     });
 
-    createScrollReveal('.vehicle-card-animate', {
-      y: 35,
-      duration: 0.7,
-      stagger: 0.12,
-      start: 'top 85%',
-    });
-  }, []);
+  }, [vehicles]);
 
   return (
     <section ref={sectionRef} className="section-padding">
       <div className="container-main">
         {/* Section Header */}
-        <div className="popular-animate flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12" style={{ opacity: 0 }}>
+        <div className="popular-animate flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8" >
           <div>
             <p className="text-caption text-primary-accent mb-2">
               Curated Selection
@@ -63,12 +57,12 @@ export function PopularVehicles({ vehicles }: PopularVehiclesProps) {
         </div>
 
         {/* Vehicle Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="vehicle-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {vehicles.map((vehicle, index) => (
             <div
               key={vehicle.id}
               className="vehicle-card-animate"
-              style={{ opacity: 0 }}
+
             >
               <VehicleCard vehicle={vehicle} index={index} />
             </div>

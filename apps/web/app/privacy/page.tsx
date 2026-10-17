@@ -1,13 +1,13 @@
 export const metadata = {
   title: 'Privacy Policy',
-  description: 'Learn how CAR collects, uses, and protects your personal information.',
+  description: 'Learn how CarPal collects, uses, and protects your personal information.',
 };
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="bg-primary-bg py-16 px-4 sm:px-6 lg:px-8">
+    <div className="page-shell bg-primary-bg container-main">
       <div className="max-w-3xl mx-auto">
-        <div className="mb-12">
+        <div className="mb-8">
           <h1 className="text-display-lg font-semibold text-primary-text mb-4">
             Privacy Policy
           </h1>
@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-heading-md font-semibold mb-4">1. Introduction</h2>
             <p className="text-body-sm leading-relaxed">
-              CAR ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services. Please read this policy carefully. If you do not agree with the terms of this policy, please do not access the site.
+              CarPal ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services. Please read this policy carefully. If you do not agree with the terms of this policy, please do not access the site.
             </p>
           </section>
 

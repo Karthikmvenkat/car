@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Manrope } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -8,6 +8,7 @@ import { FavoritesProvider } from '@/contexts/FavoritesContext';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const googleClientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || '';
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', display: 'swap' });
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,8 +18,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'CAR — Your Next Car, A Better Way',
-    template: '%s | CAR',
+    default: 'CarPal — Find your next chapter',
+    template: '%s | CarPal',
   },
   description:
     'Discover the right car with transparent pricing, thoughtful guidance and a better buying experience.',
@@ -26,14 +27,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://trycar.com',
-    siteName: 'CAR',
-    title: 'CAR — Your Next Car, A Better Way',
+    siteName: 'CarPal',
+    title: 'CarPal — Find your next chapter',
     description:
       'Discover the right car with transparent pricing, thoughtful guidance and a better buying experience.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CAR — Your Next Car, A Better Way',
+    title: 'CarPal — Find your next chapter',
     description:
       'Discover the right car with transparent pricing, thoughtful guidance and a better buying experience.',
   },
@@ -49,13 +50,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${manrope.variable}`}>
       <body className="min-h-screen bg-primary-bg text-primary-text font-sans">
         <GoogleOAuthProvider clientId={googleClientId}>
           <AuthProvider>
             <FavoritesProvider>
               <Navbar />
-              <main className="min-h-screen">{children}</main>
+              <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] bg-white p-3 rounded-lg">Skip to content</a>
+              <main tabIndex={-1} id="main-content" className="min-h-screen">{children}</main>
               <Footer />
             </FavoritesProvider>
           </AuthProvider>

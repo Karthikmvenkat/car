@@ -63,12 +63,12 @@ function SignInForm() {
       )}
 
       {error && (
-        <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl text-body-sm text-red-800">
+        <div role="alert" className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl text-body-sm text-red-800">
           {error}
         </div>
       )}
 
-      <div className="bg-white rounded-2xl border border-primary-border p-8">
+      <div className="bg-white rounded-2xl border border-primary-border p-5 sm:p-6">
         {/* Google Sign In */}
         <div className="flex justify-center mb-6">
           <GoogleLogin
@@ -76,7 +76,7 @@ function SignInForm() {
             onError={handleGoogleError}
             theme="outline"
             size="large"
-            width="100%"
+            width="250"
             text="signin_with"
           />
         </div>
@@ -166,7 +166,7 @@ function SignInForm() {
 
 export default function SignInPage() {
   return (
-    <div className="pt-32 pb-20 min-h-screen flex items-center">
+    <div className="page-shell min-h-screen flex items-center">
       <div className="container-main w-full">
         <div className="max-w-md mx-auto">
           <div className="text-center mb-8">
@@ -174,7 +174,7 @@ export default function SignInPage() {
               Welcome Back
             </h1>
             <p className="text-body-md text-primary-muted">
-              Sign in to your CAR account
+              Sign in to your CarPal account
             </p>
           </div>
 

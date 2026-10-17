@@ -23,8 +23,12 @@ export function useGsapContext(
     if (!scope.current) return;
 
     try {
-      const ctx = gsap.context(callback, scope);
-      return () => ctx.revert();
+      const media = gsap.matchMedia();
+      media.add('(prefers-reduced-motion: no-preference)', () => {
+        const ctx = gsap.context(callback, scope);
+        return () => ctx.revert();
+      });
+      return () => media.revert();
     } catch (error) {
       console.error('GSAP context error:', error);
       // Force visibility if GSAP fails
@@ -139,6 +143,7 @@ export function createScrollReveal(
     y?: number;
     duration?: number;
     stagger?: number;
+    delay?: number;
     start?: string;
     once?: boolean;
     ease?: string;
@@ -148,31 +153,22 @@ export function createScrollReveal(
     y = 30,
     duration = 0.7,
     stagger = 0.1,
+    delay = 0,
     start = 'top 85%',
     once = true,
     ease = 'power2.out',
   } = options;
 
-  return gsap.fromTo(
-    elements as gsap.TweenTarget,
-    {
-      y,
-      autoAlpha: 0,
-    },
-    {
-      autoAlpha: 1,
-      y: 0,
-      duration,
-      stagger,
-      ease,
-      scrollTrigger: {
-        trigger: (Array.isArray(elements) ? elements[0] : elements) as Element,
-        start,
-        toggleActions: once ? 'play none none none' : 'play reverse play reverse',
-        once: once,
-      },
+  const targets = gsap.utils.toArray<Element>(elements as gsap.DOMTarget);
+  // Each item watches its own position, so later rows never animate off screen.
+  return targets.map((target, index) => gsap.fromTo(target,
+    { y: Math.min(y, 18), opacity: 0 },
+    { opacity: 1, y: 0, duration: Math.min(duration, .5),
+      delay: Math.min(delay + index * stagger, .15), ease, clearProps: 'transform,opacity',
+      scrollTrigger: { trigger: target, start, once,
+        toggleActions: 'play none none none' },
     }
-  );
+  ));
 }
 
 /**

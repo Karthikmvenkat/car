@@ -567,8 +567,8 @@ export const demoVehicles: Vehicle[] = [
     images: [
       {
         id: 'img-15',
-        url: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80&auto=format&fit=crop',
-        alt: '2024 Kia Sonet Imperial Blue',
+        url: 'https://www.kia.com/content/dam/kia2/in/en/images/360vr/sonet/sxw5k2g1uhh078/exterior/mpb/09-d.png',
+        alt: 'Kia Sonet Imperial Blue — illustrative trim',
         order: 0,
         isPrimary: true,
       },
@@ -1197,14 +1197,14 @@ export function searchVehicles(filters: {
   sortBy?: string;
   page?: number;
   limit?: number;
-}): {
+}, inventory: Vehicle[] = demoVehicles): {
   vehicles: Vehicle[];
   total: number;
   page: number;
   limit: number;
   totalPages: number;
 } {
-  let results = [...demoVehicles];
+  let results = [...inventory];
 
   if (filters.query) {
     const q = filters.query.toLowerCase();

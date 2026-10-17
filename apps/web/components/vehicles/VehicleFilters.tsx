@@ -14,7 +14,7 @@ const bodyStyles = [
   'Wagon',
 ];
 
-const fuelTypes = ['', 'Gasoline', 'Diesel', 'Electric', 'Hybrid', 'Plug-in Hybrid'];
+const fuelTypes = ['', 'Petrol', 'Gasoline', 'Diesel', 'Electric', 'Hybrid', 'Plug-in Hybrid', 'CNG'];
 const conditions = ['', 'New', 'Used', 'Certified'];
 const sortOptions = [
   { value: 'newest', label: 'Recently Added' },
@@ -38,17 +38,18 @@ export function VehicleFilters({ makes }: { makes: string[] }) {
       }
       // Reset to page 1 when filters change
       params.delete('page');
-      router.push(`/vehicles?${params.toString()}`);
+      router.push(`/vehicles?${params.toString()}`, { scroll: false });
     },
     [router, searchParams]
   );
 
   const selectClass =
-    'px-3 py-2.5 bg-white border border-primary-border rounded-lg text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent/30 transition-colors cursor-pointer';
+    'min-w-0 max-w-full flex-1 sm:flex-none px-3 py-2.5 bg-white border border-primary-border rounded-lg text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent/30 transition-colors cursor-pointer';
 
   return (
     <div className="flex flex-wrap items-center gap-3">
       <select
+        aria-label="Filter by make"
         value={searchParams.get('make') || ''}
         onChange={(e) => updateFilter('make', e.target.value)}
         className={selectClass}
@@ -62,6 +63,7 @@ export function VehicleFilters({ makes }: { makes: string[] }) {
       </select>
 
       <select
+        aria-label="Filter by body type"
         value={searchParams.get('bodyStyle') || ''}
         onChange={(e) => updateFilter('bodyStyle', e.target.value)}
         className={selectClass}
@@ -74,6 +76,7 @@ export function VehicleFilters({ makes }: { makes: string[] }) {
       </select>
 
       <select
+        aria-label="Filter by fuel"
         value={searchParams.get('fuelType') || ''}
         onChange={(e) => updateFilter('fuelType', e.target.value)}
         className={selectClass}
@@ -86,6 +89,7 @@ export function VehicleFilters({ makes }: { makes: string[] }) {
       </select>
 
       <select
+        aria-label="Filter by condition"
         value={searchParams.get('condition') || ''}
         onChange={(e) => updateFilter('condition', e.target.value)}
         className={selectClass}
@@ -98,6 +102,7 @@ export function VehicleFilters({ makes }: { makes: string[] }) {
       </select>
 
       <select
+        aria-label="Sort vehicles"
         value={searchParams.get('sortBy') || 'newest'}
         onChange={(e) => updateFilter('sortBy', e.target.value)}
         className={selectClass}

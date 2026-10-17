@@ -1,25 +1,19 @@
 'use client';
 
 import Link from 'next/link';
-import { useGsapContext, createScrollReveal, createParallax, prefersReducedMotion } from '@/hooks/useGsap';
+import { useGsapContext, createScrollReveal, prefersReducedMotion } from '@/hooks/useGsap';
 
 export function EditorialBanner() {
   const sectionRef = useGsapContext((ctx) => {
     if (prefersReducedMotion()) return;
 
     createScrollReveal('.editorial-animate', {
-      y: 30,
-      duration: 0.7,
+      y: 16,
+      duration: 0.45,
       stagger: 0.1,
       start: 'top 80%',
     });
 
-    createParallax('.editorial-parallax', {
-      y: -40,
-      start: 'top bottom',
-      end: 'bottom top',
-      scrub: 1,
-    });
   }, []);
 
   return (
@@ -31,7 +25,7 @@ export function EditorialBanner() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="order-2 lg:order-1">
-            <div className="editorial-animate" style={{ opacity: 0 }}>
+            <div className="editorial-animate" >
               <p className="text-caption text-primary-accent mb-3">
                 Featured Collection
               </p>
@@ -70,18 +64,18 @@ export function EditorialBanner() {
             </div>
 
             {/* Stats */}
-            <div className="editorial-animate flex gap-8 mt-12 pt-8 border-t border-white/10" style={{ opacity: 0 }}>
+            <div className="editorial-animate flex gap-8 mt-12 pt-8 border-t border-white/10" >
               <div>
-                <p className="text-2xl font-bold text-white">30+</p>
-                <p className="text-caption text-white/40 mt-1">Electric Models</p>
+                <p className="text-lg font-bold text-white">Electric</p>
+                <p className="text-caption text-white/60 mt-1">Explore the collection</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-white">200+</p>
-                <p className="text-caption text-white/40 mt-1">Charging Partners</p>
+                <p className="text-lg font-bold text-white">Hybrid</p>
+                <p className="text-caption text-white/60 mt-1">Find your balance</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-white">0</p>
-                <p className="text-caption text-white/40 mt-1">Emissions</p>
+                <p className="text-lg font-bold text-white">Compare</p>
+                <p className="text-caption text-white/60 mt-1">Make your choice</p>
               </div>
             </div>
           </div>

@@ -62,10 +62,10 @@ export function HowItWorks() {
     <section ref={sectionRef} className="section-padding bg-primary-surface">
       <div className="container-main">
         {/* Header */}
-        <div className="hiw-header text-center max-w-2xl mx-auto mb-16" style={{ opacity: 0 }}>
+        <div className="hiw-header text-center max-w-2xl mx-auto mb-16" >
           <p className="text-caption text-primary-accent mb-2">Simple Process</p>
           <h2 className="text-display-md font-bold text-primary-text tracking-tight">
-            How CAR Works
+            How CarPal Works
           </h2>
           <p className="text-body-lg text-primary-muted mt-4">
             A streamlined experience designed to make finding your next car
@@ -79,7 +79,7 @@ export function HowItWorks() {
             <div
               key={step.number}
               className="hiw-step relative bg-white rounded-2xl p-8 border border-primary-border hover:shadow-lg hover:border-primary-accent/30 transition-all duration-300"
-              style={{ opacity: 0 }}
+
             >
               {/* Step Number */}
               <div className="absolute -top-4 left-8 px-3 py-1 bg-primary-accent text-white text-caption rounded-full">

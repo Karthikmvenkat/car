@@ -7,6 +7,7 @@ export default function AdminSettingsPage() {
 
   return (
     <div className="space-y-6">
+      <p role="note" className="p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm">This editor is a preview of existing configuration fields. Server persistence is not connected; use the inventory screens for live vehicle changes.</p>
       <div>
         <h1 className="text-heading-md font-semibold text-primary-text mb-1">
           Settings
@@ -16,7 +17,7 @@ export default function AdminSettingsPage() {
         </p>
       </div>
 
-      <div className="flex gap-1 bg-gray-100 rounded-lg p-1 w-fit">
+      <div className="flex flex-wrap gap-1 bg-gray-100 rounded-lg p-1 w-fit max-w-full">
         {[
           { id: 'general', label: 'General' },
           { id: 'contact', label: 'Contact Info' },
@@ -46,7 +47,7 @@ export default function AdminSettingsPage() {
               </label>
               <input
                 type="text"
-                defaultValue="CAR"
+                defaultValue="CarPal"
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-accent focus:border-transparent"
               />
             </div>
@@ -83,7 +84,7 @@ export default function AdminSettingsPage() {
             </div>
           </div>
           <div className="flex justify-end pt-4 border-t border-gray-100">
-            <button className="btn-primary">Save Settings</button>
+            <button disabled title="Server persistence is not configured" className="btn-primary opacity-50 cursor-not-allowed">Save Settings</button>
           </div>
         </div>
       )}
@@ -123,7 +124,7 @@ export default function AdminSettingsPage() {
             />
           </div>
           <div className="flex justify-end pt-4 border-t border-gray-100">
-            <button className="btn-primary">Save Contact Info</button>
+            <button disabled title="Server persistence is not configured" className="btn-primary opacity-50 cursor-not-allowed">Save Contact Info</button>
           </div>
         </div>
       )}
@@ -153,7 +154,7 @@ export default function AdminSettingsPage() {
             ))}
           </div>
           <div className="flex justify-end pt-4 border-t border-gray-100">
-            <button className="btn-primary">Save Preferences</button>
+            <button disabled title="Server persistence is not configured" className="btn-primary opacity-50 cursor-not-allowed">Save Preferences</button>
           </div>
         </div>
       )}
@@ -177,7 +178,7 @@ export default function AdminSettingsPage() {
                     {integration.status}
                   </p>
                 </div>
-                <button className={`px-3 py-1.5 rounded-lg text-caption font-medium transition-colors ${
+                <button disabled title="Integration setup is not connected" className={`px-3 py-1.5 rounded-lg text-caption font-medium transition-colors ${
                   integration.configured
                     ? 'bg-gray-50 text-primary-muted hover:bg-gray-100'
                     : 'bg-primary-surface text-primary-accent hover:bg-primary-surface/80'

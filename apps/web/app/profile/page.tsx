@@ -64,7 +64,7 @@ export default function ProfilePage() {
 
   if (authLoading || !user) {
     return (
-      <div className="pt-32 pb-20 min-h-screen flex items-center">
+      <div className="page-shell min-h-screen flex items-center">
         <div className="container-main w-full text-center">
           <p className="text-body-md text-primary-muted">Loading...</p>
         </div>
@@ -73,7 +73,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="pt-32 pb-20 min-h-screen">
+    <div className="page-shell min-h-screen">
       <div className="container-main w-full">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">

@@ -60,6 +60,8 @@ export default function RegisterPage() {
     }
 
     setErrors(newErrors);
+    const firstInvalid=Object.keys(newErrors)[0];
+    if(firstInvalid)document.getElementById(firstInvalid)?.focus();
     return Object.keys(newErrors).length === 0;
   };
 
@@ -105,14 +107,14 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="min-h-screen bg-primary-bg py-12 px-4 sm:px-6 lg:px-8">
+    <div className="page-shell min-h-screen bg-primary-bg px-4 sm:px-6 lg:px-8">
       <div className="max-w-md mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-display-sm font-semibold text-primary-text mb-2">
             Create your account
           </h1>
           <p className="text-body-sm text-primary-muted">
-            Join CAR to save vehicles, track enquiries, and more
+            Join CarPal to save vehicles, track enquiries, and more
           </p>
         </div>
 
@@ -133,7 +135,7 @@ export default function RegisterPage() {
               onError={handleGoogleError}
               theme="outline"
               size="large"
-              width="100%"
+              width="250"
               text="signup_with"
             />
           </div>
@@ -159,6 +161,8 @@ export default function RegisterPage() {
               </label>
               <input
                 id="firstName"
+                aria-invalid={Boolean(errors.firstName)}
+                aria-describedby={errors.firstName?'firstName-error':undefined}
                 name="firstName"
                 type="text"
                 value={formData.firstName}
@@ -171,7 +175,7 @@ export default function RegisterPage() {
                 placeholder="John"
               />
               {errors.firstName && (
-                <p className="mt-1 text-caption text-red-600">{errors.firstName}</p>
+                <p id="firstName-error" className="mt-1 text-caption text-red-600">{errors.firstName}</p>
               )}
             </div>
 
@@ -184,6 +188,8 @@ export default function RegisterPage() {
               </label>
               <input
                 id="lastName"
+                aria-invalid={Boolean(errors.lastName)}
+                aria-describedby={errors.lastName?'lastName-error':undefined}
                 name="lastName"
                 type="text"
                 value={formData.lastName}
@@ -194,7 +200,7 @@ export default function RegisterPage() {
                 placeholder="Doe"
               />
               {errors.lastName && (
-                <p className="mt-1 text-caption text-red-600">{errors.lastName}</p>
+                <p id="lastName-error" className="mt-1 text-caption text-red-600">{errors.lastName}</p>
               )}
             </div>
 
@@ -207,6 +213,8 @@ export default function RegisterPage() {
               </label>
               <input
                 id="email"
+                aria-invalid={Boolean(errors.email)}
+                aria-describedby={errors.email?'email-error':undefined}
                 name="email"
                 type="email"
                 value={formData.email}
@@ -217,7 +225,7 @@ export default function RegisterPage() {
                 placeholder="john@example.com"
               />
               {errors.email && (
-                <p className="mt-1 text-caption text-red-600">{errors.email}</p>
+                <p id="email-error" className="mt-1 text-caption text-red-600">{errors.email}</p>
               )}
             </div>
 
@@ -248,6 +256,8 @@ export default function RegisterPage() {
               </label>
               <input
                 id="password"
+                aria-invalid={Boolean(errors.password)}
+                aria-describedby={errors.password?'password-error':undefined}
                 name="password"
                 type="password"
                 value={formData.password}
@@ -258,7 +268,7 @@ export default function RegisterPage() {
                 placeholder="At least 8 characters"
               />
               {errors.password && (
-                <p className="mt-1 text-caption text-red-600">{errors.password}</p>
+                <p id="password-error" className="mt-1 text-caption text-red-600">{errors.password}</p>
               )}
             </div>
 
@@ -271,6 +281,8 @@ export default function RegisterPage() {
               </label>
               <input
                 id="confirmPassword"
+                aria-invalid={Boolean(errors.confirmPassword)}
+                aria-describedby={errors.confirmPassword?'confirmPassword-error':undefined}
                 name="confirmPassword"
                 type="password"
                 value={formData.confirmPassword}
@@ -281,7 +293,7 @@ export default function RegisterPage() {
                 placeholder="Re-enter your password"
               />
               {errors.confirmPassword && (
-                <p className="mt-1 text-caption text-red-600">
+                <p id="confirmPassword-error" className="mt-1 text-caption text-red-600">
                   {errors.confirmPassword}
                 </p>
               )}
@@ -291,6 +303,9 @@ export default function RegisterPage() {
               <label className="flex items-start gap-3 cursor-pointer">
                 <input
                   type="checkbox"
+                  id="agreeToTerms"
+                  aria-invalid={Boolean(errors.agreeToTerms)}
+                  aria-describedby={errors.agreeToTerms?'agreeToTerms-error':undefined}
                   name="agreeToTerms"
                   checked={formData.agreeToTerms}
                   onChange={handleChange}
@@ -314,7 +329,7 @@ export default function RegisterPage() {
                 </span>
               </label>
               {errors.agreeToTerms && (
-                <p className="mt-1 text-caption text-red-600">{errors.agreeToTerms}</p>
+                <p id="agreeToTerms-error" className="mt-1 text-caption text-red-600">{errors.agreeToTerms}</p>
               )}
             </div>
           </div>

@@ -108,6 +108,18 @@ model Vehicle {
   createdAt     DateTime         @default(now())
   updatedAt     DateTime         @updatedAt
 
+  // 3D configurator / asset pipeline
+  generation        String?
+  market            String?
+  interiorOptions   String[]          @default([])
+  wheelOptions      String[]          @default([])
+  specifications    Json?
+  manufacturerUrl   String?
+  priceVerified     Boolean           @default(false)
+  assetStatus       AssetPipelineStatus @default(DRAFT)
+  publicationStatus PublicationStatus @default(UNPUBLISHED)
+  configuratorPublishedAt DateTime?
+
   brand         Brand            @relation(fields: [brandId], references: [id])
   model         Model            @relation(fields: [modelId], references: [id])
   location      Location?        @relation(fields: [locationId], references: [id])
@@ -116,7 +128,13 @@ model Vehicle {
   favorites     Favorite[]
   enquiries     Enquiry[]
   bookings      TestDriveBooking[]
+  assets        VehicleAsset[]
+  colours       VehicleColour[]
+  assetJobs     AssetGenerationJob[]
+  savedConfigurations SavedConfiguration[]
 
+  @@index([assetStatus])
+  @@index([publicationStatus])
   @@index([brandId])
   @@index([modelId])
   @@index([status])
@@ -165,6 +183,166 @@ model VehicleFeature {
   category  String?
 
   vehicle   Vehicle @relation(fields: [vehicleId], references: [id], onDelete: Cascade)
+
+  @@index([vehicleId])
+}
+
+// ============================================
+// 3D CONFIGURATOR — ASSETS, COLOURS, JOBS
+// ============================================
+
+enum AssetPipelineStatus {
+  DRAFT
+  SEARCHING_MODEL
+  EXACT_MODEL_FOUND
+  MODEL_UNAVAILABLE
+  AI_PREVIEW_GENERATION
+  PREPARING_3D_ASSETS
+  MAPPING_MATERIALS
+  GENERATING_PREVIEWS
+  VALIDATING_ASSETS
+  READY_FOR_REVIEW
+  APPROVED
+  PUBLISHED
+  FAILED
+}
+
+enum PublicationStatus {
+  UNPUBLISHED
+  PUBLISHED
+}
+
+enum AssetType {
+  MODEL_3D_SOURCE      // original licensed / uploaded GLB
+  MODEL_3D_WEB         // optimised GLB delivered to browsers
+  MODEL_CANDIDATE      // discovered, not yet imported
+  REFERENCE_IMAGE      // admin-supplied reference photo
+  RENDER_PREVIEW       // rendered from the actual 3D geometry
+  AI_PREVIEW           // AI-generated marketing image (not a 3D asset)
+  THUMBNAIL
+}
+
+enum IdentityVerificationStatus {
+  UNVERIFIED
+  VERIFIED_EXACT        // admin confirmed it matches make/model/year/generation
+  APPROVED_APPROXIMATE  // admin explicitly approved as an approximate model
+  REJECTED
+  NOT_APPLICABLE        // e.g. reference photos
+}
+
+enum AssetProcessingStatus {
+  PENDING
+  PROCESSING
+  READY
+  NEEDS_PREPARATION     // e.g. no separable body-paint material
+  FAILED
+}
+
+enum JobStatus {
+  QUEUED
+  RUNNING
+  WAITING_FOR_INPUT     // e.g. exact model unavailable, needs admin upload/selection
+  COMPLETED
+  FAILED
+  CANCELLED
+}
+
+enum ColourAvailability {
+  AVAILABLE
+  DISCONTINUED
+  UNVERIFIED
+}
+
+model VehicleAsset {
+  id                         String                     @id @default(cuid())
+  vehicleId                  String
+  assetType                  AssetType
+  assetUrl                   String?
+  storageKey                 String?
+  previewUrl                 String?
+  label                      String?                    // e.g. "front-three-quarter", "colour:Glacier White Pearl"
+  sourceProvider             String                     // "admin-upload" | "sketchfab" | "internal-catalogue" | "openai" | "viewer-render"
+  sourceUrl                  String?
+  externalId                 String?
+  licenceDetails             Json?
+  identityVerificationStatus IdentityVerificationStatus @default(UNVERIFIED)
+  assetProcessingStatus      AssetProcessingStatus      @default(PENDING)
+  matchConfidence            Float?
+  materialMappings           Json?
+  validationReport           Json?
+  metadata                   Json?
+  contentHash                String?
+  fileSizeBytes              Int?
+  isGenerated                Boolean                    @default(false)
+  createdAt                  DateTime                   @default(now())
+  updatedAt                  DateTime                   @updatedAt
+
+  vehicle Vehicle @relation(fields: [vehicleId], references: [id], onDelete: Cascade)
+
+  @@index([vehicleId, assetType])
+  @@index([contentHash])
+  @@index([sourceProvider, externalId])
+}
+
+model VehicleColour {
+  id                    String             @id @default(cuid())
+  vehicleId             String
+  name                  String
+  manufacturerPaintCode String?
+  previewHex            String
+  finish                String             @default("metallic") // solid | metallic | pearl | matte
+  renderingParameters   Json?              // { metalness, roughness, clearcoat, clearcoatRoughness }
+  availabilityStatus    ColourAvailability @default(UNVERIFIED)
+  sortOrder             Int                @default(0)
+  createdAt             DateTime           @default(now())
+  updatedAt             DateTime           @updatedAt
+
+  vehicle Vehicle @relation(fields: [vehicleId], references: [id], onDelete: Cascade)
+
+  @@unique([vehicleId, name])
+  @@index([vehicleId])
+}
+
+model AssetGenerationJob {
+  id              String    @id @default(cuid())
+  vehicleId       String
+  jobStatus       JobStatus @default(QUEUED)
+  progress        Int       @default(0)
+  processingStage AssetPipelineStatus @default(DRAFT)
+  stagesCompleted String[]  @default([])
+  errorMessage    String?
+  errorStage      AssetPipelineStatus?
+  retryCount      Int       @default(0)
+  maxRetries      Int       @default(3)
+  nextRunAt       DateTime  @default(now())
+  lockedAt        DateTime?
+  dedupeKey       String?
+  log             Json?     // [{ at, stage, level, message }]
+  costLog         Json?     // [{ provider, operation, units, estimatedUsd }]
+  requestedById   String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  completedAt     DateTime?
+
+  vehicle Vehicle @relation(fields: [vehicleId], references: [id], onDelete: Cascade)
+
+  @@index([jobStatus, nextRunAt])
+  @@index([vehicleId])
+  @@index([dedupeKey])
+}
+
+model SavedConfiguration {
+  id              String   @id @default(cuid())
+  vehicleId       String
+  selectedVariant String?
+  selectedColour  String?
+  selectedOptions Json?
+  cameraState     Json?
+  shareToken      String   @unique
+  userId          String?
+  createdAt       DateTime @default(now())
+
+  vehicle Vehicle @relation(fields: [vehicleId], references: [id], onDelete: Cascade)
 
   @@index([vehicleId])
 }

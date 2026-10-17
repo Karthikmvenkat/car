@@ -1,4 +1,5 @@
 export interface Vehicle {
+  detailsHref?: string;
   id: string;
   slug: string;
   make: string;

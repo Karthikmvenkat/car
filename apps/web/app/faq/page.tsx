@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions',
-  description: 'Find answers to common questions about CAR, our vehicles, and the buying process.',
+  description: 'Find answers to common questions about CarPal, our vehicles, and the buying process.',
 };
 
 const faqs = [
@@ -11,16 +11,16 @@ const faqs = [
     category: 'General',
     questions: [
       {
-        q: 'What is CAR?',
-        a: 'CAR is a premium automotive platform that helps you discover, explore, and acquire your next vehicle. We curate a selection of quality vehicles and provide transparent information, expert guidance, and a streamlined buying experience.',
+        q: 'What is CarPal?',
+        a: 'CarPal is a premium automotive platform that helps you discover, explore, and acquire your next vehicle. We curate a selection of quality vehicles and provide transparent information, expert guidance, and a streamlined buying experience.',
       },
       {
-        q: 'How does CAR make money?',
-        a: 'We work with verified sellers and dealerships to list quality vehicles on our platform. When a vehicle is sold through CAR, we receive a referral fee. This allows us to provide our discovery and guidance services to buyers at no cost.',
+        q: 'How does CarPal make money?',
+        a: 'We work with verified sellers and dealerships to list quality vehicles on our platform. When a vehicle is sold through CarPal, we receive a referral fee. This allows us to provide our discovery and guidance services to buyers at no cost.',
       },
       {
-        q: 'Is CAR available in my area?',
-        a: 'CAR currently serves customers across the United States. Our inventory spans multiple locations, and we can help you find vehicles both locally and through our network of trusted partners.',
+        q: 'Is CarPal available in my area?',
+        a: 'CarPal currently serves customers across the United States. Our inventory spans multiple locations, and we can help you find vehicles both locally and through our network of trusted partners.',
       },
     ],
   },
@@ -41,7 +41,7 @@ const faqs = [
       },
       {
         q: 'What if I want to trade in my current vehicle?',
-        a: 'Trade-in options are coming soon. In the meantime, you can sell your current vehicle independently and use the proceeds toward your CAR purchase. Our team can provide guidance on valuation if needed.',
+        a: 'Trade-in options are coming soon. In the meantime, you can sell your current vehicle independently and use the proceeds toward your CarPal purchase. Our team can provide guidance on valuation if needed.',
       },
     ],
   },
@@ -49,7 +49,7 @@ const faqs = [
     category: 'Buying Process',
     questions: [
       {
-        q: 'How do I purchase a vehicle through CAR?',
+        q: 'How do I purchase a vehicle through CarPal?',
         a: 'Once you\'ve found a vehicle you love, you can send an enquiry or schedule a test drive. Our team will connect you with the seller, and you\'ll work directly with them to complete the purchase. We guide you through every step.',
       },
       {
@@ -79,7 +79,7 @@ const faqs = [
 
 export default function FAQPage() {
   return (
-    <div className="pt-32 pb-20">
+    <div className="page-shell">
       <div className="container-main">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -88,7 +88,7 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="text-body-lg text-primary-muted">
-            Find answers to common questions about CAR, our vehicles, and the
+            Find answers to common questions about CarPal, our vehicles, and the
             buying process. Can&apos;t find what you&apos;re looking for?{' '}
             <Link
               href="/contact"

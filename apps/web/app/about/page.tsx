@@ -2,30 +2,30 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About CAR',
+  title: 'About CarPal',
   description:
-    'Learn about CAR\'s mission to transform the car buying experience with transparency, expertise, and care.',
+    'Learn about CarPal\'s mission to transform the car buying experience with transparency, expertise, and care.',
 };
 
 export default function AboutPage() {
   return (
-    <div className="pt-32 pb-20">
+    <div className="page-shell">
       <div className="container-main">
         {/* Hero */}
-        <div className="max-w-3xl mx-auto text-center mb-20">
-          <p className="text-caption text-primary-accent mb-2">About CAR</p>
+        <div className="max-w-3xl mx-auto text-center mb-10 md:mb-16">
+          <p className="text-caption text-primary-accent mb-2">About CarPal</p>
           <h1 className="text-display-lg font-bold text-primary-text tracking-tight mb-6">
             A Better Way to Find Your Car
           </h1>
           <p className="text-body-lg text-primary-muted leading-relaxed">
             We believe buying a car should be an exciting experience, not a
-            stressful one. CAR was built to bring transparency, expertise,
+            stressful one. CarPal was built to bring transparency, expertise,
             and genuine care to the automotive buying journey.
           </p>
         </div>
 
         {/* Values */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 md:mb-16">
           {[
             {
               title: 'Transparency First',
@@ -69,7 +69,7 @@ export default function AboutPage() {
           </h2>
           <p className="text-body-lg text-primary-muted mb-8 max-w-lg mx-auto">
             Browse our curated collection of premium vehicles and experience the
-            CAR difference.
+            CarPal difference.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/vehicles" className="btn-primary px-8 py-3.5">
