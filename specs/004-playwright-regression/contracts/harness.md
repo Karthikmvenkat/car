@@ -1,0 +1,6 @@
+# Harness contract
+npm run test:e2e requires explicitly supplied guarded CAR_TEST_DATABASE_URL. On Windows portable helper -Suite e2e creates a new loopback cluster first. No DATABASE_URL/live-service fallback. Runner sets fresh CAR_TEST_DATABASE_SCHEMA, CAR_E2E_RUN_ID, CAR_E2E_WEB_URL, CAR_E2E_API_URL, CAR_E2E_ARTIFACT_DIR, private storage and local public assets; validates loopback URLs. Direct Playwright without owned env fails closed. Optional CLI args forwarded as argv, no shell interpolation.
+
+Exit nonzero on startup/test/cleanup failure. Reports include actual failures; retries0. Desktop/mobile browser projects and API-only project are separate. Screenshots/traces on failure only, ignored/private synthetic artifacts; no production auth state. Only owned child processes/schema are stopped/removed. No recursive filesystem deletion. Existing developer services remain running.
+
+Readiness checks use an unpredictable database-backed API marker and a run-specific response header on the cached frontend copy, so a port collision cannot accidentally reuse an unrelated service. Header/config instrumentation exists only in the ignored copy. lifecycle.json records schema/process cleanup without credentials.

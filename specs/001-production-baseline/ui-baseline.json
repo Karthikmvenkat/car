@@ -1,0 +1,375 @@
+{
+  "baselineCommit": "7ec4e718c9d81125467d1551387ddcc5c21a8fa5",
+  "captured": "2026-10-17",
+  "kind": "source-integrity-only",
+  "files": [
+    {
+      "path": "apps/web/.dockerignore",
+      "sha256": "222233349b35a6b97519161182b6b839aba768e873575c333175d212c0947441"
+    },
+    {
+      "path": "apps/web/.env.production",
+      "sha256": "5f3225267d28f53a377781025e47a1913e4edf1f18e74bcb04da4adf2ab0f8ea"
+    },
+    {
+      "path": "apps/web/.eslintrc.json",
+      "sha256": "6d064f510db367d7d8e3bed8948036c7297e5c14e7143b1319f6c6a3bb24405b"
+    },
+    {
+      "path": "apps/web/Dockerfile",
+      "sha256": "7344cfae2bad5e86fc060a4ced062d3ebe28dd16198c3d0d27cf07c73fc0628d"
+    },
+    {
+      "path": "apps/web/app/about/page.tsx",
+      "sha256": "21d60fe75e3eeea681a703f3127859b71f87fa4bd1672572c509eb4d81678525"
+    },
+    {
+      "path": "apps/web/app/admin/3d-library/page.tsx",
+      "sha256": "ce3fcdec0a4eccb1d110e6c7e1cacae7c964fdec9d19514b1a04738080db414d"
+    },
+    {
+      "path": "apps/web/app/admin/bookings/page.tsx",
+      "sha256": "200a35a0ea57a7f570253bfc0bcd05fc7a140845077a8fbe8c045e21545dca57"
+    },
+    {
+      "path": "apps/web/app/admin/brands/page.tsx",
+      "sha256": "2fbfbc0d0a614d4143507d115fd60eebb559d8eee5174dd45cb9e1201209bfe8"
+    },
+    {
+      "path": "apps/web/app/admin/content/page.tsx",
+      "sha256": "58674808528a676a9dbcf64dc7b04e140df3051f2b2dd88038735db8c8fc53d1"
+    },
+    {
+      "path": "apps/web/app/admin/customers/page.tsx",
+      "sha256": "047caa1b3f87cdb2429094a81be5e3b8903ca9b4e17fb51ec996be7a8833764a"
+    },
+    {
+      "path": "apps/web/app/admin/enquiries/page.tsx",
+      "sha256": "8fc0cf00a35dacc50c842ec7a634be4dcda421aedb4f954f1bca0f11d7c46488"
+    },
+    {
+      "path": "apps/web/app/admin/faqs/page.tsx",
+      "sha256": "d37e405ec430fe389804f12218017fc60eb2ef9436d695418e86bd91220b902c"
+    },
+    {
+      "path": "apps/web/app/admin/layout.tsx",
+      "sha256": "9b68e63e8fb39d9122143e6a1c0ac1ac95aa57e07e46a36783ca2d80fb0c0307"
+    },
+    {
+      "path": "apps/web/app/admin/login/page.tsx",
+      "sha256": "9f3aff3ebcbf9a7fc30d35a041edce37bd9639272eaed24d2662b1ca2cad913b"
+    },
+    {
+      "path": "apps/web/app/admin/page.tsx",
+      "sha256": "488bcee16a7efe5d340fe2a35e34efb6fd63795b58f285ca4480511ca6b503b8"
+    },
+    {
+      "path": "apps/web/app/admin/settings/page.tsx",
+      "sha256": "acd023dab00525f898a633f8ec4d13ebe47bcfda973c1469ca3a76653dbfa06c"
+    },
+    {
+      "path": "apps/web/app/admin/testimonials/page.tsx",
+      "sha256": "72ee0d08bb34a32f278018a46248995e609f88bb8c6a38d1dc520bcdb766abeb"
+    },
+    {
+      "path": "apps/web/app/admin/users/page.tsx",
+      "sha256": "bb70e35388b7bba91687cc1f997769436fc5d07e6f1bdd9cac0aef69d9118887"
+    },
+    {
+      "path": "apps/web/app/admin/vehicles/new/page.tsx",
+      "sha256": "ed4cc144a4d131a3f86da51d501fc6e055289cf4932f618f157accc885650454"
+    },
+    {
+      "path": "apps/web/app/admin/vehicles/page.tsx",
+      "sha256": "023bd4d63ff7a19c389f267683af77519946653b5335e4ccefca01beac9d541f"
+    },
+    {
+      "path": "apps/web/app/admin/vehicles/pipeline/page.tsx",
+      "sha256": "ef6a85e8116b7824c33b1c199014dc354a71da18847fff6c3558df4cf3ea3066"
+    },
+    {
+      "path": "apps/web/app/compare/page.tsx",
+      "sha256": "a500849b7cde2a52a2b09b064464c1f8a16a03e103fdedf1d84f5e414facfa45"
+    },
+    {
+      "path": "apps/web/app/configurator/page.tsx",
+      "sha256": "d5a5d97be2431445f8ce053cf18ec1a06c1c77466e02509bfe595c688281a1c5"
+    },
+    {
+      "path": "apps/web/app/contact/page.tsx",
+      "sha256": "a991834ea6f3be663627df93aaa68356e2ab1bd732e5943a671f22301f99e581"
+    },
+    {
+      "path": "apps/web/app/enquire/page.tsx",
+      "sha256": "170dd1eeb90b4a600f3752afcb0d7ecd6926c098644afbd6625a85d0e4f9adaa"
+    },
+    {
+      "path": "apps/web/app/faq/page.tsx",
+      "sha256": "601ad5c6fa6061f7b39ce3a6556ccb3572a6cbd6b8587bfa617fb117b2a2663a"
+    },
+    {
+      "path": "apps/web/app/favorites/page.tsx",
+      "sha256": "060c0cc939cbb5e1c7e2ca9d66ef1c8cb708342563cc2ccb6539e1c3e682ef3a"
+    },
+    {
+      "path": "apps/web/app/finance/page.tsx",
+      "sha256": "f371afa47e9154cc7dcdba43041bd67e2f55f9323aa231bd4d68425fd11c8e75"
+    },
+    {
+      "path": "apps/web/app/forgot-password/page.tsx",
+      "sha256": "fa35acd43fc5870b58d2867cc765f438c8a303e2bd858628df1d3c444d604436"
+    },
+    {
+      "path": "apps/web/app/get-started/page.tsx",
+      "sha256": "fb3fc6c624fd7450255acee15f84c448fe987797c9f629faef42f8723f5ed6a2"
+    },
+    {
+      "path": "apps/web/app/globals.css",
+      "sha256": "193afe29695c7172aad37ff70f9546ff79d878d878a189c2955fca94d6d8d6d5"
+    },
+    {
+      "path": "apps/web/app/how-it-works/page.tsx",
+      "sha256": "50d6ea0923de721fd4d5a6b85a71479187946f6ed47bcb828a5e13635345244b"
+    },
+    {
+      "path": "apps/web/app/layout.tsx",
+      "sha256": "5e9859d7daf2f106938c19c2c616fcf932aa8602711186b256810982e20c6b73"
+    },
+    {
+      "path": "apps/web/app/not-found.tsx",
+      "sha256": "6bbd885e9ce54ba78daeae55b27175b8aaa94c4699392f86b5476b5b2a5f390d"
+    },
+    {
+      "path": "apps/web/app/page.tsx",
+      "sha256": "48dda2fcaedaec08097280282e6057b1eeba922e9457bf3e434e7b8ddd54147e"
+    },
+    {
+      "path": "apps/web/app/privacy/page.tsx",
+      "sha256": "6e9f74282dc958270d96106fb1f2eb37f32576546edb1168026a2780e26b0e97"
+    },
+    {
+      "path": "apps/web/app/profile/page.tsx",
+      "sha256": "b3fa01c9470c96c0eab1ef1336ff6a1e4c89b9771209b650360f7b4c40cb61e3"
+    },
+    {
+      "path": "apps/web/app/register/page.tsx",
+      "sha256": "1d5d21bd79e3577e4330ea2a35288e5052b92e98fd96331c6e63ecb1e71e28d0"
+    },
+    {
+      "path": "apps/web/app/sell/page.tsx",
+      "sha256": "4d82fdc63f3d4964579eec3a62fd2e34c37f4d1408e4b0351235eab83e4433fa"
+    },
+    {
+      "path": "apps/web/app/signin/page.tsx",
+      "sha256": "c820cdb3ae2cc593f2a1b258e49e3a518f604f069d48977ca066282c9fd5b54a"
+    },
+    {
+      "path": "apps/web/app/stories/page.tsx",
+      "sha256": "85195249022731b0a5678b3f4b7e5187a4255284fed4bd91eb2cbf40a866aa83"
+    },
+    {
+      "path": "apps/web/app/terms/page.tsx",
+      "sha256": "1437fcf76ff9bc6a2ffddd7a65dc8a16cb2b309252084c9bbeb31447788777d8"
+    },
+    {
+      "path": "apps/web/app/test-drive/page.tsx",
+      "sha256": "3345a016f812ba104e41785e2c9bda05825bd65fb767afddc61b9a23864e0265"
+    },
+    {
+      "path": "apps/web/app/vehicles/[slug]/page.tsx",
+      "sha256": "e624f8d253f76f27148b2a4fd82576e734d01dae1f25858aa2b9ee75cbf2d9fd"
+    },
+    {
+      "path": "apps/web/app/vehicles/layout.tsx",
+      "sha256": "af31c144201914bb21bf2b8e0fff71c63c255a90b9a7258854da37786e7c0c9b"
+    },
+    {
+      "path": "apps/web/app/vehicles/page.tsx",
+      "sha256": "c5d87d055a4ea90f232d9d90bea0e1a050af8ea9663a8b1b82e8daf6d04a1a93"
+    },
+    {
+      "path": "apps/web/components/VehicleLeadForm.tsx",
+      "sha256": "ab5408908afde04b6f1855be0be8df0a8274cdf9d65d8e6aaead8ce8fc83d551"
+    },
+    {
+      "path": "apps/web/components/configurator/AdminRecords.tsx",
+      "sha256": "a1e7af7c44273ffeceffb45ccdfc860203c61672ccfb0deff5f04fc0755e4349"
+    },
+    {
+      "path": "apps/web/components/configurator/VehicleViewer.tsx",
+      "sha256": "7b7eadb1636124df1c9625e21723eed0e639a47eae915aadc028cc46b555f872"
+    },
+    {
+      "path": "apps/web/components/configurator/admin-ui.tsx",
+      "sha256": "6563d2846ea873065fd0e6157d4b9b5b6c04467328b3cd4d519e83e5c5eaa355"
+    },
+    {
+      "path": "apps/web/components/home/CtaBanner.tsx",
+      "sha256": "55b9d080d1209dff68043e0624999332f36fa8b92c2f18507581ce87bf81418d"
+    },
+    {
+      "path": "apps/web/components/home/EditorialBanner.tsx",
+      "sha256": "8249780167087a2bd62b51222c45ce7e3e60faf1a2d5b2502a61e70aa8599d90"
+    },
+    {
+      "path": "apps/web/components/home/ExploreCollection.tsx",
+      "sha256": "f07b295ef177404d588a3db5628d213ebc9d9e028faaf597d4b286d4dec14d7e"
+    },
+    {
+      "path": "apps/web/components/home/Hero.tsx",
+      "sha256": "417baef80655a565336393d37721982d8109e5e83c04ee79447b62d50a159a3f"
+    },
+    {
+      "path": "apps/web/components/home/HowItWorks.tsx",
+      "sha256": "96ad53f37ebe0329063ad811cef7c464771cfdc3d91b35ff06848b62c3267471"
+    },
+    {
+      "path": "apps/web/components/home/PopularVehicles.tsx",
+      "sha256": "e7b8697902d551b2d92e8b9554c3fde758b36c850ceb588167fe4ae7ca19ed34"
+    },
+    {
+      "path": "apps/web/components/home/Spotlight.tsx",
+      "sha256": "73bf188fd9fef3ca7d9801bf246ecd74183a59eb47263f429b3a0968f3168259"
+    },
+    {
+      "path": "apps/web/components/home/Testimonials.tsx",
+      "sha256": "c3a37c96d0e052738abef63837f1cc5fda76ce01d67b3d4dcd100f1e9d3ddd79"
+    },
+    {
+      "path": "apps/web/components/home/TrustSection.tsx",
+      "sha256": "455de1f90d3bb9f5c637bc48f03fee66fdd2f8a8c027206f4217dc1f2064d147"
+    },
+    {
+      "path": "apps/web/components/home/VehicleSearch.tsx",
+      "sha256": "bfb45212c3831233e17add74f77958c414bdfbf35cb5f34c1b99a4635e9c6848"
+    },
+    {
+      "path": "apps/web/components/layout/Footer.tsx",
+      "sha256": "7afaa84a697bc88eb6adf917886de79f53f6fe4b814a3e8784c18b92a83a7f13"
+    },
+    {
+      "path": "apps/web/components/layout/MobileMenu.tsx",
+      "sha256": "e588a82cd3a63adc64c4a9d246ac9b42bac3da1e1c73053bb00fc152ede6c907"
+    },
+    {
+      "path": "apps/web/components/layout/Navbar.tsx",
+      "sha256": "f1fe205cbaef66fdc9dc197e5762ec56f75bd4095677b99eff1408039450b3f8"
+    },
+    {
+      "path": "apps/web/components/vehicles/CarViewer3D.tsx",
+      "sha256": "0e883fc71e0cf249b294e0bfb35cc42fdb9177fdd0f65b1e2eb96ecc884f6c52"
+    },
+    {
+      "path": "apps/web/components/vehicles/PublicConfigurator.tsx",
+      "sha256": "9974df682121351bcb14272381cb9a0f73c3859313579f163cb17f93036dfdcf"
+    },
+    {
+      "path": "apps/web/components/vehicles/SaveButton.tsx",
+      "sha256": "e3c3b0f42f3b31939a173e4a9ca2227c557377fdca1888b919dfa223086bdcb2"
+    },
+    {
+      "path": "apps/web/components/vehicles/SonetPhotoPreview.tsx",
+      "sha256": "6e82d9450491428726624f8058d5df412037b8b1aa48ed897c28416961fa2071"
+    },
+    {
+      "path": "apps/web/components/vehicles/VehicleCard.tsx",
+      "sha256": "879a114095a7f5270d917df8111dd1221975a91a8953c841a34a7af178c1aa37"
+    },
+    {
+      "path": "apps/web/components/vehicles/VehicleColorPicker.tsx",
+      "sha256": "7efa64c6be2810c1349e7eabde353279fdda4fd620fc6be1d74a8d92d4723d8b"
+    },
+    {
+      "path": "apps/web/components/vehicles/VehicleFilters.tsx",
+      "sha256": "2fa0b290af2753b9d37d31ac2c52527766a44cf863836c49caad83d7fc9c3997"
+    },
+    {
+      "path": "apps/web/contexts/AuthContext.tsx",
+      "sha256": "52dea9621eeea0a791772bbf3728e1958c6433a3be9df2c7bcf0a1fbcb676f48"
+    },
+    {
+      "path": "apps/web/contexts/FavoritesContext.tsx",
+      "sha256": "9eb3d27e60441aeec038f6e51fa593155e644eb5937a2bd2b954b6594776ec61"
+    },
+    {
+      "path": "apps/web/eslint.config.mjs",
+      "sha256": "531210a6cc7f1184533d3cc5acb38038f8a07352d4e5ea99b57a5eecf9656bdc"
+    },
+    {
+      "path": "apps/web/hooks/useGsap.ts",
+      "sha256": "2aa1b5ffb3c535a3c80c513f6b040ed3db9a38b40526717d5920789cc3eb87a6"
+    },
+    {
+      "path": "apps/web/lib/admin-auth.ts",
+      "sha256": "ab5388051f0b2daf2c50324ace0a2974878aea6ed0fb30767521d595b9a01f74"
+    },
+    {
+      "path": "apps/web/lib/api-client.ts",
+      "sha256": "fe929f97ea8288fe1c1f6d271c8208d95261f52608b04ecc7cab54a4c572f688"
+    },
+    {
+      "path": "apps/web/lib/configurator-types.ts",
+      "sha256": "3207fbf655e49b7bcf2c4c07c99193c6277115102bd482e04b5eee16b4f69c13"
+    },
+    {
+      "path": "apps/web/lib/demo-data.ts",
+      "sha256": "74654b935afa2b6db5faf91fe3dd5ae0d6124b235f4fb6bd51cafefdc8c74826"
+    },
+    {
+      "path": "apps/web/lib/emi.ts",
+      "sha256": "8d7c96e85c7ad0c0ea7003ae1351abd6c1e6c76152b16ca8bc2a925565465e42"
+    },
+    {
+      "path": "apps/web/lib/india-vehicle-catalog.json",
+      "sha256": "c6e3cadc27f54b5dee375c088db7fd768506fd7ebd5e6da592a234307d959ec1"
+    },
+    {
+      "path": "apps/web/lib/three-d-sourcing.json",
+      "sha256": "e61d3148b2da984e1f511ee23c19ea598d5ab287f2d37420bd47698169339686"
+    },
+    {
+      "path": "apps/web/lib/types.ts",
+      "sha256": "c2dd01d053f4cd8b02e4acc398b3266fafa072202bf61f337e7db20a4066ea13"
+    },
+    {
+      "path": "apps/web/lib/use-published-vehicles.ts",
+      "sha256": "5cd6c39c1ff29e162fa3365873ea61b3b9e9b3f1476eef1be276bf1b54d102b7"
+    },
+    {
+      "path": "apps/web/lib/utils.ts",
+      "sha256": "499bb255c6a9f4e97fa7e6c01b8e0dcc0c36132bac354d8d5958c77054f18a4c"
+    },
+    {
+      "path": "apps/web/next-env.d.ts",
+      "sha256": "e462a655754db9df18b4a657454a7b6a88717ffded4e89403b2b3a47c6603fc3"
+    },
+    {
+      "path": "apps/web/next.config.js",
+      "sha256": "a4069ad74c06ddeb24a278f871f1f5a1379b872a7f8ccbfb5be638685f666cf3"
+    },
+    {
+      "path": "apps/web/package.json",
+      "sha256": "9cdd12b4a95275de0e93ede58423d93cda46ca5ef4e383c43194711cac70d4c7"
+    },
+    {
+      "path": "apps/web/postcss.config.js",
+      "sha256": "fa650b380adfabb151a0b352f7135e107e6352345f899060f1c5c231228f94bf"
+    },
+    {
+      "path": "apps/web/public/images/placeholder-car.svg",
+      "sha256": "77a3936e0b99ce14ff4698560e9751eeb63ea7b2af59ec6605b013b1475ca64f"
+    },
+    {
+      "path": "apps/web/tailwind.config.ts",
+      "sha256": "d6f052e32703edeb89fec6ca4a5d3d73288d6181ba3e16a10ea032ea2cc72ebe"
+    },
+    {
+      "path": "apps/web/tsconfig.json",
+      "sha256": "e0fb709e68f8c70bfaaa4bb5a1df183a592e4f0baeff18716a67440ec61b0fc0"
+    },
+    {
+      "path": "apps/web/vercel.json",
+      "sha256": "b03a6ceb86f01ba98b294f4aba583d6398b8ae7d5c74caba7a23ab98120ac06b"
+    }
+  ]
+}

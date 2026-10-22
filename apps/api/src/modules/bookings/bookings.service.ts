@@ -2,6 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
 import { CreateBookingDto } from './dto/create-booking.dto';
 import { UpdateBookingStatusDto } from './dto/update-booking-status.dto';
+import { PUBLIC_VEHICLE_VISIBILITY } from '../../common/public-vehicle-visibility';
 
 @Injectable()
 export class BookingsService {
@@ -9,7 +10,7 @@ export class BookingsService {
 
   async create(dto: CreateBookingDto) {
     const vehicle = await this.prisma.vehicle.findFirst({
-      where: { slug: dto.vehicleSlug },
+      where: { slug: dto.vehicleSlug, ...PUBLIC_VEHICLE_VISIBILITY },
     });
 
     if (!vehicle) {
@@ -26,7 +27,7 @@ export class BookingsService {
         notes: dto.notes,
         status: 'PENDING',
         vehicle: { connect: { id: vehicle.id } },
-        ...(dto.userId ? { user: { connect: { id: dto.userId } } } : {}),
+        // Public caller-supplied userId is not an authenticated identity.
       },
       include: { vehicle: true },
     });

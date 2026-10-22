@@ -1,339 +1,92 @@
-import { Injectable, UnauthorizedException, ConflictException } from '@nestjs/common';
+import { Injectable, UnauthorizedException, ConflictException, ServiceUnavailableException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcrypt';
+import { randomBytes } from 'crypto';
 import { OAuth2Client } from 'google-auth-library';
+import { Prisma, UserStatus } from '@prisma/client';
 import { PrismaService } from '../../prisma/prisma.service';
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
 
-// In-memory user store for demo (used when database is unavailable)
-const demoUsers: Map<string, any> = new Map([
-  [
-    'demo@trycar.com',
-    {
-      id: 'demo-user-1',
-      email: 'demo@trycar.com',
-      name: 'Demo User',
-      phone: null,
-      passwordHash: bcrypt.hashSync('customer123', 12),
-      role: 'CUSTOMER',
-      status: 'ACTIVE',
-      emailVerified: true,
-      createdAt: new Date(),
-    },
-  ],
-  [
-    'admin@trycar.com',
-    {
-      id: 'admin-user-1',
-      email: 'admin@trycar.com',
-      name: 'Admin User',
-      phone: null,
-      passwordHash: bcrypt.hashSync('admin123', 12),
-      role: 'SUPER_ADMIN',
-      status: 'ACTIVE',
-      emailVerified: true,
-      createdAt: new Date(),
-    },
-  ],
-]);
-
-let useInMemoryStore = false;
+const publicUserSelect = {
+  id: true, email: true, name: true, phone: true, role: true,
+  status: true, emailVerified: true, createdAt: true,
+} satisfies Prisma.UserSelect;
 
 @Injectable()
 export class AuthService {
-  constructor(
-    private prisma: PrismaService,
-    private jwtService: JwtService,
-  ) {}
+  constructor(private prisma: PrismaService, private jwtService: JwtService) {}
 
-  private async checkDatabase(): Promise<boolean> {
-    if (useInMemoryStore) return false;
+  private async database<T>(operation: () => Promise<T>): Promise<T> {
     try {
-      await this.prisma.$queryRaw`SELECT 1`;
-      return true;
-    } catch {
-      useInMemoryStore = true;
-      console.log('Database unavailable, using in-memory auth store');
-      return false;
+      return await operation();
+    } catch (error) {
+      if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === 'P2002') {
+        throw new ConflictException('Email already registered');
+      }
+      throw new ServiceUnavailableException('Authentication is temporarily unavailable');
     }
+  }
+
+  private requireActive(status: UserStatus): void {
+    if (status !== 'ACTIVE') throw new UnauthorizedException('Account is not active');
   }
 
   async register(dto: RegisterDto) {
-    const dbAvailable = await this.checkDatabase();
-
-    if (!dbAvailable) {
-      // In-memory registration
-      if (demoUsers.has(dto.email)) {
-        throw new ConflictException('Email already registered');
-      }
-
-      const passwordHash = await bcrypt.hash(dto.password, 12);
-      const user = {
-        id: `user-${Date.now()}`,
-        email: dto.email,
-        name: dto.name,
-        phone: dto.phone || null,
-        passwordHash,
-        role: 'CUSTOMER',
-        status: 'ACTIVE',
-        emailVerified: false,
-        createdAt: new Date(),
-      };
-
-      demoUsers.set(dto.email, user);
-
-      const token = this.generateToken(user.id, user.role);
-
-      return {
-        user: {
-          id: user.id,
-          email: user.email,
-          name: user.name,
-          phone: user.phone,
-          role: user.role,
-        },
-        token,
-      };
-    }
-
-    const existing = await this.prisma.user.findUnique({
-      where: { email: dto.email },
-    });
-
-    if (existing) {
-      throw new ConflictException('Email already registered');
-    }
-
+    const existing = await this.database(() => this.prisma.user.findUnique({ where: { email: dto.email } }));
+    if (existing) throw new ConflictException('Email already registered');
     const passwordHash = await bcrypt.hash(dto.password, 12);
-
-    const user = await this.prisma.user.create({
-      data: {
-        email: dto.email,
-        name: dto.name,
-        phone: dto.phone,
-        passwordHash,
-        role: 'CUSTOMER',
-      },
-      select: {
-        id: true,
-        email: true,
-        name: true,
-        phone: true,
-        role: true,
-        createdAt: true,
-      },
-    });
-
-    const token = this.generateToken(user.id, user.role);
-
-    return { user, token };
+    const user = await this.database(() => this.prisma.user.create({
+      data: { email: dto.email, name: dto.name, phone: dto.phone, passwordHash, role: 'CUSTOMER' },
+      select: { id: true, email: true, name: true, phone: true, role: true, createdAt: true },
+    }));
+    return { user, token: this.generateToken(user.id, user.role) };
   }
 
   async login(dto: LoginDto) {
-    const dbAvailable = await this.checkDatabase();
-
-    if (!dbAvailable) {
-      // In-memory login
-      const user = demoUsers.get(dto.email);
-      if (!user) {
-        throw new UnauthorizedException('Invalid credentials');
-      }
-
-      const isValid = await bcrypt.compare(dto.password, user.passwordHash);
-      if (!isValid) {
-        throw new UnauthorizedException('Invalid credentials');
-      }
-
-      const token = this.generateToken(user.id, user.role);
-
-      return {
-        user: {
-          id: user.id,
-          email: user.email,
-          name: user.name,
-          phone: user.phone,
-          role: user.role,
-        },
-        token,
-      };
-    }
-
-    const user = await this.prisma.user.findUnique({
-      where: { email: dto.email },
-    });
-
-    if (!user) {
+    const user = await this.database(() => this.prisma.user.findUnique({ where: { email: dto.email } }));
+    if (!user || !(await bcrypt.compare(dto.password, user.passwordHash))) {
       throw new UnauthorizedException('Invalid credentials');
     }
-
-    const isValid = await bcrypt.compare(dto.password, user.passwordHash);
-    if (!isValid) {
-      throw new UnauthorizedException('Invalid credentials');
-    }
-
-    const token = this.generateToken(user.id, user.role);
-
+    this.requireActive(user.status);
     return {
-      user: {
-        id: user.id,
-        email: user.email,
-        name: user.name,
-        phone: user.phone,
-        role: user.role,
-      },
-      token,
+      user: { id: user.id, email: user.email, name: user.name, phone: user.phone, role: user.role },
+      token: this.generateToken(user.id, user.role),
     };
   }
 
   async validateUser(userId: string) {
-    const dbAvailable = await this.checkDatabase();
-
-    if (!dbAvailable) {
-      // In-memory validation
-      for (const user of demoUsers.values()) {
-        if (user.id === userId) {
-          return {
-            id: user.id,
-            email: user.email,
-            name: user.name,
-            phone: user.phone,
-            role: user.role,
-            status: user.status,
-            emailVerified: user.emailVerified,
-            createdAt: user.createdAt,
-          };
-        }
-      }
-      throw new UnauthorizedException('User not found');
-    }
-
-    const user = await this.prisma.user.findUnique({
-      where: { id: userId },
-      select: {
-        id: true,
-        email: true,
-        name: true,
-        phone: true,
-        role: true,
-        status: true,
-        emailVerified: true,
-        createdAt: true,
-      },
-    });
-
-    if (!user) {
-      throw new UnauthorizedException('User not found');
-    }
-
+    const user = await this.database(() => this.prisma.user.findUnique({ where: { id: userId }, select: publicUserSelect }));
+    if (!user) throw new UnauthorizedException('User not found');
+    this.requireActive(user.status);
     return user;
   }
 
   async googleAuth(googleToken: string) {
-    const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
-
-    let payload: any;
+    const audience = process.env.GOOGLE_CLIENT_ID;
+    if (!audience) throw new ServiceUnavailableException('Google sign-in is not configured');
+    const client = new OAuth2Client(audience);
+    let payload;
     try {
-      const ticket = await client.verifyIdToken({
-        idToken: googleToken,
-        audience: process.env.GOOGLE_CLIENT_ID,
-      });
-      payload = ticket.getPayload();
-    } catch (error) {
+      payload = (await client.verifyIdToken({ idToken: googleToken, audience })).getPayload();
+    } catch {
       throw new UnauthorizedException('Invalid Google token');
     }
-
-    if (!payload || !payload.email) {
+    if (!payload?.email || payload.email_verified !== true) {
       throw new UnauthorizedException('Invalid Google token payload');
     }
-
-    const { email, name } = payload;
-    const dbAvailable = await this.checkDatabase();
-
-    if (!dbAvailable) {
-      // In-memory Google auth
-      let user = demoUsers.get(email);
-
-      if (!user) {
-        const randomPassword = Math.random().toString(36).slice(-20);
-        const passwordHash = await bcrypt.hash(randomPassword, 12);
-
-        user = {
-          id: `google-user-${Date.now()}`,
-          email,
-          name: name || 'Google User',
-          phone: null,
-          passwordHash,
-          role: 'CUSTOMER',
-          status: 'ACTIVE',
-          emailVerified: true,
-          createdAt: new Date(),
-        };
-
-        demoUsers.set(email, user);
-      }
-
-      const token = this.generateToken(user.id, user.role);
-
-      return {
-        user: {
-          id: user.id,
-          email: user.email,
-          name: user.name,
-          phone: user.phone,
-          role: user.role,
-        },
-        token,
-      };
+    const email = payload.email;
+    let user = await this.database(() => this.prisma.user.findUnique({ where: { email } }));
+    if (!user) {
+      const passwordHash = await bcrypt.hash(randomBytes(32).toString('hex'), 12);
+      user = await this.database(() => this.prisma.user.create({
+        data: { email, name: payload.name || 'Google User', passwordHash, role: 'CUSTOMER', emailVerified: true },
+      }));
     }
-
-    // Check if user exists
-    const existingUser = await this.prisma.user.findUnique({
-      where: { email },
-    });
-
-    let userId: string;
-    let userRole: string;
-    let userName: string;
-    let userPhone: string | null;
-
-    if (existingUser) {
-      userId = existingUser.id;
-      userRole = existingUser.role;
-      userName = existingUser.name;
-      userPhone = existingUser.phone;
-    } else {
-      // Create new user with Google profile
-      const randomPassword = Math.random().toString(36).slice(-20);
-      const passwordHash = await bcrypt.hash(randomPassword, 12);
-
-      const newUser = await this.prisma.user.create({
-        data: {
-          email,
-          name: name || 'Google User',
-          passwordHash,
-          role: 'CUSTOMER',
-          emailVerified: true,
-        },
-      });
-
-      userId = newUser.id;
-      userRole = newUser.role;
-      userName = newUser.name;
-      userPhone = newUser.phone;
-    }
-
-    const token = this.generateToken(userId, userRole);
-
+    this.requireActive(user.status);
     return {
-      user: {
-        id: userId,
-        email,
-        name: userName,
-        phone: userPhone,
-        role: userRole,
-      },
-      token,
+      user: { id: user.id, email: user.email, name: user.name, phone: user.phone, role: user.role },
+      token: this.generateToken(user.id, user.role),
     };
   }
 
@@ -342,47 +95,13 @@ export class AuthService {
   }
 
   async updateProfile(userId: string, data: { name?: string; phone?: string }) {
-    const dbAvailable = await this.checkDatabase();
-
-    if (!dbAvailable) {
-      // In-memory update
-      for (const user of demoUsers.values()) {
-        if (user.id === userId) {
-          if (data.name !== undefined) user.name = data.name;
-          if (data.phone !== undefined) user.phone = data.phone || null;
-          return {
-            id: user.id,
-            email: user.email,
-            name: user.name,
-            phone: user.phone,
-            role: user.role,
-            status: user.status,
-            emailVerified: user.emailVerified,
-            createdAt: user.createdAt,
-          };
-        }
-      }
-      throw new UnauthorizedException('User not found');
-    }
-
-    const user = await this.prisma.user.update({
+    return this.database(() => this.prisma.user.update({
       where: { id: userId },
       data: {
         ...(data.name !== undefined && { name: data.name }),
         ...(data.phone !== undefined && { phone: data.phone }),
       },
-      select: {
-        id: true,
-        email: true,
-        name: true,
-        phone: true,
-        role: true,
-        status: true,
-        emailVerified: true,
-        createdAt: true,
-      },
-    });
-
-    return user;
+      select: publicUserSelect,
+    }));
   }
 }

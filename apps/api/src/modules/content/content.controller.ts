@@ -1,3 +1,6 @@
+import { RolesGuard } from '../../common/guards/roles.guard';
+import { Roles } from '../../common/decorators/roles.decorator';
+import { CONTENT_ROLES } from '../../common/auth-roles';
 import {
   Controller,
   Get,
@@ -30,7 +33,8 @@ export class ContentController {
   }
 
   @Post('pages/:pageKey')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...CONTENT_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Create or update page content (admin)' })
   upsertPageContent(
@@ -49,7 +53,8 @@ export class ContentController {
   }
 
   @Post('seo/:pagePath')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...CONTENT_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Create or update SEO metadata (admin)' })
   upsertSeoMetadata(
@@ -75,7 +80,8 @@ export class ContentController {
   }
 
   @Post('testimonials')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...CONTENT_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Create a testimonial (admin)' })
   createTestimonial(@Body() dto: CreateTestimonialDto) {
@@ -83,7 +89,8 @@ export class ContentController {
   }
 
   @Put('testimonials/:id')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...CONTENT_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Update a testimonial (admin)' })
   updateTestimonial(
@@ -94,7 +101,8 @@ export class ContentController {
   }
 
   @Delete('testimonials/:id')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...CONTENT_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Delete a testimonial (admin)' })
   deleteTestimonial(@Param('id') id: string) {
@@ -117,7 +125,8 @@ export class ContentController {
   }
 
   @Post('faqs')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...CONTENT_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Create an FAQ (admin)' })
   createFaq(@Body() dto: CreateFaqDto) {
@@ -125,7 +134,8 @@ export class ContentController {
   }
 
   @Put('faqs/:id')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...CONTENT_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Update an FAQ (admin)' })
   updateFaq(@Param('id') id: string, @Body() dto: Partial<CreateFaqDto>) {
@@ -133,7 +143,8 @@ export class ContentController {
   }
 
   @Delete('faqs/:id')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...CONTENT_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Delete an FAQ (admin)' })
   deleteFaq(@Param('id') id: string) {

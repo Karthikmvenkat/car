@@ -7,6 +7,7 @@ import { MaterialMapping } from './gltf/material-classifier';
 import { SaveConfigurationDto } from './dto/configurator.dto';
 import { AI_DISCLAIMER } from './pipeline/pipeline.service';
 import { fullSizePhoto } from './images/photo-quality';
+import { PUBLIC_VEHICLE_VISIBILITY } from '../../common/public-vehicle-visibility';
 
 /** Public, read-only view of published vehicles. Never exposes unapproved assets. */
 @Injectable()
@@ -18,7 +19,7 @@ export class ConfiguratorPublicService {
 
   async listPublished() {
     const vehicles = await this.prisma.vehicle.findMany({
-      where: { publicationStatus: 'PUBLISHED' },
+      where: PUBLIC_VEHICLE_VISIBILITY,
       include: {
         brand: { select: { name: true } },
         model: { select: { name: true } },
@@ -52,7 +53,7 @@ export class ConfiguratorPublicService {
 
   async getBySlug(slug: string) {
     const v = await this.prisma.vehicle.findFirst({
-      where: { slug, publicationStatus: 'PUBLISHED' },
+      where: { slug, ...PUBLIC_VEHICLE_VISIBILITY },
       include: {
         brand: true,
         model: true,
@@ -77,7 +78,7 @@ export class ConfiguratorPublicService {
       orderBy: { createdAt: 'asc' },
     });
     const variants = await this.prisma.vehicle.findMany({
-      where: { brandId: v.brandId, modelId: v.modelId, publicationStatus: 'PUBLISHED' },
+      where: { brandId: v.brandId, modelId: v.modelId, ...PUBLIC_VEHICLE_VISIBILITY },
       select: { slug: true, variant: true, year: true, fuelType: true, transmission: true, price: true, currency: true, priceVerified: true },
       orderBy: [{ year: 'desc' }, { price: 'asc' }],
     });
@@ -133,7 +134,7 @@ export class ConfiguratorPublicService {
 
   async saveConfiguration(dto: SaveConfigurationDto, userId?: string) {
     const v = await this.prisma.vehicle.findFirst({
-      where: { slug: dto.vehicleSlug, publicationStatus: 'PUBLISHED' },
+      where: { slug: dto.vehicleSlug, ...PUBLIC_VEHICLE_VISIBILITY },
       include: { colours: true },
     });
     if (!v) throw new NotFoundException('Vehicle not found');
@@ -157,9 +158,10 @@ export class ConfiguratorPublicService {
   async getConfiguration(token: string) {
     const cfg = await this.prisma.savedConfiguration.findUnique({
       where: { shareToken: token },
-      include: { vehicle: { select: { slug: true, publicationStatus: true } } },
+      include: { vehicle: { select: { slug: true, publicationStatus: true, status: true } } },
     });
-    if (!cfg || cfg.vehicle.publicationStatus !== 'PUBLISHED') throw new NotFoundException('Configuration not found');
+    if (!cfg || cfg.vehicle.publicationStatus !== PUBLIC_VEHICLE_VISIBILITY.publicationStatus ||
+        cfg.vehicle.status !== PUBLIC_VEHICLE_VISIBILITY.status) throw new NotFoundException('Configuration not found');
     return {
       shareToken: cfg.shareToken, vehicleSlug: cfg.vehicle.slug, selectedVariant: cfg.selectedVariant,
       selectedColour: cfg.selectedColour, selectedOptions: cfg.selectedOptions, cameraState: cfg.cameraState, createdAt: cfg.createdAt,

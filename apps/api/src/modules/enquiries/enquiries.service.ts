@@ -1,6 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
 import { CreateEnquiryDto } from './dto/create-enquiry.dto';
+import { PUBLIC_VEHICLE_VISIBILITY } from '../../common/public-vehicle-visibility';
 
 @Injectable()
 export class EnquiriesService {
@@ -9,7 +10,7 @@ export class EnquiriesService {
   async create(dto: CreateEnquiryDto) {
     // Find vehicle by slug - required in schema
     const vehicle = await this.prisma.vehicle.findFirst({
-      where: { slug: dto.vehicleSlug },
+      where: { slug: dto.vehicleSlug, ...PUBLIC_VEHICLE_VISIBILITY },
     });
 
     if (!vehicle) {
@@ -23,9 +24,7 @@ export class EnquiriesService {
         phone: dto.phone,
         message: dto.message,
         vehicle: { connect: { id: vehicle.id } },
-        user: dto.userId
-          ? { connect: { id: dto.userId } }
-          : undefined,
+        // Public caller-supplied userId is not an authenticated identity.
         source: dto.source || 'website',
         status: 'NEW',
       },

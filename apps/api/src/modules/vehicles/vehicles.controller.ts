@@ -1,3 +1,6 @@
+import { RolesGuard } from '../../common/guards/roles.guard';
+import { Roles } from '../../common/decorators/roles.decorator';
+import { INVENTORY_ROLES } from '../../common/auth-roles';
 import {
   Controller,
   Get,
@@ -34,7 +37,8 @@ export class VehiclesController {
   }
 
   @Get('all')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...INVENTORY_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Get all vehicles (admin)' })
   findAll() {
@@ -48,7 +52,8 @@ export class VehiclesController {
   }
 
   @Post()
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...INVENTORY_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Create a new vehicle (admin)' })
   create(@Body() dto: CreateVehicleDto) {
@@ -56,7 +61,8 @@ export class VehiclesController {
   }
 
   @Put(':id')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...INVENTORY_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Update a vehicle (admin)' })
   update(@Param('id') id: string, @Body() dto: UpdateVehicleDto) {
@@ -64,7 +70,8 @@ export class VehiclesController {
   }
 
   @Delete(':id')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...INVENTORY_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Delete a vehicle (admin)' })
   remove(@Param('id') id: string) {

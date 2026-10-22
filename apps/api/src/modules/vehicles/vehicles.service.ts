@@ -3,6 +3,7 @@ import { PrismaService } from '../../prisma/prisma.service';
 import { CreateVehicleDto } from './dto/create-vehicle.dto';
 import { UpdateVehicleDto } from './dto/update-vehicle.dto';
 import { SearchVehiclesDto } from './dto/search-vehicles.dto';
+import { PUBLIC_VEHICLE_VISIBILITY } from '../../common/public-vehicle-visibility';
 
 @Injectable()
 export class VehiclesService {
@@ -23,14 +24,11 @@ export class VehiclesService {
       minYear,
       maxYear,
       sort = 'newest',
-      published = true,
     } = dto;
 
-    const where: any = {};
+    const where: any = { ...PUBLIC_VEHICLE_VISIBILITY };
 
-    if (published) {
-      where.status = 'AVAILABLE';
-    }
+    // Staff inventory uses guarded /vehicles/all; public flags cannot relax visibility.
     if (make) where.brand = { slug: make };
     if (model) where.model = { slug: model };
     if (bodyStyle) where.bodyStyle = bodyStyle;
@@ -105,8 +103,8 @@ export class VehiclesService {
   }
 
   async findBySlug(slug: string) {
-    const vehicle = await this.prisma.vehicle.findUnique({
-      where: { slug },
+    const vehicle = await this.prisma.vehicle.findFirst({
+      where: { slug, ...PUBLIC_VEHICLE_VISIBILITY },
       include: {
         brand: true,
         model: true,
@@ -206,7 +204,7 @@ export class VehiclesService {
 
   async getFeatured() {
     return this.prisma.vehicle.findMany({
-      where: { featured: true, status: 'AVAILABLE' },
+      where: { featured: true, ...PUBLIC_VEHICLE_VISIBILITY },
       take: 6,
       orderBy: { createdAt: 'desc' },
       include: {

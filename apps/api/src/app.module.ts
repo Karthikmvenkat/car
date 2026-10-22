@@ -9,6 +9,8 @@ import { BrandsModule } from './modules/brands/brands.module';
 import { ContentModule } from './modules/content/content.module';
 import { ConfiguratorModule } from './modules/configurator/configurator.module';
 import { HealthController } from './health.controller';
+import { CatalogIntakeModule } from './modules/catalog-intake/catalog-intake.module';
+import { CatalogMediaModule } from './modules/catalog-media/catalog-media.module';
 
 @Module({
   imports: [
@@ -21,6 +23,8 @@ import { HealthController } from './health.controller';
     BrandsModule,
     ContentModule,
     ConfiguratorModule,
+    CatalogIntakeModule,
+    CatalogMediaModule,
   ],
   controllers: [HealthController],
 })

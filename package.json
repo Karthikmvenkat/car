@@ -8,6 +8,12 @@
     "packages/*"
   ],
   "scripts": {
+    "test:e2e": "node scripts/run-e2e.cjs",
+    "test:e2e:install": "node scripts/install-e2e-browsers.cjs",
+    "test:api:database": "node scripts/run-api-database-tests.cjs",
+    "check:ui-baseline": "node scripts/verify-ui-baseline.cjs",
+    "test:api": "npm run test --workspace=apps/api",
+    "typecheck:api": "npm run typecheck --workspace=apps/api",
     "dev": "npm run dev --workspace=apps/web",
     "dev:api": "npm run dev --workspace=apps/api",
     "build": "npm run build --workspace=apps/web",
@@ -34,5 +40,9 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@neon/config": "^1.8.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "puppeteer": "^25.14.0"
   }
 }

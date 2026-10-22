@@ -1,0 +1,58 @@
+name: Playwright functional regression
+on:
+  pull_request:
+    paths: ['apps/**','prisma/**','e2e/**','scripts/**','playwright.config.ts','package*.json','.github/workflows/playwright.yml']
+  push:
+    branches: ['main','codex/**']
+    paths: ['apps/**','prisma/**','e2e/**','scripts/**','playwright.config.ts','package*.json','.github/workflows/playwright.yml']
+permissions:
+  contents: read
+concurrency:
+  group: playwright-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: car_test
+          POSTGRES_PASSWORD: fixture-only-password
+          POSTGRES_DB: car_security_test_e2e
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U car_test -d car_security_test_e2e"
+          --health-interval 5s --health-timeout 5s --health-retries 12
+    env:
+      PUPPETEER_SKIP_DOWNLOAD: 'true'
+      DATABASE_URL: postgresql://car_test:fixture-only-password@127.0.0.1:5432/car_security_test_e2e
+      CAR_TEST_DATABASE_URL: postgresql://car_test:fixture-only-password@127.0.0.1:5432/car_security_test_e2e
+      PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.cache/playwright-browsers
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run db:generate
+      - run: npx playwright install --with-deps chromium
+      - run: node node_modules/typescript/bin/tsc --project e2e/tsconfig.json
+      - run: npm run test:e2e
+      - name: Retain synthetic E2E reports and failure evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: playwright-functional-report
+          path: |
+            .cache/e2e/*/report/**
+            .cache/e2e/*/results/**
+            .cache/e2e/*/summary.json
+          retention-days: 7
+          if-no-files-found: ignore
+      - if: always()
+        run: npm run check:ui-baseline

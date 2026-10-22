@@ -1,0 +1,8 @@
+# Research
+Decision: separate private model/storage; do not reuse public uploads or VehicleAsset publication. Rationale: read-only research agent found current static mount and per-source evidence insufficient for per-photo identity/provenance. Alternative public storage would leak drafts/proofs.
+
+Decision: Sharp0.35.5 child process with bounded stdin/stdout, timeout and slot admission before buffering. Local installed types verified. Official [constructor](https://sharp.pixelplumbing.com/api-constructor/) documents strict failOn, pixel limits and animation; [output](https://sharp.pixelplumbing.com/api-output/) documents output/metadata behavior. Native timeout is supplemented by parent kill. No arbitrary worker code/URLs; environment excludes application secrets. A child is process isolation, not an OS security sandbox.
+
+Decision: immutable random-key blob sets and transactional media/audit after persistence; retain complete orphans after uncertain DB outcome. Rationale: deleting on an ambiguous commit can destroy a committed record's image. Alternative distributed transaction is unavailable; automatic GC without leases/age grace is unsafe. Per-process concurrency does not constitute global rate limiting or storage quotas; production ingress/quotas and reconciliation remain gates.
+
+Decision: immutable final media review plus separate withdrawal. Permission expiry/revocation changes current eligibility, not historical review. Acceptance requires eligible accepted facts and exact identity attestation. Public distribution/attribution design follows separately. No unresolved inputs for private local verification.

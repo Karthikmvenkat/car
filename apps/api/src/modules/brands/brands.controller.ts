@@ -1,3 +1,6 @@
+import { RolesGuard } from '../../common/guards/roles.guard';
+import { Roles } from '../../common/decorators/roles.decorator';
+import { INVENTORY_ROLES } from '../../common/auth-roles';
 import {
   Controller,
   Get,
@@ -33,7 +36,8 @@ export class BrandsController {
   }
 
   @Post()
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...INVENTORY_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Create a brand (admin)' })
   create(@Body() dto: CreateBrandDto) {
@@ -41,7 +45,8 @@ export class BrandsController {
   }
 
   @Put(':id')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...INVENTORY_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Update a brand (admin)' })
   update(@Param('id') id: string, @Body() dto: UpdateBrandDto) {
@@ -49,7 +54,8 @@ export class BrandsController {
   }
 
   @Delete(':id')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...INVENTORY_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Delete a brand (admin)' })
   remove(@Param('id') id: string) {
@@ -57,7 +63,8 @@ export class BrandsController {
   }
 
   @Post(':brandId/models')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...INVENTORY_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Add a model to a brand (admin)' })
   createModel(
@@ -68,7 +75,8 @@ export class BrandsController {
   }
 
   @Delete('models/:modelId')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...INVENTORY_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Delete a model (admin)' })
   removeModel(@Param('modelId') modelId: string) {

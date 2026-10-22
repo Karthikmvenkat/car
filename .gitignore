@@ -42,6 +42,8 @@ prisma/*.db-journal
 # Testing
 coverage/
 .nyc_output/
+playwright-report/
+test-results/
 
 # Turbo
 .turbo/
@@ -49,6 +51,7 @@ coverage/
 # Misc
 *.tsbuildinfo
 .cache/
+.private/
 .neon
 
 # Configurator local storage / test fixtures

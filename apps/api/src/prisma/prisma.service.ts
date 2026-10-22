@@ -14,8 +14,7 @@ export class PrismaService extends PrismaClient implements OnModuleInit, OnModul
     } catch (error) {
       this.isDatabaseAvailable = false;
       this.logger.warn(
-        'Database unavailable — running in demo mode with in-memory auth. ' +
-        'Set up PostgreSQL to persist data.'
+        'Database unavailable. Authentication and persistence require PostgreSQL; no demo fallback is enabled.'
       );
     }
   }

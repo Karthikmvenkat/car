@@ -3,6 +3,7 @@ import { PrismaService } from '../../prisma/prisma.service';
 import { CreateBrandDto } from './dto/create-brand.dto';
 import { UpdateBrandDto } from './dto/update-brand.dto';
 import { CreateModelDto } from './dto/create-model.dto';
+import { PUBLIC_VEHICLE_VISIBILITY } from '../../common/public-vehicle-visibility';
 
 @Injectable()
 export class BrandsService {
@@ -12,7 +13,7 @@ export class BrandsService {
     return this.prisma.brand.findMany({
       include: {
         _count: {
-          select: { models: true, vehicles: true },
+          select: { models: true, vehicles: { where: PUBLIC_VEHICLE_VISIBILITY } },
         },
         models: {
           select: { id: true, name: true, slug: true },
@@ -29,6 +30,7 @@ export class BrandsService {
       include: {
         models: { orderBy: { name: 'asc' } },
         vehicles: {
+          where: PUBLIC_VEHICLE_VISIBILITY,
           select: {
             id: true,
             brand: { select: { name: true } },

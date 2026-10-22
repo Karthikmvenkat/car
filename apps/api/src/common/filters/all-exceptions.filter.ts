@@ -23,8 +23,6 @@ export class AllExceptionsFilter implements ExceptionFilter {
         typeof exceptionResponse === 'string'
           ? exceptionResponse
           : (exceptionResponse as any).message || exception.message;
-    } else if (exception instanceof Error) {
-      message = exception.message;
     }
 
     response.status(status).json({

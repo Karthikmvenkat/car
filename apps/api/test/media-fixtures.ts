@@ -1,0 +1,2 @@
+// Synthetic metadata only; no real acquisition or source permission attested.
+export const mediaMetadata = (sourceId = 'source', importKey = 'media_key_01') => ({ sourceId, importKey, evidenceUrl: 'https://fixture.example.invalid/photo', evidenceRef: 'private/synthetic-image-permission', creator: 'Synthetic creator', attribution: 'Synthetic creator / CC0', alt: 'Synthetic variant front view', acquiredAt: new Date().toISOString() });

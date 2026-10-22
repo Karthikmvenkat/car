@@ -7,6 +7,102 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// Private catalog preparation. These records never publish a legacy Vehicle.
+enum CatalogLicense {
+  CC0
+  CC_BY_4_0
+  MANUFACTURER_PERMISSION
+}
+
+enum CatalogReviewStatus {
+  READY_FOR_REVIEW
+  ACCEPTED
+  REJECTED
+}
+
+model CatalogSource {
+  id                  String @id @default(cuid())
+  name                String
+  sourceUrl           String
+  host                String
+  license             CatalogLicense
+  evidenceRef         String
+  attribution         String
+  commercialUse       Boolean
+  storageAllowed      Boolean
+  displayAllowed      Boolean
+  modificationAllowed Boolean
+  policyVersion       Int @default(1)
+  validUntil          DateTime
+  approvedById        String
+  revokedAt           DateTime?
+  revokedById         String?
+  createdAt           DateTime @default(now())
+  candidates          CatalogCandidate[]
+  media               CatalogMedia[]
+}
+
+model CatalogCandidate {
+  id                  String @id @default(cuid())
+  sourceId            String
+  sourcePolicyVersion Int
+  importKey           String
+  inputHash           String
+  dictionaryVersion   Int @default(1)
+  identity            Json
+  saleEvidenceUrl     String
+  saleObservedAt      DateTime
+  facts               Json
+  submittedById       String
+  status              CatalogReviewStatus @default(READY_FOR_REVIEW)
+  reviewedById        String?
+  reviewedAt          DateTime?
+  reviewNote          String?
+  createdAt           DateTime @default(now())
+  source              CatalogSource @relation(fields: [sourceId], references: [id], onDelete: Restrict)
+  media               CatalogMedia[]
+
+  @@unique([sourceId, importKey])
+  @@index([status, id])
+}
+
+model CatalogMedia {
+  id                  String @id @default(cuid())
+  candidateId         String
+  sourceId            String
+  sourcePolicyVersion Int
+  importKey           String
+  inputHash           String
+  evidenceUrl         String
+  evidenceRef         String
+  creator             String
+  attribution         String
+  alt                 String
+  acquiredAt          DateTime
+  originalHash        String
+  originalBytes       Int
+  originalFormat      String
+  width               Int
+  height              Int
+  storageKey          String @unique
+  derivatives         Json
+  recipeVersion       Int @default(1)
+  submittedById       String
+  status              CatalogReviewStatus @default(READY_FOR_REVIEW)
+  identityConfirmed   Boolean @default(false)
+  reviewedById        String?
+  reviewedAt          DateTime?
+  reviewNote          String?
+  withdrawnAt         DateTime?
+  withdrawnById       String?
+  createdAt           DateTime @default(now())
+  candidate           CatalogCandidate @relation(fields: [candidateId], references: [id], onDelete: Restrict)
+  source              CatalogSource @relation(fields: [sourceId], references: [id], onDelete: Restrict)
+
+  @@unique([candidateId, importKey])
+  @@index([candidateId, id])
+}
+
 // ============================================
 // USERS & AUTH
 // ============================================

@@ -1,0 +1,6 @@
+# Validation
+Set CATALOG_MEDIA_ROOT to an absolute private persistent directory outside uploads/public/static trees for local API uploads. Without it, binary storage fails closed; unrelated API startup remains usable. Never put this directory behind a static mount or CDN. Production shared storage, OS process limits, retention/quota/backup/reconciliation and authenticated staff UI preview are later gates. Local POSIX modes do not configure Windows ACLs; operators must restrict the mount ACL before deployment.
+
+Run npm run db:generate, npm run typecheck:api, npm run test:api, npm run build:api, npm run typecheck, npm run check:ui-baseline. Use existing disposable PostgreSQL helper for npm run test:api:database; no live migrations. Synthetic fixtures only. Test rights revalidation, oriented/metadata images, corrupt/animated/bomb/oversize/timeout/saturation, path/symlink isolation, keyed races/audit rollback, preview integrity and withdrawal.
+
+Complete private orphan directories after uncertain failures are intentionally retained. Before production add an age/lease-aware inventory comparing storage keys to DB references, with dry-run and explicit retention approval, plus durable backups. No automated recursive deletion or source acquisition is part of this feature. Do not deploy the local adapter onto an ephemeral/multi-replica filesystem.

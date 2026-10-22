@@ -1,3 +1,6 @@
+import { RolesGuard } from '../../common/guards/roles.guard';
+import { Roles } from '../../common/decorators/roles.decorator';
+import { SALES_ROLES } from '../../common/auth-roles';
 import {
   Controller,
   Get,
@@ -25,7 +28,8 @@ export class BookingsController {
   }
 
   @Get()
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...SALES_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'List all bookings (admin)' })
   findAll(@Query('status') status?: string) {
@@ -33,7 +37,8 @@ export class BookingsController {
   }
 
   @Get(':id')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...SALES_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Get booking by ID (admin)' })
   findOne(@Param('id') id: string) {
@@ -41,7 +46,8 @@ export class BookingsController {
   }
 
   @Post(':id/status')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(...SALES_ROLES)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Update booking status (admin)' })
   updateStatus(
