@@ -1,0 +1,6 @@
+# Data model
+- QuotationRequest: UUID id/reference, unique client UUID requestKey, inputHash, vehicleSnapshot JSON, email<=254, normalized Indian phone10digits, consentVersion1, status NEW/CONTACTED/CLOSED, version>=0, timestamps. Snapshot survives inventory deletion.
+- QuotationRevision: UUID id, restrictive requestId FK, unique(requestId,number), immutable snapshot JSON, totalPaise integer1..2,000,000,000, PDF Bytes<=2MiB/sha256, createdById/time. No update/delete endpoint.
+- QuotationThrottle: SHA256(contact) key + hourly UTC bucket; max5newrequests/contact/hour; same transaction as request. Replays precede quota; expired buckets cleaned opportunistically. No raw phone/email/network address in throttle.
+- Revision snapshot: authoritative request vehicle/contact; customerName<=120/location<=300; issuerName<=150/address<=500/contact<=150; validUntil YYYY-MM-DD not before today; deliveryEstimate<=120; terms<=3000; 1..20rows, label<=100/note<=300/kind CHARGE|DISCOUNT/amountPaise integer0..2,000,000,000. Charge sum<=2,000,000,000; discounts<charges; server calculates total. Validate font coverage before publication.
+- Staff mutations: expectedVersion>=0; recheck active sales actor within transaction, compare/update version, insert revision/audit atomically. Conflict409/missing404. Audit metadata contains IDs/status only, no contacts/pricing snapshot.

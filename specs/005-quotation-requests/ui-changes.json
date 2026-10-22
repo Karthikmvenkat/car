@@ -1,0 +1,36 @@
+{
+  "purpose": "Quotation feature shown in preview; preserve existing visual styles and unrelated source",
+  "files": [
+    {
+      "path": "apps/web/components/vehicles/PublicConfigurator.tsx",
+      "reason": "Quotation request/customer dialog or authorized sales workflow",
+      "baselineSha256": "9974df682121351bcb14272381cb9a0f73c3859313579f163cb17f93036dfdcf",
+      "previousSha256": "0922b9059e932805f565c0311c0f32818576c26430223d88477421cfe519dac1",
+      "sha256": "c846dc8a5ba47a342907fcac31d3ae2e985ffbc6c846b9f8cc60972f492db0fd"
+    },
+    {
+      "path": "apps/web/lib/admin-auth.ts",
+      "reason": "Quotation request/customer dialog or authorized sales workflow",
+      "baselineSha256": "ab5388051f0b2daf2c50324ace0a2974878aea6ed0fb30767521d595b9a01f74",
+      "sha256": "f3a80a77927471b6780d9da48240e4ce0ca50487d6b4ff25919dee5b780f32b7"
+    },
+    {
+      "path": "apps/web/app/admin/layout.tsx",
+      "reason": "Quotation request/customer dialog or authorized sales workflow",
+      "baselineSha256": "9b68e63e8fb39d9122143e6a1c0ac1ac95aa57e07e46a36783ca2d80fb0c0307",
+      "sha256": "939aea2ba56f7e8e0b59b0d4d10954197a5f474e67b9fb022297ea87e2486a04"
+    },
+    {
+      "path": "apps/web/components/vehicles/QuotationRequest.tsx",
+      "reason": "Quotation request/customer dialog or authorized sales workflow",
+      "added": true,
+      "sha256": "1d9cebacac19ca233e69fdd1214d1d7c485d2d78353b1544ce344fe3d3002863"
+    },
+    {
+      "path": "apps/web/app/admin/quotations/page.tsx",
+      "reason": "Quotation request/customer dialog or authorized sales workflow",
+      "added": true,
+      "sha256": "9745e8627089eccf4cf025dd7ad1ad5d92441e241c8b3aa8f712fae57833e62d"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { useAuth } from '@/contexts/AuthContext';
-import { isStaffRole } from '@/lib/admin-auth';
+import { canManageSales, isStaffRole } from '@/lib/admin-auth';
 
 const sidebarLinks = [
   {
@@ -27,6 +27,7 @@ const sidebarLinks = [
     group: 'Sales',
     items: [
       { href: '/admin/enquiries', label: 'Enquiries', icon: 'mail' },
+      { href: '/admin/quotations', label: 'Requested quotations', icon: 'mail' },
       { href: '/admin/bookings', label: 'Test Drives', icon: 'calendar' },
       { href: '/admin/customers', label: 'Customers', icon: 'users' },
     ],
@@ -209,7 +210,7 @@ export default function AdminLayout({
                 {group.group}
               </p>
               <ul className="space-y-1">
-                {group.items.map((item) => {
+                {group.items.filter(item=>item.href!=='/admin/quotations'||canManageSales(user.role)).map((item) => {
                   const isActive =
                     item.href === '/admin'
                       ? pathname === '/admin'

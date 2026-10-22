@@ -34,6 +34,7 @@ execSync('npm run build:api', { cwd: ROOT, stdio: 'inherit' });
 // Step 2: Copy API dist to functions/api/dist
 console.log('[2/4] Copying API build to functions/...');
 copyDir(API_DIST, path.join(FUNCTIONS_DIR, 'api', 'dist'));
+copyDir(path.join(ROOT, 'apps', 'api', 'assets'), path.join(FUNCTIONS_DIR, 'api', 'assets'));
 
 // Step 3: Copy Prisma schema to functions/prisma
 console.log('[3/4] Copying Prisma schema...');

@@ -17,3 +17,7 @@ export function isStaffRole(role?: string | null) {
 export function canManageConfigurator(role?: string | null) {
   return !!role && (CONFIGURATOR_ROLES as readonly string[]).includes(role);
 }
+
+export function canManageSales(role?: string | null) {
+  return !!role && ['SUPER_ADMIN','ADMIN','SALES_MANAGER'].includes(role);
+}

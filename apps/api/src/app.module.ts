@@ -11,6 +11,7 @@ import { ConfiguratorModule } from './modules/configurator/configurator.module';
 import { HealthController } from './health.controller';
 import { CatalogIntakeModule } from './modules/catalog-intake/catalog-intake.module';
 import { CatalogMediaModule } from './modules/catalog-media/catalog-media.module';
+import { QuotationsModule } from './modules/quotations/quotations.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { CatalogMediaModule } from './modules/catalog-media/catalog-media.module
     ConfiguratorModule,
     CatalogIntakeModule,
     CatalogMediaModule,
+    QuotationsModule,
   ],
   controllers: [HealthController],
 })

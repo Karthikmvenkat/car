@@ -7,6 +7,50 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum QuotationStatus {
+  NEW
+  CONTACTED
+  CLOSED
+}
+
+model QuotationRequest {
+  id              String @id @default(uuid())
+  requestKey      String @unique
+  inputHash       String
+  vehicleSnapshot Json
+  phone           String
+  email           String
+  consentVersion  Int @default(1)
+  status          QuotationStatus @default(NEW)
+  version         Int @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  revisions       QuotationRevision[]
+  @@index([status, createdAt])
+  @@index([createdAt])
+}
+
+model QuotationRevision {
+  id          String @id @default(uuid())
+  requestId   String
+  number      Int
+  snapshot    Json
+  totalPaise  Int
+  pdf         Bytes
+  sha256      String
+  createdById String
+  createdAt   DateTime @default(now())
+  request     QuotationRequest @relation(fields: [requestId], references: [id], onDelete: Restrict)
+  @@unique([requestId, number])
+}
+
+model QuotationThrottle {
+  key    String @id
+  bucket DateTime
+  count  Int
+  @@index([bucket])
+}
+
 // Private catalog preparation. These records never publish a legacy Vehicle.
 enum CatalogLicense {
   CC0
