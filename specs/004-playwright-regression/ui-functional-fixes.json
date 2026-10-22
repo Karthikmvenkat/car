@@ -1,0 +1,29 @@
+{
+  "purpose": "Authorized functional bug fixes; existing styling and original baseline retained",
+  "files": [
+    {
+      "path": "apps/web/app/admin/page.tsx",
+      "reason": "E2E06: request and link only role-authorized dashboard resources",
+      "baselineSha256": "488bcee16a7efe5d340fe2a35e34efb6fd63795b58f285ca4480511ca6b503b8",
+      "sha256": "7059ee61ffc356e79c56869c5fe2c457daf1de217ba11b86199aec8d6574dcc9"
+    },
+    {
+      "path": "apps/web/components/vehicles/VehicleFilters.tsx",
+      "reason": "E2E03: preserve rapid filter selections during navigation",
+      "baselineSha256": "2fa0b290af2753b9d37d31ac2c52527766a44cf863836c49caad83d7fc9c3997",
+      "sha256": "91b75af1da6d22ebc83e823b0e2714cf9553ba0a9d1fa4732ccbe489ccb54d7d"
+    },
+    {
+      "path": "apps/web/components/vehicles/PublicConfigurator.tsx",
+      "reason": "E2E04: resolve stored photo paths against the API origin",
+      "baselineSha256": "9974df682121351bcb14272381cb9a0f73c3859313579f163cb17f93036dfdcf",
+      "sha256": "0922b9059e932805f565c0311c0f32818576c26430223d88477421cfe519dac1"
+    },
+    {
+      "path": "apps/web/next.config.js",
+      "reason": "E2E05: route legacy links to the existing configurator",
+      "baselineSha256": "a4069ad74c06ddeb24a278f871f1f5a1379b872a7f8ccbfb5be638685f666cf3",
+      "sha256": "06a0143042e69900ec538af65ecee06e90c8cecc4b7cfdc5d223078b3d098fbc"
+    }
+  ]
+}

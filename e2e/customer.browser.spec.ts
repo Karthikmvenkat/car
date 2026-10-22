@@ -18,6 +18,8 @@ test('filters and sorting preserve real inventory', async ({page}) => {
   await expect(page.getByRole('heading',{name:/E2E Motors Aster/})).toBeVisible();
   await expect(page.getByRole('heading',{name:/E2E Motors Boreal/})).toHaveCount(0);
   const names = await page.locator('.vehicle-grid h3').allTextContents(); expect(names[0]).toContain('Cedar');
+  await expect(page.getByLabel('Filter by fuel')).toHaveValue('Electric');
+  await expect(page).toHaveURL(/fuelType=Electric.*sortBy=price-desc/);
 });
 
 test('saved vehicles survive reload and can be removed', async ({page}) => {

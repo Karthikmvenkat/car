@@ -71,7 +71,7 @@ const routes: Route[] = [
   { method: 'DELETE', path: '/brands/target', roles: inventory },
   { method: 'POST', path: '/brands/target/models', roles: inventory, body: { name: 'Fixture', slug: 'fixture' } },
   { method: 'DELETE', path: '/brands/models/target', roles: inventory },
-  { method: 'POST', path: '/content/pages/home', roles: editors, body: { title: 'Fixture' } },
+  { method: 'POST', path: '/content/pages/home', roles: editors, body: { title: 'Fixture', content: 'Synthetic page body' } },
   { method: 'POST', path: '/content/seo/home', roles: editors, body: { title: 'Fixture', description: 'Fixture' } },
   { method: 'POST', path: '/content/testimonials', roles: editors, body: { name: 'Fixture', quote: 'Fixture', rating: 5 } },
   { method: 'PUT', path: '/content/testimonials/target', roles: editors, body: { quote: 'Fixture' } },

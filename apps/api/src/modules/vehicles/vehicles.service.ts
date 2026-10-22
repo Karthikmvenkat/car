@@ -122,6 +122,11 @@ export class VehiclesService {
   }
 
   async create(dto: CreateVehicleDto) {
+    const model = await this.prisma.model.findFirst({
+      where: { slug: dto.modelSlug, brand: { slug: dto.brandSlug } },
+      select: { id: true, brandId: true },
+    });
+    if (!model) throw new NotFoundException('Model not found for this brand');
     const slug = `${dto.year}-${dto.brandSlug}-${dto.modelSlug}`
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, '-')
@@ -131,8 +136,10 @@ export class VehiclesService {
       data: {
         slug,
         year: dto.year,
-        condition: dto.condition as any,
+        condition: dto.condition ?? 'NEW',
+        variant: dto.variant,
         price: dto.price,
+        currency: dto.currency ?? 'INR',
         mileage: dto.mileage ?? 0,
         fuelType: dto.fuelType ?? 'Petrol',
         transmission: dto.transmission ?? 'Manual',
@@ -143,8 +150,8 @@ export class VehiclesService {
         description: dto.description,
         status: dto.status === 'AVAILABLE' ? 'AVAILABLE' : 'DRAFT',
         featured: dto.featured ?? false,
-        brand: { connect: { slug: dto.brandSlug } },
-        model: { connect: { id_slug: { id: '', slug: dto.modelSlug } } } as any,
+        brand: { connect: { id: model.brandId } },
+        model: { connect: { id: model.id } },
         location: dto.locationId ? { connect: { id: dto.locationId } } : undefined,
         images: dto.images
           ? {
@@ -171,12 +178,19 @@ export class VehiclesService {
     const updateData: any = { ...dto };
 
     // Handle brand/model slug connections
-    if (dto.brandSlug) {
-      updateData.brand = { connect: { slug: dto.brandSlug } };
+    if (dto.brandSlug || dto.modelSlug) {
+      const currentModel = dto.modelSlug ? null : await this.prisma.model.findUnique({ where: { id: vehicle.modelId } });
+      const model = await this.prisma.model.findFirst({
+        where: {
+          slug: dto.modelSlug ?? currentModel?.slug,
+          ...(dto.brandSlug ? { brand: { slug: dto.brandSlug } } : { brandId: vehicle.brandId }),
+        },
+        select: { id: true, brandId: true },
+      });
+      if (!model) throw new NotFoundException('Model not found for this brand');
+      updateData.brand = { connect: { id: model.brandId } };
+      updateData.model = { connect: { id: model.id } };
       delete updateData.brandSlug;
-    }
-    if (dto.modelSlug) {
-      updateData.model = { connect: { slug: dto.modelSlug } };
       delete updateData.modelSlug;
     }
 

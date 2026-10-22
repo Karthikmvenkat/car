@@ -125,7 +125,8 @@
     },
     {
       "path": "apps/web/app/globals.css",
-      "sha256": "193afe29695c7172aad37ff70f9546ff79d878d878a189c2955fca94d6d8d6d5"
+      "sha256": "193afe29695c7172aad37ff70f9546ff79d878d878a189c2955fca94d6d8d6d5",
+      "normalizedSha256": "aee6d0ead2007b9ec13fa9e50ec3865d2b849c2910a23fb5bf995876750e2081"
     },
     {
       "path": "apps/web/app/how-it-works/page.tsx",
@@ -229,7 +230,8 @@
     },
     {
       "path": "apps/web/components/home/Spotlight.tsx",
-      "sha256": "73bf188fd9fef3ca7d9801bf246ecd74183a59eb47263f429b3a0968f3168259"
+      "sha256": "73bf188fd9fef3ca7d9801bf246ecd74183a59eb47263f429b3a0968f3168259",
+      "normalizedSha256": "0ede2c90273c706fddac6050c44f8e3a26e86bc5d2def310b7940f76d55d3387"
     },
     {
       "path": "apps/web/components/home/Testimonials.tsx",
@@ -341,7 +343,8 @@
     },
     {
       "path": "apps/web/next-env.d.ts",
-      "sha256": "e462a655754db9df18b4a657454a7b6a88717ffded4e89403b2b3a47c6603fc3"
+      "sha256": "e462a655754db9df18b4a657454a7b6a88717ffded4e89403b2b3a47c6603fc3",
+      "normalizedSha256": "9dd9d642cdb87d4d5b3173217e0c45429b3e47a6f5cf5fb0ead6c644ec5fed01"
     },
     {
       "path": "apps/web/next.config.js",

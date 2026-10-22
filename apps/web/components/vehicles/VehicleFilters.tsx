@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useCallback } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 
 const bodyStyles = [
   '',
@@ -27,10 +27,20 @@ const sortOptions = [
 export function VehicleFilters({ makes }: { makes: string[] }) {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const pending = useRef<string | null>(null);
+  const issued = useRef(new Set<string>());
+  useEffect(() => {
+    const current = searchParams.toString();
+    // An intermediate navigation must not discard more recent selections.
+    if (current === pending.current || !issued.current.has(current)) {
+      pending.current = null;
+      issued.current.clear();
+    } else issued.current.delete(current);
+  }, [searchParams]);
 
   const updateFilter = useCallback(
     (key: string, value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
+      const params = new URLSearchParams(pending.current ?? searchParams.toString());
       if (value) {
         params.set(key, value);
       } else {
@@ -38,6 +48,8 @@ export function VehicleFilters({ makes }: { makes: string[] }) {
       }
       // Reset to page 1 when filters change
       params.delete('page');
+      pending.current = params.toString();
+      issued.current.add(pending.current);
       router.push(`/vehicles?${params.toString()}`, { scroll: false });
     },
     [router, searchParams]

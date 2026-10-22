@@ -80,7 +80,7 @@ export default function PublicConfiguratorContent({ slugOverride }: { slugOverri
 
   const paint=selectedColour?.rendering ?? null;
   const title=vehicle.year+' '+vehicle.make+' '+vehicle.model;
-  const photos=[...(selectedColour?.imageUrl?[{url:selectedColour.imageUrl,alt:selectedColour.name}]:[]),...(vehicle.images??[]).map(p=>({url:p.url,alt:p.alt||title})),...vehicle.renders.map(p=>({url:assetUrl(p.url)!,alt:p.label})),...vehicle.aiPreviews.map(p=>({url:assetUrl(p.assetUrl)!,alt:'AI illustration: '+p.label}))].filter((p,i,a)=>p.url&&a.findIndex(q=>q.url===p.url)===i);
+  const photos=[...(selectedColour?.imageUrl?[{url:assetUrl(selectedColour.imageUrl)!,alt:selectedColour.name}]:[]),...(vehicle.images??[]).map(p=>({url:assetUrl(p.url)!,alt:p.alt||title})),...vehicle.renders.map(p=>({url:assetUrl(p.url)!,alt:p.label})),...vehicle.aiPreviews.map(p=>({url:assetUrl(p.assetUrl)!,alt:'AI illustration: '+p.label}))].filter((p,i,a)=>p.url&&a.findIndex(q=>q.url===p.url)===i);
   const photo=galleryPhoto??photos[0];
   const step=(n:number)=>{setPrefer3d(false);setGalleryPhoto(photos[(photos.findIndex(p=>p.url===photo?.url)+n+photos.length)%photos.length]);};
   const tabs=['Overview','Key Specifications','Features','Variants','Gallery'];

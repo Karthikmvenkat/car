@@ -1,7 +1,11 @@
 {
   "hosting": {
     "public": "apps/web/out",
+    "cleanUrls": true,
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      { "regex": "^/vehicles/(?P<slug>[-a-zA-Z0-9_]+)/?$", "destination": "/configurator?vehicle=:slug&from=/vehicles/:slug", "type": 301 }
+    ],
     "headers": [
       {
         "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|avif|ico|css|js|woff2|woff)",

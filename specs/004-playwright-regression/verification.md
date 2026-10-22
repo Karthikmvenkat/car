@@ -1,5 +1,5 @@
 # Playwright verification
-Date2026-10-22; branch codex/001-production-baseline. Testing suite implemented and executed. Product regression remains failing; no product/UI fixes were mixed into this testing increment.
+Date2026-10-22; branch main. The original testing increment and its failures are retained below as historical evidence. See functional-fixes.md for the subsequent six product corrections and current verification results.
 
 ## What this feature delivers
 Pinned Playwright1.64.1 and matching Chromium; guarded disposable PostgreSQL schema/seed; real API compilation, isolated Next source copy and private test storage; API integration plus desktop/mobile browser projects; failure traces/screenshots and HTML/JSON reports; least-privilege CI with seven-day synthetic artifacts. No business API mocking, production secrets or reused developer services.
@@ -13,7 +13,7 @@ Next dev also autoformatted tsconfig/additional generated includes. The original
 
 The full run also exposed an invalid smoke-test assumption: the pipeline review route requires a vehicle ID. Its request now includes ?id=e2e-car-0. Focused desktop/mobile reruns passed with this supported input. The base route's indefinite loading without an ID remains an uncovered empty-input UX concern, not one of the six confirmed product regressions below. An additional normal filter/sort test waits for each navigation to settle and passes on both devices; the original fast successive changes still expose the race.
 
-## Product findings under verification
+## Original product findings (corrections in functional-fixes.md)
 | ID | Behavior | Evidence / next fix |
 |---|---|---|
 | E2E01 | Legacy vehicle creation returns500 for valid existing make/model | apps/api/src/modules/vehicles/vehicles.service.ts uses nonexistent model unique selector id_slug and omits requested currency; fix relation resolution and required/default fields, then verify create/update/delete separately |
@@ -61,4 +61,4 @@ Production-like static export, Firefox/WebKit, GPU/real licensed3D assets, exter
 
 The frontend source/design and product APIs/schema are unchanged by this testing increment. Previous implementation work and independent workspace changes (including an existing Puppeteer dependency, unused by this suite) were preserved. CI configuration was parsed locally and pins verified action references; no push/GitHub run/deployment occurred. npm install used ignore-scripts and only Playwright is required by these tests. Legacy lint debt remains outside this increment and was not rerun.
 
-Next action: fix the six confirmed product issues, rerun their targeted regressions, then run the entire125-case suite against fresh fixtures. Keep public reviewed-media publication and real money collection gated separately.
+The original next action was to fix these six issues and rerun regression. That work is recorded in functional-fixes.md, with the expanded 131-case suite. Public reviewed-media publication and real money collection remain separately gated.

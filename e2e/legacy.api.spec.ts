@@ -46,6 +46,11 @@ test('legacy vehicle creation accepts a valid existing brand/model',async({reque
   const created=await request.post(apiURL+'/vehicles',{headers:h,data:{brandSlug:'e2e-motors',modelSlug:'aster',variant:'Create test',year:2027,condition:'NEW',price:1100000,currency:'INR',bodyStyle:'SUV',fuelType:'Electric',transmission:'Automatic'}});
   expect(created.status()).toBe(201);
   const car=await created.json();expect(car.currency).toBe('INR');
+  expect(car.variant).toBe('Create test');expect(car.model.slug).toBe('aster');
+  expect((await request.put(apiURL+'/vehicles/'+car.id,{headers:h,data:{modelSlug:'boreal'}})).status()).toBe(200);
+  const changed=await(await request.get(apiURL+'/vehicles/all',{headers:h})).json();
+  expect(changed.find((v:any)=>v.id===car.id).model.slug).toBe('boreal');
+  expect((await request.put(apiURL+'/vehicles/'+car.id,{headers:h,data:{brandSlug:'missing-brand',modelSlug:'aster'}})).status()).toBe(404);
   expect((await request.delete(apiURL+'/vehicles/'+car.id,{headers:h})).status()).toBe(200);
 });
 
@@ -62,6 +67,10 @@ test('page content mutation and read round-trip through actual validation',async
   const saved=await request.post(apiURL+'/content/pages/e2e-page',{headers,data});expect(saved.status()).toBe(201);
   expect((await (await request.get(apiURL+'/content/pages/e2e-page')).json()).content).toBe(data.content);
   expect((await db.pageContent.findUnique({where:{slug:'e2e-page'}}))?.content).toBe(data.content);
+  const structured={blocks:[{text:'Synthetic structured content'}]};
+  expect((await request.post(apiURL+'/content/pages/e2e-page',{headers,data:{...data,content:structured}})).status()).toBe(201);
+  expect(JSON.parse((await db.pageContent.findUniqueOrThrow({where:{slug:'e2e-page'}})).content)).toEqual(structured);
+  for(const content of [null,42,true,[],undefined])expect((await request.post(apiURL+'/content/pages/e2e-page',{headers,data:{...data,content}})).status()).toBe(400);
 });
 
 test('SEO metadata round-trips without provider access',async({request,db})=>{

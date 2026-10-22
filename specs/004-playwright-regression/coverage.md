@@ -13,7 +13,7 @@
 | Finance | customer.browser | Deterministic EMI and invalid budget; no lender integration |
 | Staff login/records/screens | staff/routes.browser | Staff login, access denial, read/status surfaces; generic brand/user/FAQ/testimonial screens are not CRUD forms |
 | Brands/models/legacy vehicles | legacy.api | Real CRUD and permissions; no legacy automatic photo lookup or external acquisition |
-| Content | legacy.api + route smoke | FAQ/testimonial CRUD, page-content and SEO HTTP round-trips; public FAQ hardcoded, editors/settings preview-only; valid page-content request currently fails |
+| Content | legacy.api + route smoke | FAQ/testimonial CRUD, string/object page-content and SEO round-trips; rejects missing/null/array/number/boolean content; public FAQ hardcoded, editors/settings preview-only |
 | User roles/status | legacy.api | Persisted promotion/demotion/suspension/current-token effects and self-lockout guard; concurrency remains lower-level DB suites |
 | Source/candidate preparation | catalog-media.api | Approval permission, field normalization, keyed replay/conflict, review and revocation |
 | Private image engine | catalog-media.api | Real multipart decode/storage/derivative/review/withdrawal; lower-level decoder/path/concurrency cases remain existing459tests |

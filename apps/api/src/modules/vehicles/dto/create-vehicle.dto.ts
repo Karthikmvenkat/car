@@ -1,4 +1,5 @@
-import { IsString, IsNotEmpty, IsInt, IsOptional, IsBoolean, IsArray, ValidateNested } from 'class-validator';
+import { IsString, IsNotEmpty, IsInt, IsOptional, IsBoolean, IsArray, ValidateNested, IsEnum } from 'class-validator';
+import { VehicleCondition } from '@prisma/client';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
 
@@ -84,8 +85,8 @@ export class CreateVehicleDto {
 
   @ApiPropertyOptional()
   @IsOptional()
-  @IsString()
-  condition?: string;
+  @IsEnum(VehicleCondition)
+  condition?: VehicleCondition;
 
   @ApiPropertyOptional()
   @IsOptional()
